@@ -27,7 +27,7 @@ async def handle_lifepath_command(event):
     life_path = birthdate_to_life_path(birthdate)
 
     try:
-        content = life_path_to_content(life_path,Path('/home/nigella/tg_bot/Kitap/data/tr/MDs/'))
+        content = life_path_to_content(life_path, Path('/home/nigella/tg_bot/Kitap/data/tr/MDs/'))
     except Exception as e:
         await event.respond(f"Dosya işlemlerinde hata ile karşılaşıldı: {e}")
         return
@@ -50,7 +50,7 @@ async def handle_lifepath_command(event):
     with open(f'/home/nigella/tg_bot/Kitap/data/en/JSONs/{life_path[0]}_{life_path[1]}.json', 'r') as f:
         summary_json = json.loads(f.read())
 
-    summary_short = '<b><u>Genel Özet</b></u>\n\n'
+    summary_short = '<b><u>Genel Kısa Özet</b></u>\n\n'
 
     summary_short += f'<b><u>Temel Özellikler</b></u>\n{"".join(f"- {key_trait}{chr(10)}" for key_trait in summary_json["key_traits"])}\n\n'
 
@@ -77,6 +77,16 @@ async def handle_lifepath_command(event):
     else:
         await event.respond(message.strip(), parse_mode="html")
 
+    summary = life_path_to_content(life_path, Path('/home/nigella/tg_bot/Kitap/data/tr/Summarizations/'))
+
+    message = '<b><u>Genel Özet</b></u>'
+    for part in summary.split('\n\n'):
+        if len(message) + len(part) + 2 > 4096:
+            await event.respond(message.strip(), parse_mode="html")
+            message = ''
+        message += f'\n\n{part}'
+    else:
+        await event.respond(message.strip(), parse_mode="html")
 
 client.start()
 print("Bot started...")
