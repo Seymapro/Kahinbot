@@ -1,0 +1,87 @@
+{
+    "challenges": [
+        "Güven sorunları",
+        "Paranoya",
+        "Aşırı düşünme",
+        "Seçicilik",
+        "Öz güvensizlik"
+    ],
+    "famous_people": [],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Bir sorunuz olduğunda, onu yazın ve daha sonra daha bilge benliğinizin bir cevap yazmasına izin verin.",
+            "Sadece kafanızdan değil, kalbinizden de paylaşın ve başkalarıyla net anlaşmalar yapın.",
+            "Gizlilik ihtiyacınıza saygı gösterin, ancak duygularınızı açığa vururken küçük riskler alın.",
+            "Kendi sezgilerinize ve içgüdülerinize güvenin; siz kendi bedeninizin ve hayatınızın uzmanısınız."
+        ],
+        "questions": [
+            "Bir karar verirken kendinize sorun, \"Cevabı bilseydim ne olurdu?\""
+        ]
+    },
+    "health": {
+        "advice": [
+            "Yenilenmek için doğada vakit geçirin",
+            "Öz güveni oluşturmak için fiziksel aktivitelere katılın",
+            "Hastalığı bir ihanet olarak değil, bir öğrenme deneyimi olarak görün"
+        ],
+        "negative": [
+            "Egzersiz yapmaktansa aşırı düşünebilirler",
+            "Hastalığı beden tarafından bir ihanet olarak görebilirler"
+        ],
+        "positive": [
+            "Doğal dünya ile derin bir bağ",
+            "Dışarıda vakit geçirmekten faydalanırlar"
+        ]
+    },
+    "key_traits": [
+        "Keskin zeka",
+        "Sezgisel",
+        "İçe dönük",
+        "Özel",
+        "Manevi veya bilimsel arayış içinde olanlar",
+        "Güven sorunları",
+        "Seçici",
+        "Bağımsız"
+    ],
+    "opportunities": [
+        "Anlayışlı mentorlar olun",
+        "Doğa ile derin bir bağ kurun",
+        "Aşk ve arkadaşlık bulun",
+        "Yalnızlığa ve konsantrasyona olanak tanıyan kariyerlerde başarıya ulaşın"
+    ],
+    "relationships": {
+        "advice": [
+            "Yakınlık ihtiyacı ile yalnızlık ihtiyacı arasında denge kurun",
+            "Net sınırlar belirleyin",
+            "Yavaş yavaş açılın ve güven oluşturun",
+            "Alan ihtiyacına saygı duyan ortaklar arayın"
+        ],
+        "negative": [
+            "Yakınlığa karşı kararsız",
+            "İhanet korkusu",
+            "Kapalı veya aşırı paylaşımcı olabilir",
+            "Katı sınırlar yaratabilir"
+        ],
+        "positive": [
+            "Güven tesis edildiğinde arkadaşlık ve bütünlük duygusu arzusu",
+            "Derin bir yakınlık ve kırılganlık kapasitesi"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Yalnızlığa ve konsantrasyona olanak tanıyan kariyerler seçin",
+            "Anlaşmaları yazılı olarak resmileştirin",
+            "İçsel çalışma ile dışsal başarı arasında denge kurun"
+        ],
+        "negative": [
+            "Kariyerden çok içsel çalışmalara öncelik verebilir",
+            "İş hayatında sinik ve güvensiz olabilir",
+            "Başkalarının yanında olmaktansa yalnızlığı tercih eder"
+        ],
+        "positive": [
+            "Çeşitli alanlarda başarılı olabilir",
+            "Keskin zeka ve odaklanma başarıya götürür",
+            "Finansmanı yönetmede iyi"
+        ]
+    }
+}

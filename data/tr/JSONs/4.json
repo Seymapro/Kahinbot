@@ -1,0 +1,107 @@
+{
+    "challenges": [
+        "Engellerin üstesinden gelmek",
+        "Olumsuz eğilimler",
+        "İnatçılık",
+        "Fazla analiz etme",
+        "Çok fazla sorumluluk almak",
+        "Manipüle edilme",
+        "Sabırsızlık",
+        "Planlama eksikliği",
+        "Katılık",
+        "Stresi somatize etme"
+    ],
+    "famous_people": [],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Büyük hedefleri daha küçük adımlara bölün",
+            "Gücü esneklikle dengeleyin",
+            "İyi hazırlanın ve sistematik olarak ilerleyin",
+            "Uyumlu olun",
+            "Karar verirken iç sesinize güvenin"
+        ],
+        "questions": [
+            "Kendinizin veya başkalarının ne \"yapması gerektiği\" konusundaki inançlara takılıp kaldınız mı?",
+            "Mevcut hedefleriniz ve bunlara ulaşmak için atmanız gereken adımlar nelerdir?",
+            "Karar verirken artıları ve eksileri yazmayı ve iç sesinizi dinlemeyi denediniz mi?",
+            "\"Sağlamlık\" kelimesinin sizin için ne anlama geldiği hakkında ne düşünüyorsunuz?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Gevşeme veya meditasyon uygulamalarına katılın",
+            "Gergin anlarda derin nefes alma ve gevşeme egzersizleri yapın"
+        ],
+        "negative": [
+            "Bacaklarda yaralanmalara yatkınlık",
+            "Fiziksel ve zihinsel katılık",
+            "Psikolojik sertlik (tutumların sertleşmesi)",
+            "Stres somatizasyonu",
+            "Alerjiler",
+            "Sırt gerginliği"
+        ],
+        "positive": [
+            "Güçlü bünyeler",
+            "Dirençli doğa"
+        ]
+    },
+    "key_traits": [
+        "Sağlamlık",
+        "Süreç odaklı",
+        "Analitik zihin",
+        "Sorumlu",
+        "Güçlü irade",
+        "İnatçı",
+        "Azimli",
+        "Dayanıklılık",
+        "Açık sözlü",
+        "Fiziksel olarak güçlü",
+        "Mantıklı",
+        "Temelli",
+        "Zaman zaman dalgın",
+        "Yorgunken kolay kandırılabilir"
+    ],
+    "opportunities": [
+        "Hayat için sağlam bir temel oluşturmak",
+        "İç ve dış güçlü yönleri kullanmak",
+        "Çalışkanlıkla başarıya ulaşmak",
+        "Dengeli ve doyurucu bir hayat yaratmak"
+    ],
+    "relationships": {
+        "advice": [
+            "\"Ben kendim yapabilirim\" yaklaşımından vazgeçin",
+            "Sorumluluk paylaşın",
+            "Manipülasyona dikkat edin",
+            "İş yükünü paylaşmada denge kurun"
+        ],
+        "negative": [
+            "Dengeli değilse sorumsuz olabilir",
+            "Zorluklar, sorumluluk duygusu etrafında döner"
+        ],
+        "positive": [
+            "Aile odaklı",
+            "Arkadaşlıklara değer veren",
+            "Sürü halinde yaşayan",
+            "Güçlü kişisel ve profesyonel ağlar kurar"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Bir süreçte uzmanlaşın",
+            "İyice hazırlanın",
+            "Sağlam bir temel oluşturun",
+            "Sistematik olarak adım adım ilerleyin"
+        ],
+        "negative": [
+            "Sabırsızlık, kısayollara ve planlama eksikliğine yol açabilir",
+            "Dağınık düşünceden kaynaklanan bunalım ve stres"
+        ],
+        "positive": [
+            "İyi yöneticiler",
+            "Satış temsilcileri",
+            "Veri analistleri",
+            "Finansal planlamacılar",
+            "Dikkatlilik ve süreç odaklılık gerektiren rollerde başarılı olur"
+        ]
+    }
+}
