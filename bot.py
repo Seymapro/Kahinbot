@@ -8,27 +8,35 @@ api_id = int(os.environ['OZETCIBOT_API_ID'])
 api_hash = os.environ['OZETCIBOT_API_HASH']
 bot_token = os.environ['OZETCIBOT_BOT_TOKEN']
 
+print("-"*100)
+print(f'{api_id=}, {api_hash=}, {bot_token=}')
+
 client = TelegramClient('bot', api_id, api_hash).start(bot_token=bot_token)
 
 @client.on(events.NewMessage(pattern='/hayatyolu'))
 async def handle_lifepath_command(event):
-    dogum_tarihi_full = event.raw_text.split('/hayatyolu')
-    dogum_tarihi = dogum_tarihi_full[1].strip()
-    dogum_tarihi = datetime.strptime(dogum_tarihi, '%d.%m.%Y')
-
-    
+    message_raw = event.raw_text
     try:
-        hayat_sayisi = birthdate_to_life_path(dogum_tarihi)
-        
-        content = life_path_to_content(hayat_sayisi,Path('data/'))
-        
-        if content:
-            await event.respond(f"Hayat Sayısı: {hayat_sayisi}\n\n{content}", parse_mode='md')
-        else:
-            await event.respond(f"Hayat sayısı dosyası '{hayat_sayisi}.md' bulunamadı.")
-    
+        birthdate = datetime.strptime(message_raw.split('/hayatyolu')[1].strip(), '%d.%m.%Y')
+        print(birthdate)
+    except Exception:
+        await event.respond(f"Girilen mesaj ({message_raw}) hatalı!")
+        return
+
+    life_path = birthdate_to_life_path(birthdate)
+    print(life_path)
+
+    try:
+        content = life_path_to_content(life_path,Path('/home/nigella/tg_bot/Kitap/data/tr/MDs/'))
+        print(content)
     except Exception as e:
-        await event.respond(f"Bir hata oluştu: {str(e)}")
+        await event.respond(f"Dosya işlemlerinde hata ile karşılaşıldı: {e}")
+        return
+
+    await event.respond(f"**Hayat Sayısı**: {life_path}", parse_mode='markdown')
+
+    for i in range(0, len(content), 4096):
+        await event.respond(f"{content[i:min(i+4096, len(content))]}", parse_mode='markdown')
 
 client.start()
 print("Bot started...")
