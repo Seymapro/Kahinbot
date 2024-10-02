@@ -1,0 +1,100 @@
+{
+    "challenges": [
+        "Güvensizliğin üstesinden gelmek",
+        "Kendilerine ve başkalarına güvenmeyi öğrenmek",
+        "Duygularını ifade etmek",
+        "Hassas bir enerji alanını yönetmek"
+    ],
+    "famous_people": [
+        "Napolyon Bonapart",
+        "Charlie Chaplin",
+        "Aldous Huxley",
+        "Earvin (Magic) Johnson",
+        "Paul Klee",
+        "Michelle Pfeiffer",
+        "Robert Redford",
+        "Jean Renoir",
+        "O. J. Simpson",
+        "Bruce Springsteen",
+        "Leo Tolstoy"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Duygularınıza ve içsel duyarlılık, güç, ifade etme ve sezgi yeteneklerinize güvenin.",
+            "Duygularınızı ifade etme cesareti geliştirin.",
+            "Korkuyla karşılaştığınızda geri adım atmayın.",
+            "Bir bahçede çalışın; melekler hakkında bir kitap okuyun"
+        ],
+        "questions": [
+            "Vücudum söz konusu olduğunda, içgüdülerime ve sezgilerime dışarıdaki uzmanlardan veya teorilerden daha mı çok güveniyorum?",
+            "En derin duygularımı ifade edebiliyor muyum? Edemezsem, neden?",
+            "Yaratıcı enerjimi dünyaya daha fazla güzellik getirmek için en iyi nasıl kullanabilirim?",
+            "Güven hissetmediğimde, bunun üstesinden nasıl gelebilirim?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Derin düşünme veya meditasyon gibi içsel çalışmaları içeren dengeli, ılımlı bir yaşam tarzı sürdürün.",
+            "Hafif, öncelikle vejeteryan bir diyet uygulayın.",
+            "Dans, tai chi, yoga veya yüzme gibi düzenli, orta düzeyde egzersiz yapın.",
+            "Vücutlarının ihtiyaçlarını dinleyin ve kendine zarar veren davranışlardan kaçının"
+        ],
+        "negative": [
+            "Hassas enerji alanı ve omurganın tabanı, üreme organları, solar pleksus, kalp ve dizlerle ilgili olası sorunlar.",
+            "Güvensizlik yaratıcılığı engellediğinde uyuşturucu, yemek veya cinsel istismar gibi kendine zarar veren davranışlara eğilimli.",
+            "İyileşme yöntemleri hakkında bilgi edinmek için fiziksel sorunlar yaşayabilir"
+        ],
+        "positive": [
+            "Bilinçaltında enerjisel şifa sanatlarında bilgili.",
+            "Sağlıklı bir yaşam tarzı ile gelişmiş bir sağlık hali yaşayabilir"
+        ]
+    },
+    "key_traits": [
+        "Hassas",
+        "Yaratıcı",
+        "Sezgisel",
+        "Güven arayan",
+        "Özel",
+        "İfade edici"
+    ],
+    "opportunities": [
+        "Şifa sanatları",
+        "Yaratıcı ifade (sanat, müzik, drama, yazarlık, fotoğrafçılık)",
+        "Öğretmenlik",
+        "Güzellik ve ilham yaratmak"
+    ],
+    "relationships": {
+        "advice": [
+            "Duygularına ve partnerine güvenmeyi öğrenin.",
+            "Duygularını ve ihtiyaçlarını açıkça ifade edin.",
+            "Tantra yogası gibi duygusal bağı derinleştiren uygulamalara katılın.",
+            "Bütünlük duygusu için başkalarına güvenmekten kaçının"
+        ],
+        "negative": [
+            "İhanet ve incinme korkusu, geri çekilmeye ve temkinliliğe yol açabilir.",
+            "Güç ve onay için başkalarına güvenme eğilimi.",
+            "İhtiyaçlarını ifade etmekte ve sınırlar koymakta zorluk çekebilir"
+        ],
+        "positive": [
+            "Derin sevgi ve bağ kurma kapasitesi.",
+            "Mahremiyete ve anlamlı birliğe değer verir.",
+            "Güven ve anlayışa dayalı doyurucu ilişkiler yaşayabilir"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "İlham veren ve moral veren yaratıcı arayışlara kucak açın.",
+            "Değerleriyle uyumlu ve dünyaya güzellik getiren işlere odaklanın.",
+            "Yeteneklerine güvenin ve maddi kazanıma aşırı odaklanmadan tutkularının peşinden gidin"
+        ],
+        "negative": [
+            "Güvenliği, tutkularının peşinden koşmaya tercih etmeleri nedeniyle mali istikrarsızlık yaşayabilirler.",
+            "Başarısızlık veya eleştiri korkusu yaratıcı ifadeyi engelleyebilir.",
+            "Anlamlı ve tatmin edici gelen bir iş bulmakta zorluk çekebilirler"
+        ],
+        "positive": [
+            "İnsanları iyileştirmeyi, yaratıcılığı ve onlara ilham vermeyi içeren mesleklere doğal olarak yönelirler.",
+            "Yeteneklerine güvendikleri ve yeteneklerini dünyayla paylaştıkları zaman maddi bolluk elde etme potansiyeline sahiptirler"
+        ]
+    }
+}

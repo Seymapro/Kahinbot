@@ -1,0 +1,115 @@
+{
+    "challenges": [
+        "Kendini güvende hissetme veya uzun bir süreci takip etmede zorluk",
+        "Gerekli adımları atlama veya görmezden gelme",
+        "Artık işe yaramayan durumlarda sıkışmış hissetme",
+        "Sabırsızlık ve anında sonuç isteme",
+        "Hedeflere giden yolda kafa karışıklığı",
+        "Aşırı analiz ve zihinsel döngülerde sıkışıp kalma",
+        "Geçmişi bırakmakta zorluk çekme, pişmanlıklara yol açma",
+        "İnatçılık ve değişime direnç",
+        "İstekler yerine \"yapmalılar\" açısından düşünme",
+        "\"Yapmalılar\"ı başkalarına yansıtma",
+        "Aşırı analiz ve duygusal fevrilik arasında gidip gelme"
+    ],
+    "famous_people": [
+        "Elliott Gould",
+        "Jim Thorpe"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Hem hassasiyetlerinizi hem de güçlü yönlerinizi takdir edin.",
+            "Hedefinize ulaşmak için yoldaki her adımı izleyin.",
+            "Acele olduğunuzda, uzun ve emin yolu seçin.",
+            "Hayatınıza bir ev inşa eder gibi davranın, sağlam bir temel sağlayın ve kademeli bir süreci takip edin."
+        ],
+        "questions": [
+            "Karar verirken aşırı analiz mi yapıyorum yoksa içgüdülerime mi güveniyorum?",
+            "Ailevi zorluklarımı nasıl bir büyüme aracı olarak kullanabilirim?",
+            "Başkalarını desteklemek ve başkalarının beni desteklemesine izin vermek arasında bir denge buldum mu?",
+            "Değişen ihtiyaçlara ve durumlara tepkim ne kadar esnek?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Düşük yağlı veya vejetaryen beslenme",
+            "Aerobik egzersiz",
+            "Yoga, dans, aikido, tai chi veya diğer dövüş sanatları"
+        ],
+        "negative": [
+            "Kalça, uyluk, diz, ayak bileği veya ayaklarda sorunlar",
+            "Fiziksel kabızlık",
+            "Alerjiler",
+            "Sabırsızlık veya fevrilik nedeniyle kazalar",
+            "Doğuştan gelen sorunlar veya çocukluktan gelen fiziksel sorunlar",
+            "Kilo alımı"
+        ],
+        "positive": [
+            "Sağlam ve hastalıklara karşı dirençli"
+        ]
+    },
+    "key_traits": [
+        "Odaklanmış bir yaşam amacı",
+        "Analitik yetenek",
+        "Derin güç ve azim",
+        "Duyarlılık",
+        "İfade etme yeteneği",
+        "Net bir sezgi",
+        "Güçlü bir sorumluluk duygusu",
+        "İnatçılık",
+        "Geçmişi bırakmakta zorluk"
+    ],
+    "opportunities": [
+        "Hayatta güvenli temeller oluşturmak",
+        "Hedeflere ulaşmak için kademeli bir süreci takip etmek",
+        "İçsel yetenekleri bir hizmet ruhuyla kullanmak",
+        "Dengeli ve doyurucu bir yaşam yaratmak",
+        "Zengin içsel kaynaklarını geliştirmek ve paylaşmak",
+        "Başarılı işletmeler veya kariyerler inşa etmek",
+        "Başkalarına yardım etmek ve destek olmak",
+        "Azim, güç, duyarlılık ve analitik yetenekler gerektiren alanlarda başarılı olmak"
+    ],
+    "relationships": {
+        "advice": [
+            "Kafalarından çıkıp bedenlerine girin.",
+            "Yoga, esneme ve gevşeme egzersizleri yapın."
+        ],
+        "negative": [
+            "Zorlayıcı, müdahaleci, patronluk taslayan veya kontrolcü",
+            "Başkaları için aşırı sorumlu",
+            "İstikrarla ilgili sorun",
+            "İlişkilerde fevri karar verme",
+            "Kısa süreli ilişkiler",
+            "Bağlılık sorunu",
+            "Merhaba-hoşçakal kalıplarını tekrarlama",
+            "İnatçılık ve esnemez görüşler",
+            "Cinsel ilişkilere gerginlik veya enerji blokajları getirme"
+        ],
+        "positive": [
+            "Dengeli ve destekleyici",
+            "Aile kurmaya meyilli"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Süreç Yasasını izleyin.",
+            "Enerjiyi pratik şekillerde kullanın.",
+            "Analitik becerileri sezgiyle birleştirin.",
+            "Başkalarına yardım etmeyi veya desteklemeyi içeren kariyerler arayın."
+        ],
+        "negative": [
+            "Karar verirken kafa karışıklığı",
+            "İş veya finans konularında fevri karar verme",
+            "Görevleri tamamlamadan başlatmak ve durdurmak"
+        ],
+        "positive": [
+            "Mükemmel analitik beceriler ve sezgi",
+            "Güvenli temellere duyulan ihtiyaç",
+            "İş hayatında iyi",
+            "Mükemmel danışmanlar, organizatörler, finansörler veya emlak danışmanları",
+            "Hizmet odaklı",
+            "Hemşirelik veya sosyal hizmet gibi bakım verme alanlarında başarı",
+            "Spor ve atletizm dahil olmak üzere çeşitli alanlarda başarı potansiyeli"
+        ]
+    }
+}

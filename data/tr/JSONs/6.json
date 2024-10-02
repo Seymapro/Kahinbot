@@ -1,34 +1,34 @@
 {
     "challenges": [
-        "Yüksek idealleri pratik gerçeklikle uzlaştırmak",
-        "Yargılama ve olumsuzluğa olan eğilimin üstesinden gelmek",
-        "İdealizm ve gerçekçilik arasında bir denge kurmak",
+        "Yüksek idealleri pratik gerçeklikle bağdaştırmak",
+        "Yargılamaya ve olumsuzluğa olan eğilimin üstesinden gelmek",
+        "İdealizm ve gerçekçilik arasında bir denge bulmak",
         "Kendilerini başkalarıyla karşılaştırma eğilimini yönetmek",
         "Mükemmellik ihtiyacını bırakmak"
     ],
     "famous_people": [],
     "fulfilling_destiny": {
         "guidelines": [
-            "\\\"Ben (veya bu) yeterince iyiyim.\\\" ifadesini benimseyin.",
-            "Kim olduğunuzun, ne yaptığınızdan daha önemli olduğunu unutmayın.",
+            "\"Ben (veya bu) yeterince iyiyim.\" ifadesini benimseyin.",
+            "Kim olduğunuzun ne yaptığınızdan daha önemli olduğunu unutmayın.",
             "Ortaya çıkan her türlü duyguyu kabul etmeyi ve en iyi şekilde değerlendirmeyi öğrenin.",
-            "Nelerin mümkün olduğuna dair vizyonunuzun size ilham vermesine izin verirken şu anki hayatın tadını çıkarın."
+            "Nelerin mümkün olduğuna dair vizyonunuzun sizi şu anki hayatınızın tadını çıkarırken ilham vermesine izin verin."
         ],
         "questions": [
             "Bu an, bu durum, bu zorluk hangi açıdan mükemmel olabilir? (Veya en azından, benim/bizim evrimimizin mükemmel bir parçası olabilir mi?)",
             "Dünyaya biraz daha ışık getirmek için yapabileceğiniz üç küçük şey nedir? Nazik bir söz söylemek? Teşekkür etmek? Özür dilemek?",
-            "Gökyüzünden bir ses size ihtiyacınız olan her şeyi zaten başardığınızı ve artık hayatınızın geri kalanına oyun olarak yaklaşabileceğinizi söyleseydi nasıl olurdu? Ve neden olmasın?"
+            "Eğer göklerden bir ses size ihtiyacınız olan her şeyi başardığınızı söyleseydi ve artık hayatınızın geri kalanına oyun gibi yaklaşabileceğinizi söyleseydi nasıl olurdu? Ve neden olmasın?"
         ]
     },
     "health": {
         "advice": [
             "Tam, rahat nefes almayı teşvik eden uygulamalara katılın.",
-            "Fiziksel sağlığa ve esenliğe öncelik verin.",
+            "Fizsel sağlığı ve esenliği öncelendirin.",
             "Her şeyde sağlıklı alışkanlıklar ve ölçülülük benimseyin"
         ],
         "negative": [
             "Özellikle göğüs bölgesinde strese ve gerginliğe yatkın.",
-            "Bastırılmış duygular ve mükemmel olma baskısı nedeniyle astım semptomları yaşayabilir"
+            "Bastırılmış duygular ve başarılı olma baskısı nedeniyle astım semptomları yaşayabilir"
         ],
         "positive": [
             "Çoğu zaman başkalarını çeken parlak, mavi bir enerji alanına sahiptir.",
@@ -39,7 +39,7 @@
         "Vizyoner",
         "İdealist",
         "Yüksek standartlar",
-        "Şefkatli (olumlu yönünü ifade ederken) ",
+        "Şefkatli (olumlu yönünü ifade ederken)",
         "Yargılayıcı (olumsuz yönünü ifade ederken)"
     ],
     "opportunities": [
@@ -50,9 +50,9 @@
     ],
     "relationships": {
         "advice": [
-            "İlişkilere oyunculuk ve keyif duygusuyla yaklaşın.",
-            "İlişkiyi bir proje olarak görmek yerine yolculuğa odaklanın.",
-            "Samimi bağlantılarda kontrol ihtiyacını gevşetmeyi ve bırakmayı öğrenin"
+            "İlişkilere bir oyunbazlık ve keyif duygusuyla yaklaşın.",
+            "İlişkiye bir proje olarak bakmak yerine yolculuğa odaklanın.",
+            "Samimi bağlantılarda kontrol ihtiyacını bırakmayı ve rahatlamayı öğrenin"
         ],
         "negative": [
             "İlişkilere mükemmelleştirilecek projeler olarak bakabilirler.",
@@ -78,8 +78,8 @@
         ],
         "positive": [
             "Seçtikleri alanlarda mükemmelliğe ulaşmak için motive olurlar.",
-            "Güçlü bir iş ahlakına ve olumlu bir katkıda bulunma arzusuna sahiptirler.",
-            "Becerilerine değer vermeyi ve onları tanıtmayı öğrendiklerinde büyük başarılar elde edebilirler."
+            "Güçlü bir iş ahlakına ve olumlu bir katkı sağlama arzusuna sahiptirler.",
+            "Becerilerine değer vermeyi ve tanıtmayı öğrendiklerinde büyük başarılar elde edebilirler."
         ]
     }
 }

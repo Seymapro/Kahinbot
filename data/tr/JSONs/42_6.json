@@ -1,0 +1,131 @@
+{
+    "challenges": [
+        "Mükemmeliyetçilik",
+        "Süreç",
+        "Sorumluluk",
+        "Kendini Kabul",
+        "Sabır",
+        "İdealizm",
+        "Aşırı Analiz",
+        "Bağımlılık",
+        "İnatçılık",
+        "Kendini Kandırma",
+        "İnkar",
+        "Manipülasyon",
+        "Dürtüsellik",
+        "Topraklanma Enerjisi"
+    ],
+    "famous_people": [
+        "T. S. Eliot",
+        "Michael Jackson"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Kendinizi \"olmanız gerektiği gibi\" değil, olduğunuz gibi kabul edin.",
+            "Sadece ürüne değil, sürece de odaklanın.",
+            "Bu gerçeği takdir edin: Mükemmel bir iş veya insan yoktur.",
+            "Rahatlayın ve derin nefes alın; başkalarından sorumlu değilsiniz.",
+            "Geri bildirimlere açık olun, dinleyin ve incelikle kabul edin."
+        ],
+        "questions": [
+            "Mevcut değerimin ve kapasitemin tamamen farkında mıyım?",
+            "Kendime karşı dürüst müyüm?",
+            "Hayatım istikrarlı ve yerleşik mi hissettiriyor?",
+            "Mevcut koşullarım hangi açılardan mükemmel?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "24/6'lar ve 42/6'lar, mükemmel bir diyet veya mükemmel egzersiz sistemi aramak yerine, öğrenmek için burada oldukları mükemmelliğe doğru adım adım ilerleyen süreci yansıtan ılımlılık alışkanlıklarını kademeli olarak geliştirdiklerinde en iyi sonucu alırlar.",
+            "Örneğin, kilo vermeye karar verirlerse, sabırlı bir süreçten geçmenin başarısı, kilo verme programlarında hızlı bir şekilde başarılı olmaktan yaşam yolları açısından çok daha önemlidir.",
+            "Zaten güçlü olan bedenleri, zihinsel odaklanma, duygusal sakinlik ve rahatlamayı fiziksel esneklikle birleştiren aktivitelerde denge bulur.",
+            "Güçlü, düzenli egzersizlere dayanabilir ve bunlarla gelişebilirler.",
+            "24/6'lar ve 42/6'ların her ikisi de, koşma veya yüzme gibi rutin bir fitness pratiği yapmak yerine, zaman içinde bir gelişme süreci gerektiren bir dövüş sanatı, yoga, bir dans formu veya başka bir aktiviteyi dahil ettiklerinde daha da fazla fayda sağlarlar."
+        ],
+        "negative": [
+            "Kazalar, özellikle alt ekstremite yaralanmaları",
+            "Değişime karşı uzun süreli direnç ve buna bağlı gerilim nedeniyle kronik rahatsızlıklar",
+            "Alerjiler",
+            "Hayal kırıklığını gidermek için tütün veya alkol kullanımı",
+            "Diyet ve egzersiz aşırılıkları",
+            "Değişen püriten ve hedonist eğilimler"
+        ],
+        "positive": [
+            "Güçlü bir bünye",
+            "Hastalıklara karşı dirençli",
+            "Hızlı iyileşme"
+        ]
+    },
+    "key_traits": [
+        "Mükemmeliyetçi",
+        "Süreç odaklı",
+        "Sorumlu",
+        "İdealist",
+        "Aşırı analizci",
+        "Bağımlı",
+        "Güçlü",
+        "İnatçı",
+        "Kendini kandıran",
+        "İnkar eğilimli",
+        "Sosyal",
+        "Geleneklere bağlı",
+        "Parlak",
+        "Canlı",
+        "Hoş",
+        "Vicdanlı",
+        "Dürtüsel"
+    ],
+    "opportunities": [
+        "Beden çalışması",
+        "Mimarlık",
+        "Hizmet odaklı meslekler",
+        "İşletme danışmanlığı",
+        "Planlama",
+        "Politika",
+        "Atletizm (jimnastik, dalış, tenis, paten)"
+    ],
+    "relationships": {
+        "advice": [
+            "İlişkilerde dengeli bir şekilde vermeyi ve almayı öğrenin.",
+            "Performanstan ziyade kırılganlığa odaklanın."
+        ],
+        "negative": [
+            "Mükemmel ilişki için çılgınca arayış",
+            "İstikrarlı veya bağlı hissetmede zorluk",
+            "Bağlılık korkusu",
+            "Duygular hakkında belirsizlik",
+            "Aşk konusunda kendini kandırma"
+        ],
+        "positive": [
+            "Keyifli arkadaşlık",
+            "İlgili ve vicdanlı partnerler",
+            "Hevesli ve becerikli sevgililer",
+            "Verici doğa"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "\"Gerekliliklerden\" ve ideallerden kurtulun ve gerçekten ne hissettiğinizi ve nelerden keyif aldığınızı yeniden keşfedin.",
+            "İdeal işinizi ararken mevcut işinizden vazgeçmeyin.",
+            "Finans konusunda idealist olmak yerine pratik olun.",
+            "Finansal hedeflere ulaşmak için gerekli olan adım adım sürece ve hazırlığa istekli olun."
+        ],
+        "negative": [
+            "Pratik olmama",
+            "Fikirlerden ve planlardan çok çabuk vazgeçme",
+            "Eleştiriye karşı aşırı hassasiyet",
+            "Aynı hataları tekrarlama"
+        ],
+        "positive": [
+            "Güç",
+            "Hassasiyet",
+            "Analitik yetenekler",
+            "Destek enerjisi",
+            "Yüksek vizyon",
+            "Güçlü vicdan",
+            "Sürekli kendini geliştirme",
+            "Pratiklik",
+            "Vermede ve almada denge"
+        ]
+    }
+}

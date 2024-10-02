@@ -1,0 +1,102 @@
+{
+    "challenges": [
+        "Öz güvensizlik",
+        "Güvensizlik",
+        "Bağlılık eksikliği",
+        "Sabırsızlık",
+        "Adım adım bir süreci takip etmekte zorluk"
+    ],
+    "famous_people": [
+        "Nat King Cole",
+        "Marie Curie",
+        "Sigmund Freud",
+        "Robert Frost",
+        "Hugh Hefner",
+        "Henri Matisse",
+        "Paul McCartney"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Her şeyden önce mütevazı ve nazik kalın.",
+            "Tam yaratıcı yeteneklerinizi geliştirmek için önce becerilerinizi zaman içinde adım adım geliştirin.",
+            "Bedeninizi, zihninizi ve duygularınızı çalıştırın.",
+            "Analitik yeteneklerinizi yaratıcı sezgiyle dengeleyin."
+        ],
+        "questions": [
+            "Kendimden şüphe duymama veya güvensizliğin beni durdurmasına izin veriyor muyum?",
+            "Hedeflerime ulaşmak için kademeli, adım adım bir süreci takip ediyor muyum?",
+            "Yaratıcı kapasitelerimin tümünü keşfettim mi?",
+            "Erken dönem ailevi meselelerini çözdüm mü?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Meditasyon, rahatlama teknikleri ve esneklik eğitimine katılın.",
+            "Aikido veya tai chi gibi serbest hareket egzersizleri yapın.",
+            "Dans veya dövüş sanatları gibi fiziksel beceri eğitimi almayı düşünün.",
+            "Dengeli, düşük yağlı bir diyet uygulayın.",
+            "Özellikle sosyal sporlar olmak üzere düzenli egzersiz yapın.",
+            "Hızlı çözümler yerine yaşam tarzı değişiklikleriyle kademeli olarak kilo verin."
+        ],
+        "negative": [
+            "Zihinsel stres ve direnç, bağışıklık sistemini tehlikeye atarak fiziksel ve enerjik kabızlığa yol açabilir.",
+            "Ayak bilekleri, dizler, uyluklar ve kalçalar gibi temel noktalarda savunmasızdır."
+        ],
+        "positive": [
+            "Güçlü, sağlıklı ve günlük hastalıklara karşı dirençlidir.",
+            "Geniş, alt kısmı ağır bir vücut tipine veya sağlam bir atletik yapıya sahip olabilir."
+        ]
+    },
+    "key_traits": [
+        "İstikrar",
+        "Yaratıcılık",
+        "Duygusal ifade",
+        "Hırs",
+        "Güvenlik arzusu",
+        "Güç",
+        "Duyarlılık"
+    ],
+    "opportunities": [
+        "Enerjiyi yapıcı bir şekilde kanalize etmek",
+        "Hedeflere ulaşmak için adım adım bir süreçte ustalaşmak",
+        "Güvenli temeller oluşturmak",
+        "Öz güvensizliği ve güvensizliği aşmak",
+        "Yaratıcılığı ve hırsı ifade etmek",
+        "Çeşitli alanlarda başarıya ulaşmak"
+    ],
+    "relationships": {
+        "advice": [
+            "Kırılganlığı kabul edin ve benimseyin.",
+            "Özgünlük ve güven oluşturmak için güvensizliklerinizi itiraf edin.",
+            "İlişkileri bir büyüme ve öğrenme süreci olarak görün.",
+            "Cinsel doyuma ulaşmak için geçmiş deneyimleri ve bilinçaltı direncini ele alın."
+        ],
+        "negative": [
+            "Bağlılık ve yerleşik kalma konusunda mücadele edebilir.",
+            "Ciddi ilişkilerde bile duygusal bir arka kapı açık tutabilir.",
+            "Geçmişte yaşanan istismar veya direnç, cinsel ifadeyi engelleyebilir."
+        ],
+        "positive": [
+            "Pek çok arkadaşını ve hayranını cezbeder.",
+            "Sosyal, aile odaklı ve genellikle insanlarla rahattır.",
+            "İstikrarlı, sadık ve sürekli partnerler olabilir.",
+            "Potansiyel olarak güçlü, canlı, gerçekçi ve yaratıcı aşıklar."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "İş, danışmanlık, gayrimenkul veya yatırım alanlarındaki kariyerlere odaklanın.",
+            "Koçluk, aile hizmetleri, mimarlık, mühendislik veya yaratıcı iletişim gibi alanları keşfedin.",
+            "Kariyer hedeflerinde sabır ve titizlik gösterin.",
+            "Başarının genellikle zaman ve tutarlı çaba gerektirdiğini unutmayın."
+        ],
+        "negative": [
+            "Sabır ve titizlik eksikliği, gerçekleştirilmemiş potansiyele yol açabilir.",
+            "Tamamlanandan daha fazla kariyer başlangıcı ve durması yaşayabilir."
+        ],
+        "positive": [
+            "Yaratıcı enerjileri, ifade yetenekleri ve analitik becerileri nedeniyle çeşitli alanlarda başarıya ulaşabilirler.",
+            "Zamanla gelişen pratik yaratıcılık, finansal güvenliğe yol açabilir."
+        ]
+    }
+}

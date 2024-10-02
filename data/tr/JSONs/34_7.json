@@ -1,0 +1,125 @@
+{
+    "challenges": [
+        "Güven",
+        "Sabır",
+        "Duygusal ifade",
+        "Spiritüel sürece inanç duyma",
+        "Başkalarına katkıda bulunmak için pratik yollar bulma",
+        "Pratik ve mistik olanı dengeleme",
+        "Öz şüpheyi aşma",
+        "Duyguları paylaşma",
+        "Kendilerini pratik gerçeklere dayandırma",
+        "Dürtüsel harcamalardan kaçınma",
+        "Sağlam bir temel oluşturma",
+        "İçgüdülerine ve sezgilerine güvenme",
+        "Başkalarının tavsiyeleri yerine kendi yolunu izleme"
+    ],
+    "famous_people": [
+        "Candice Bergen",
+        "Leonard Bernstein",
+        "Michael Douglas",
+        "Paul Gauguin",
+        "Pancho Gonzalez",
+        "Germaine Greer",
+        "Reggie Jackson"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Hayatınızın sürecine güvenin.",
+            "Unutmayın: Tamamen güvendesiniz; hiçbir şey ruhunuza zarar veremez.",
+            "İfade becerilerinizi adım adım geliştirin.",
+            "Hayatınızı iyileştirmek için en derin hislerinizi paylaşın."
+        ],
+        "questions": [
+            "Hedeflerime adım adım ulaşma yeteneğime güveniyor muyum?",
+            "Hangisine daha çok güveniyorum - aklıma mı yoksa duygularıma mı?",
+            "Öz şüphe veya sabırsızlık hayatıma müdahale ediyor mu? Öyleyse, bunu nasıl değiştirebilirim?",
+            "Sosyal olsun ya da olmasın, en derin duygularımı paylaşıyor muyum?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Vücudunuzun bilgeliğini ve mesajlarını dinleyin.",
+            "Kendi sezgilerinizle onaylamadan başkalarının sizin için neyin iyi olduğuna dair teorilerini takip etmekten kaçının.",
+            "Düşük yağlı, çeşitli bir beslenme düzeni düşünün.",
+            "Süt ürünlerinden kaçının.",
+            "Dizlerinizden veya boğazınızdan gelen mesajlara dikkat edin.",
+            "Dövüş sanatları, dans veya serbest hareket gibi bedeni, zihni ve ruhu birleştiren egzersiz biçimlerine katılın."
+        ],
+        "negative": [
+            "Anksiyete",
+            "Histeri",
+            "Sinir krizleri",
+            "Diz problemleri",
+            "Boğaz problemleri"
+        ],
+        "positive": [
+            "Güçlü bedenler",
+            "Esnek doğa",
+            "Hastalıktan çabuk iyileşme (özellikle sürece teslim olurlarsa)"
+        ]
+    },
+    "key_traits": [
+        "Pratik",
+        "Mistik",
+        "İfade edici",
+        "Duyarlı",
+        "Derin görüşlü",
+        "Analitik",
+        "Yaratıcı",
+        "Duygusal olarak takıntılı veya dürtüsel (özellikle daha genç veya daha az olgun olduğunda)",
+        "Güçlü bir güvenlik ihtiyacı",
+        "Öz şüpheye yatkın",
+        "Duyguları paylaşma konusunda temkinli olabilir",
+        "Maneviyata ve kişisel gelişime ilgi duyan",
+        "Cennet ve Dünya arasında köprü kurmakla ilgilenen",
+        "Aileye ve eve değer veren"
+    ],
+    "opportunities": [
+        "İşlerinde pratikliği ve mistisizmi harmanlamak",
+        "Bir \"manevi iş\" yaratmak",
+        "Çalışmaları ve yaşamları boyunca başkalarını yükseltmek",
+        "Zorlukları aşmak için analitik yeteneklerini kullanmak",
+        "Yazarlık, oyunculuk veya yapımcılık gibi çeşitli yollarla yaratıcılıklarını ifade etmek",
+        "Kişisel ve profesyonel yaşamlarında güçlü ve istikrarlı temeller oluşturmak"
+    ],
+    "relationships": {
+        "advice": [
+            "Açık ve dürüst iletişim geliştirin.",
+            "Savunmasız olun ve duygularınızı paylaşın.",
+            "Eşinizle güven oluşturmak için çalışın.",
+            "Bırakmaktan ve coşkulu yakınlığı deneyimlemekten korkmayın."
+        ],
+        "negative": [
+            "Güven sorunları",
+            "Kendilerini rahatsız hissetmek veya yanlış bir şey söyleyebilecekleri gibi hissetmek",
+            "Duyguları saklamak",
+            "Bırakmakta zorlanmak"
+        ],
+        "positive": [
+            "İlişkilerine istikrar, süreklilik ve duygu getirin",
+            "Açık iletişim ve güvenin olduğu ilişkilerde başarılı olun"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Çeşitli becerilerinizi iyi kullanan bir meslek bulun.",
+            "İş ve finans için adım adım bir yaklaşım geliştirin.",
+            "Kompulsif harcama modellerine dikkat edin.",
+            "Geri bildirime açık kalın ve hatalarınızdan ders çıkarın.",
+            "İçgüdülerinize güvenin, ancak bunları pratik düşüncelerle dengeleyin."
+        ],
+        "negative": [
+            "Dağınık enerji, ustalık olmadan birçok şeye bulaşmaya yol açar",
+            "Kariyer seçimlerine müdahale eden öz şüphe",
+            "Kompulsif harcama",
+            "Finansal istikrarsızlık"
+        ],
+        "positive": [
+            "Metafizik, dövüş sanatları, oyunculuk, yapımcılık, işletme ve yaratıcı yazarlık dahil olmak üzere çeşitli alanlarda mükemmelleşin",
+            "Güçlü yaratıcı ve ifade edici potansiyel",
+            "İyi yapısal anlayış, özellikle senaryo yazarlığı için",
+            "Kendilerine güvendiklerinde ve geri bildirime açık kaldıklarında mükemmelleşme yeteneği"
+        ]
+    }
+}

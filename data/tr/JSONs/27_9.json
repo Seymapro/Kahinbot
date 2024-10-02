@@ -1,0 +1,124 @@
+{
+    "challenges": [
+        "Zihni deneyimleri değerlendirmek yerine kalbe güvenmek",
+        "Bilinçaltındaki güvensizlik ve ihanet sorunları",
+        "Kendi üst bilgeliğine güvenmekte zorluk çekme",
+        "Kendi sezgilerinden çok dış otoritelere güvenme eğilimi",
+        "Acı verici duygulardan kaçınma",
+        "Aşırı zihinsel ve sözel iletişim tarzı",
+        "Maneviyata çok yaklaşma korkusu"
+    ],
+    "famous_people": [
+        "Luisa May Alcott",
+        "Ray Charles",
+        "Julia Child",
+        "Harrison Ford",
+        "Mahatma Gandhi",
+        "Benny Goodman",
+        "Jimi Hendrix",
+        "Shirley MacLaine",
+        "Thurgood Marshall",
+        "Annie Oakley",
+        "Elvis Presley",
+        "Albert Schweitzer",
+        "Gloria Steinem",
+        "Henry David Thoreau",
+        "Orson Welles"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Derslerinize rehber olarak en derin hislerinize güvenin",
+            "Ruh'un sizin ve herkesin içinden parladığını unutmayın",
+            "Hatalarınız için kendinizi affedin",
+            "Fikirleri çok ciddiye almayın"
+        ],
+        "questions": [
+            "Hayatım en yüksek dürüstlüğün bir örneği mi?",
+            "Beni ne ilhamlandırıyor?",
+            "Hayatımın uzmanı kim?",
+            "Kendi sürecime ve başkalarınınkine saygı duyuyor muyum?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Diyet ve egzersiz konusunda içgüdülerinize, sezgilerinize ve doğrudan deneyiminize güvenin",
+            "Sağlıkla ilgili eylemlerinizin sonuçlarını kabul edin",
+            "Topraklama ve denge için fiziksel antrenmana katılın",
+            "İç huzur ve sezgiyle bağlantı kurmak için meditasyon yapın"
+        ],
+        "negative": [
+            "Çocukluktan kalma bilinçaltı kalıntıları ve suçluluk duygusu",
+            "Çözülmemiş ihanet nedeniyle kalp bölgesi etrafında hassasiyet",
+            "İzolasyon ve kopukluk hissi",
+            "Psikolojik rahatsızlıklar potansiyeli",
+            "İçsel acıyı uyuşturmak için uyuşturucu veya alkol bağımlılığı riski",
+            "Fiziksel olarak daha az topraklanmış olma eğilimi"
+        ],
+        "positive": [
+            "Fiziksel aktivite yoluyla dengeli bir vücuda ve berrak bir zihne ulaşabilir",
+            "Meditasyon iç huzuru ve kalple bağlantıyı kolaylaştırabilir"
+        ]
+    },
+    "key_traits": [
+        "Dengeli sorumluluk",
+        "Özgüven",
+        "Dürüstlük",
+        "Ruh'u takip etmek",
+        "Kalbin üst bilgeliğiyle uyum içinde yaşamak",
+        "Empati",
+        "Duygusal derinlik",
+        "Gizlilik ihtiyacı",
+        "Doğal karizma",
+        "Liderlik enerjisi",
+        "Derin düşünme",
+        "Doğaya olan sevgi",
+        "Yaratıcılık",
+        "Hizmet ve şifa arzusu",
+        "Basitlik ve hizmetle bilinçaltı rezonans"
+    ],
+    "opportunities": [
+        "Zihinselleştirme ve güvensizliğe yönelik eğilimlerin farkına varmak ve bunların üstesinden gelmek",
+        "Manevi yasaları bulmak ve takip etmek için kalbi açmak",
+        "Kendi üst bilgeliğine ve sezgilerine güvenmeyi öğrenmek",
+        "Geçmiş acılardan korkuyu aşmak ve daha derin duygulara erişmek",
+        "Net ve yürekten iletişim geliştirmek",
+        "Gizlilik ve yalnızlık ihtiyaçlarını benimsemek",
+        "Karizmalarını olumlu liderlik ve ilham için kullanmak",
+        "Hizmet ve şifa ile ilgili çalışmalarda tatmin bulmak",
+        "Finansal istikrar elde etmek ve kaynakları iyiye kullanmak"
+    ],
+    "relationships": {
+        "advice": [
+            "Zihinsel süreçleri bırakın ve duygularla bağlantı kurun",
+            "İlişkilere büyüme ve güven hakkında öğrenme fırsatları olarak bakın",
+            "Cinselliğe uyum, bağlantı ve teslimiyet aracı olarak yaklaşın"
+        ],
+        "negative": [
+            "Hayata zihinsel bir yaklaşımı telafi etmek için duygusal bir kişilik yaratabilir",
+            "Kendilerine güvenmezlerse ihaneti çekebilirler"
+        ],
+        "positive": [
+            "Derin empati ve duygusal derinlik yeteneğine sahiptir",
+            "İlişkilerde büyüme ve paylaşım arar",
+            "Cinselliği uyum ve bağlantıya giden bir yol olarak kullanır"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Hizmet ve şifa ile ilgili meslekleri benimseyin",
+            "Sanatsal arayışlarda yaratıcılığı ve karizmayı kullanın",
+            "Parayla ilgili olumsuz inançları keşfedin ve iyileştirin",
+            "Sezgilerinize güvenin ve liderlik rolleri arayın"
+        ],
+        "negative": [
+            "Yoksulluk yeminleriyle rezonanstan kaynaklanan paraya ve dünyevi başarıya karşı bilinçaltı olumsuzluk",
+            "Özgüven sorunları kariyer gelişimini engelleyebilir"
+        ],
+        "positive": [
+            "Hizmet ve şifa mesleklerinde mükemmelleşin",
+            "Özellikle daha yüksek bir amaca bağlı olduğunda yaratıcı alanlarda yeteneklidir",
+            "Doğal araştırmacılardır ve bağımsız çalışmayı severler",
+            "Finansal istikrar sağlayabilir ve genellikle ihtiyaçlarını karşılamaktan fazlasını kazanabilirler"
+        ]
+    }
+}

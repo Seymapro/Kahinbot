@@ -1,0 +1,135 @@
+{
+    "challenges": [
+        "duygusal dürüstlük",
+        "mükemmeliyetçi idealler",
+        "özgüvensizlik",
+        "gerçekten ne hissettiklerini bulma",
+        "kendilerini ideal standartlara göre değerlendirme",
+        "eleştiriye karşı güçlü hassasiyet",
+        "gerçekçi olmayan standartlar",
+        "kendilerini ve değerlerini başkalarının fikir ve beklentilerine göre tanımlama",
+        "\"hata\" yapma",
+        "yüksek vizyonlarını ve ideallerini bu dünyanın pratik gerçekleriyle dengeleme"
+    ],
+    "famous_people": [
+        "Brigitte Bardot",
+        "Walter Brennan",
+        "Samuel Goldwyn",
+        "Ernest Hemingway",
+        "Dustin Hoffman",
+        "Whitney Houston",
+        "Carl Jung",
+        "Vladimir Nabokov",
+        "Cole Porter",
+        "Albay Harlan Sanders",
+        "Fulton J. Sheen",
+        "Patrick Swayze",
+        "William Howard Taft",
+        "Walter Winchell"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "İncelikli bir niteliğiniz olduğunu kabul edin; onu yaşayın.",
+            "Başkalarına hizmet etmekten doğan güzelliği bulun.",
+            "Özgüvensizlikle bir savaşçı gibi yüzleşin; meydan okumayı kabul edin.",
+            "Hissettiğiniz şeyi ve şu anda olduğunuz kişiyi mükemmel olarak kabul edin."
+        ],
+        "questions": [
+            "Özgüvensizliğin veya mükemmeliyetçiliğin beni cesaretlendirmesine izin veriyor muyum?",
+            "Şu anki durumumda mükemmel olan nedir?",
+            "Gerçekten ne istediğimi veya hissettiğimi bilmekte zorlanıyor muyum?",
+            "Kararlarımı üst ilkelere ve dürüstlüğe mi dayandırıyorum?",
+            "Eğer bu sorular herhangi bir içgörü yaratıyorsa, bu içgörüleri pratiğe nasıl dökebilirsiniz?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Hızlı yürüyüşler, güç egzersizleri veya daha sofistike antrenmanlar gibi günlük bir egzersiz rutini uygulayın.",
+            "Sabırlı olun ve en uygun olanı bulmak için farklı egzersizleri deneyin.",
+            "Egzersize mütevazı bir şekilde başlayın ve yoğunluğu kademeli olarak artırın.",
+            "Taze ve çeşitli bir diyete öncelik verin ve farklı yiyeceklerin refahlarını nasıl etkilediğine dikkat edin.",
+            "Gerçekleştirmedikleri idealist kararlar veya planlar yapmaktan veya daha önce hiç kullanmadıkları ekipmanlar almaktan kaçının."
+        ],
+        "negative": [
+            "Kronik depresyon, bağışıklık sistemlerini zayıflatarak soğuk algınlığına, stres baş ağrılarına veya diğer depresif semptomlara yol açabilir.",
+            "Gergin doğaları sinir sistemi, cinsel bölge ve karın bölgesinde sorunlara yol açabilir.",
+            "Duygularını saklarlarsa boğaz ağrısına veya kronik çene gerginliğine yatkın olabilirler.",
+            "Sindirim semptomları, cilt döküntüleri veya bünyelerine uygun olmayan godalara karşı diğer olumsuz reaksiyonlar."
+        ],
+        "positive": [
+            "İncelikli enerji alanı onlara çekici bir görünüm verir.",
+            "Enerji alanları nedeniyle \"fotojenik\" olma eğilimindedirler."
+        ]
+    },
+    "key_traits": [
+        "Duygusal dürüstlük",
+        "Mükemmeliyetçi idealler",
+        "Özgüvensizlik",
+        "Hassasiyet",
+        "İncelikli",
+        "İdealist",
+        "Gergin",
+        "Sinirli",
+        "Belirsiz benlik duygusu",
+        "Sezgisel",
+        "Dürüst",
+        "Zihinsel",
+        "Yüksek standartlar",
+        "Cesaretini kaybetmiş",
+        "Üzgün",
+        "Bilge",
+        "Meraklı",
+        "Yüksek vizyon",
+        "Karizmatik",
+        "İfade edici"
+    ],
+    "opportunities": [
+        "Dürüstlükle yaşamak",
+        "Başkalarına örnek olmak",
+        "Vizyonlarını genişletmek",
+        "Sezgileriyle bağlantı kurmak",
+        "Kendilerini ve başkalarını kabul etmek",
+        "Yüksek yasalara dayalı sıradan bir hayat yaşamak",
+        "Gerçek duygularını ifade etmek",
+        "Bilgeliklerini paylaşmak",
+        "Dünyayı keşfetmek ve anlamak",
+        "Temel gerçekleri aramak ve bulmak",
+        "Gizli veya içsel bilgeliği anlamak",
+        "Kendilerini manevi yasalarla uyumlu hale getirmek"
+    ],
+    "relationships": {
+        "advice": [
+            "İletişimi geliştirmek ve kaygıyı azaltmak için duygularıyla temas halinde kalsınlar.",
+            "Kendilerini dürüst ve özgün bir şekilde ifade etmek için çalışsınlar.",
+            "İlişkilerde yargılamayı bırakıp kabulü benimsesinler.",
+            "Cinsel ilişkilerinde özgüvensizlik, mükemmeliyetçilik ve ahlak konularını ele alsınlar."
+        ],
+        "negative": [
+            "Sinirli hiperaktivite ve başkalarını memnun etme kaygısı, etraflarında olmayı rahatsız edici hale getirebilir.",
+            "Hızlı konuşma ve sürekli düşünce akışı, başkalarını bunaltabilir.",
+            "Yüksek standartlar, sevdiklerine yük olabilir.",
+            "Kendilerini dürüst bir şekilde ifade etmekte zorlanmaları, ilişkilerde zorluklara neden olabilir."
+        ],
+        "positive": [
+            "Öz yargılarının üstesinden geldiklerinde rahat ve kabul edici ilişkilere açılırlar.",
+            "Hayat yolları üzerinde çalıştıkça daha sevgi dolu, samimi ve keyifli bir cinsel yaşam deneyimlerler."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Oyunculuk, öğretmenlik, vücut geliştirme, yazarlık, psikoterapi veya işletme gibi karizmalarını, yüksek standartlarını ve ifade edici enerjilerini kullanan alanlarda ilerlesinler.",
+            "Sezgisel manevi bilgeliklerini benimsesinler ve içgörülerini dünyayla paylaşsınlar.",
+            "Aşırı zenginlik için çabalamak yerine iyi bir yaşam sürmeye odaklansınlar."
+        ],
+        "negative": [
+            "Bilinçaltı korkular veya özgüvensizlik nedeniyle manevi veya metafiziksel fikirlerden kaçınabilirler.",
+            "İdeallerinin yönlendirmesiyle, maddi olarak sahip olduklarından daha fazlasını istemekle mücadele edebilirler."
+        ],
+        "positive": [
+            "Çoğu zaman gizli bilgelik derinlikleri olan geleneksel bir hayat yaşarlar.",
+            "Dünyaya yeni bakış açıları, perspektifler ve bilgiler getirirler.",
+            "Her şeyi etkili bir şekilde anlama ve öğretme yeteneğine sahiptirler.",
+            "Doğuştan gelen bilgelikleri sayesinde mali istikrara ulaşabilirler."
+        ]
+    }
+}

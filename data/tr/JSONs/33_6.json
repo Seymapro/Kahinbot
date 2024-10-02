@@ -1,0 +1,113 @@
+{
+    "challenges": [
+        "mükemmeliyetçilik",
+        "duygusal ifade",
+        "özgüvensizlik"
+    ],
+    "famous_people": [
+        "Fred Astaire",
+        "Mikhail Baryshnikov",
+        "Dale Carnegie",
+        "Agatha Christie",
+        "Albert Einstein",
+        "Stephen King",
+        "Elisabeth Kübler-Ross",
+        "D. H. Lawrence",
+        "John McEnroe",
+        "Linda Ronstadt",
+        "Beverly Sills",
+        "Steven Spielberg",
+        "Meryl Streep",
+        "H. G. Wells"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "İdeal olan değil, gerçek hislerinize yeniden bağlanın.",
+            "Sadece düşüncelerinizi değil, hislerinizi de ifade edin.",
+            "Duyarlılığınızı kabul edin ve başkalarının da bunu görmesine izin verin.",
+            "Şu anda sizin ve başkalarının kim olduğunu takdir edin."
+        ],
+        "questions": [
+            "İfade edici enerjimi nasıl kullanıyorum?",
+            "Bazen özgüven eksikliği ve aşırı idealist standartların yükünü mü hissediyorum?",
+            "Şu anda olduğum kişiyi takdir edebiliyor muyum?",
+            "İnsanlara nasıl hissettiğimi söylüyor muyum?",
+            "Eğer bu sorular herhangi bir içgörü yaratıyorsa, bu içgörüleri pratikte nasıl uygulayabilirsiniz?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "kendilerini iyi hissettikleri şeyleri yesinler ve yedikleri şeyler konusunda kendilerini iyi hissetsinler"
+        ],
+        "negative": [
+            "ifade edilmemiş duygular nedeniyle boğaz ağrıları",
+            "sinirsel mide",
+            "kas gerginliği",
+            "cilt döküntüleri",
+            "astım",
+            "kolit, ülser veya diğer karın semptomları dahil kronik hastalıklar",
+            "artrit",
+            "anoreksik yeme bozuklukları"
+        ],
+        "positive": [
+            "güçlü, sağlıklı vücut"
+        ]
+    },
+    "key_traits": [
+        "mükemmeliyetçilik",
+        "duygusal hassasiyet",
+        "yüksek idealler",
+        "sezgisel zeka",
+        "güçlü sosyal ihtiyaçlar",
+        "onaylanma arzusu",
+        "ifade yetenekleri"
+    ],
+    "opportunities": [
+        "öğretmenlik",
+        "eğitim",
+        "örgütsel çalışma",
+        "tasarım ve mimari",
+        "illüstrasyon",
+        "oyunculuk",
+        "dans",
+        "sporcular",
+        "yazarlık"
+    ],
+    "relationships": {
+        "advice": [
+            "duyguları doğrudan ifade etmek",
+            "özgün ve savunmasız olmak"
+        ],
+        "negative": [
+            "rahatlamakta zorlanma",
+            "sakin kalmak için üzüntüleri bastırma",
+            "teknik veya performans endişesi nedeniyle cinsellikte mesafe veya isteksizlik",
+            "sevgilileri hakkındaki yargılardan kaynaklanan bastırılmış öfke"
+        ],
+        "positive": [
+            "besleyici, verici ilişkiler"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "ideallerini kontrol altına almak",
+            "pratik ve gerçekçi kalmak",
+            "pozitif kalmak",
+            "öz değer sorunlarını ele almak",
+            "gerçek duygularını ifade etmek",
+            "hayat için neşe ifade etmek"
+        ],
+        "negative": [
+            "özgüven eksikliği finansal sorunlara yol açabilir",
+            "mükemmeliyetçi erteleme",
+            "kendilerini gerçekçi olmayan bir şekilde değersizleştirme",
+            "öne çıkıp dünyaya değerlerini göstermekten korkmak"
+        ],
+        "positive": [
+            "doğal olarak başarıya yatkın",
+            "çok iyi iş çıkarmak",
+            "o ekstra dokunuşu sunmak",
+            "yüksek standartlar için bilinçli bir şekilde çalışmak"
+        ]
+    }
+}

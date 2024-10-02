@@ -1,0 +1,85 @@
+{
+    "challenges": [
+        "güvensizlik ve öz şüpheyle başa çıkmak",
+        "yaratıcı ve duygusal enerjileri olumlu şekilde yönlendirmek",
+        "duygusal ifadeyi bastırmak fiziksel gerginliğe veya başka semptomlara yol açar"
+    ],
+    "famous_people": [
+        "Helen Hayes"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [],
+        "questions": []
+    },
+    "health": {
+        "advice": [
+            "Herhangi bir tedaviyi duygusal şifa ile birleştirin",
+            "Duygusal müzikler dinleyin veya duygusal filmler izleyin",
+            "Dengeli egzersiz yapın ve yaratıcı bir hobi edinin",
+            "Müzik dinleyin ve doğada yürüyüşe çıkın"
+        ],
+        "negative": [
+            "Hassas boğaz bölgesi, ifade bloke olduğunda ara sıra alevlenmeler",
+            "Kronik boğaz sorunları ameliyat gerektirebilir",
+            "Yaratıcı enerjiler bloke edilirse karın alt bölgesi veya üreme sorunları",
+            "Mide sorunları, fıtıklar, yumurtalık veya prostat zorlukları",
+            "Engellenmiş yaratıcılığı yansıtan aşırı kilo"
+        ],
+        "positive": [
+            "Fiziksel olarak güçlü ve sağlam yapı",
+            "Yaratıcı enerjiyi olumlu bir şekilde ifade ettiğinde ve duyguları açık tuttuğunda olağanüstü sağlık",
+            "Doğa ve müzik, hassas karakterlerini yatıştırır"
+        ]
+    },
+    "key_traits": [
+        "Yaratıcı",
+        "Duygusal olarak ifade edici",
+        "Dengeli",
+        "İşbirlikçi",
+        "Duyarlı",
+        "Kendinden şüphe duyan",
+        "Çok yönlü"
+    ],
+    "opportunities": [
+        "Öğretim",
+        "Yükseltmek",
+        "İlham vermek",
+        "İcat etmek",
+        "Yenilik yapmak",
+        "Sentezleme",
+        "Herhangi bir alanda etkileyici işleri paketlemek"
+    ],
+    "relationships": {
+        "advice": [
+            "Duyguları dürüstçe ve açıkça ifade etme pratiği yapın",
+            "Periyodik olarak sorun, 'Şu anda gerçekten ne hissediyorum?'",
+            "Yalnızca 'iyi' hisler değil, tüm duygu yelpazesini ifade edin",
+            "Duygusal teması sürdürmek için tutkulu tartışmalara girin"
+        ],
+        "negative": [
+            "Güvensizlik duygusunu maskelemek, örneğin güvence için flört etmek veya partnerlerle rekabet etmek",
+            "Yaratıcı çalışmalara dalmışken ilişkiler için çok az zaman veya enerji",
+            "Olumsuz duyguları bloke etmek nedeniyle duygusal geri çekilme, aynı zamanda olumlu olanları da bloke etme"
+        ],
+        "positive": [
+            "İlişkiler dürüstlük ve duygusal kabul üzerine gelişir",
+            "Açık iletişim ve problem çözme",
+            "Başkalarını şefkatli sözlerle yüceltmekten gerçek zevk almak"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Yaratıcı ifadeye ve başkalarını desteklemeye izin veren işlerde bulunun",
+            "Azim ve olumlu geribildirim güven oluşturmaya yardımcı olur",
+            "Yaratıcı akışın ve finansal başarının kilidini açmak için öz şüphe ve güvensizliğin üstesinden gelin"
+        ],
+        "negative": [
+            "Öz şüphe ve güvensizlik, işi ve mali durumu engelleyebilir"
+        ],
+        "positive": [
+            "Yazma, tasarım, konuşma, tartışma, danışmanlık, tanıtım veya herhangi bir yaratıcı alan için uygun güçlü yaratıcı ve ifade edici enerji",
+            "Çok yönlülük ve çeşitli alanlarda başarılı olma yeteneği",
+            "Yaratıcılığı ifade ederken ve başkalarını desteklerken faydalı ve yenilikçi çalışma"
+        ]
+    }
+}

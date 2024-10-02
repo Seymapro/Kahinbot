@@ -1,0 +1,145 @@
+{
+    "challenges": [
+        "bağımsızlık",
+        "duygusal dürüstlük",
+        "iş birliği",
+        "bağımlılık",
+        "sorumluluk",
+        "öz güvensizlik",
+        "korku",
+        "duyguları ifade etme",
+        "aşırı iş birliği"
+    ],
+    "famous_people": [
+        "Harry Belafonte",
+        "Marlon Brando",
+        "Johnny Carson",
+        "Walter Cronkite",
+        "Charles Darwin",
+        "Benjamin Franklin",
+        "Billie Jean King",
+        "Abraham Lincoln",
+        "Sir Isaac Newton",
+        "Linus Pauling",
+        "Franklin Delano Roosevelt",
+        "John Steinbeck",
+        "Vincent Van Gogh",
+        "Tennessee Williams"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Oynadığınız rolden daha fazlasısınız; özünüze değer verin.",
+            "Unutmayın: Disiplin ve derinlik, özgürlüğün kapılarını açar.",
+            "Kendinize zaman ayırın, dinlenmek için zaman yaratın ve sağlıklı kalın.",
+            "Olabildiğince açık ve savunmasız olma cesaretini bulun."
+        ],
+        "questions": [
+            "Kendimi sınırlı veya kısıtlanmış hissettiğimde beni kim özgürleştirebilir?",
+            "Bağımlılık ve bağımsızlık arasında bir denge buldum mu?",
+            "Mevcut disiplin ve odaklanma seviyem nedir?",
+            "Gerçekten hissettiğim ve ihtiyaç duyduğum şeyi doğrudan ifade ediyor muyum?",
+            "Eğer bu sorular herhangi bir içgörü oluşturuyorsa, bu içgörüleri nasıl pratiğe dökebilirsiniz?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Dengeli, düşük yağlı bir diyet ve düzenli egzersiz, hem 32/5'ler hem de 23/5'ler için çok önemli disiplinlerdir.",
+            "Egzersiz rejimlerinin, eğlenceli ve etkili çeşitli egzersizleri içermesi gerekir. Çapraz antrenman, müzik eşliğinde hareket etme, dans, dövüş sanatları ve yürüyüş mükemmel seçeneklerdir.",
+            "Uyuşturucuları bir \"macera\" biçimi olarak kullanırlarsa, sonunda zorlu deneyimlerle, uyuşturucuların onları sadece köleleştirebileceğini öğrenirler."
+        ],
+        "negative": [
+            "hassas vücut",
+            "hızlı metabolizmaları nedeniyle ince ve sinirli",
+            "psişik bir tampon olarak yağ veya kas kullanma",
+            "boğaz bölgesi, bastırılmış ifade sorunlarını yansıtabilir",
+            "böbrek üstü bezlerini ve sinir sistemlerini aşırı zorlama",
+            "dağınık ve stresli veya yorgun hissetme",
+            "düzensiz veya disiplinsiz beslenme veya egzersiz alışkanlıklarına sahip olma",
+            "dolaşım sistemi sorunları yaşama",
+            "kazalara meyilli olma"
+        ],
+        "positive": [
+            "hızlı metabolizma"
+        ]
+    },
+    "key_traits": [
+        "bağımsızlık",
+        "duygusal dürüstlük",
+        "iş birliği",
+        "disiplin yoluyla özgürlük",
+        "deneyim derinliği",
+        "geç çiçek açanlar",
+        "hassas",
+        "öz güvensizlik",
+        "korkulu",
+        "etkileyici",
+        "cömert",
+        "uyumlu",
+        "kinci",
+        "özgürlük arayan",
+        "keşifçi",
+        "maceracı",
+        "hızlı öğrenenler",
+        "esprili",
+        "takıntılı",
+        "dramatik",
+        "çabuk sıkılan",
+        "geleceği gören",
+        "disiplinli",
+        "güvensiz",
+        "manipülatif",
+        "kontrolcü",
+        "insanları memnun eden",
+        "dağınık",
+        "duygusal",
+        "canlı",
+        "dünyaya Rönesans bakış açısı",
+        "kendine güvenen"
+    ],
+    "opportunities": [
+        "öğretmenlik",
+        "yazarlık",
+        "oyunculuk",
+        "müzik",
+        "siyaset",
+        "eğitimler yönetmek",
+        "mahkeme raporlaması",
+        "seyahat etmeyi içeren satış işi",
+        "çeşitli insanlarla çalışma"
+    ],
+    "relationships": {
+        "advice": [
+            "Bireyler mutlaka yalnızlıkta özgürlük bulamazlar.",
+            "Kararlı ilişkiler, [kendisi ve başkalarıyla iş birliği konularında çalışmak için] arena sağlar.",
+            "Kendi hayatlarının sorumluluğunu üstlendiklerinde ve kendi filmlerinin yazarı ve yönetmeni olabileceklerini fark ettiklerinde, başkalarını kendilerini 'durdurdukları' için suçlamayı bırakırlar ve tepkisel bağımsızlık veya izolasyondan ziyade iş birliğinde daha fazla özgürlük bulurlar.",
+            "Hissettiklerini ifade etme cesaretini bulmaları gerekir.",
+            "Ayrıca çeşitlilik ve macera arzusunu kabul etmeleri ve kararlı bir ilişkide iseler partnerleriyle bu arzuyu yerine getirmenin bir yolunu bulmaları gerekir.",
+            "Genellikle fantezilerden ve farklı roller oynamaktan hoşlanırlar.",
+            "İlişkileri ve cinsel oyunları, yeni duygusal özgünlük ve kırılganlık seviyeleri bulmak için rollerden kurtularak yeni özgürleşme seviyeleri deneyimleme fırsatı sunar."
+        ],
+        "negative": [
+            "Kendi içsel özgürlük eksikliklerini partnerlerine, arkadaşlarına veya çocuklarına yansıtma",
+            "Özgürlük sorunlarını gündeme getirecek veya onlara bağımlı hale gelecekleri ve ardından kızacakları partnerleri çekme veya seçme",
+            "Duygularını açığa vurmada zorluk çekme",
+            "İlişkilerini bir hapishane olarak görme"
+        ],
+        "positive": [
+            "İlişkilerini daha derin bir özgürlüğe ve deneyime açılan bir kapı olarak görme"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Güvenli, emniyetli bir ev üssüne (tercihen şömineli) değer verirler, ancak tam özgüvenlerine kavuştuklarında, 32/5'ler ve 23/5'ler güvenliği macera için takas etme eğilimindedir.",
+            "5'lerin hızlı zekasıyla, genellikle ihtiyaç duyduklarında para bulabilir veya yaratabilirler ve alacaklıların en az bir adım önünde kalabilirler."
+        ],
+        "negative": [
+            "güvenlik bir sorundur",
+            "para yüksek bir öncelik değildir",
+            "parayı kazanmadan önce harcayabilirler"
+        ],
+        "positive": [
+            "çeşitliliği hayatın tadı olarak takdir etme",
+            "ilgilerini çeken hemen hemen her şeyi yapabilirler"
+        ]
+    }
+}

@@ -1,0 +1,91 @@
+{
+    "challenges": [
+        "özgüven eksikliği",
+        "güvensizlik",
+        "bağlılık eksikliği",
+        "sabırsızlık",
+        "adım adım bir süreci takip etme"
+    ],
+    "famous_people": [],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Her şeyden önce mütevazı ve nazik kalın.",
+            "Tüm yaratıcı yeteneklerinizi geliştirmek için öncelikle becerilerinizi zaman içinde adım adım geliştirin.",
+            "Bedeninizi, zihninizi ve duygularınızı çalıştırın.",
+            "Analitik yeteneklerinizi yaratıcı sezgiyle dengeleyin."
+        ],
+        "questions": [
+            "Kendimden şüphe duymama veya güvensizliğimin beni durdurmasına izin veriyor muyum?",
+            "Hedeflerime ulaşmak için kademeli bir adım adım süreci takip ediyor muyum?",
+            "Yaratıcı kapasitelerimin tüm yelpazesini keşfettim mi?",
+            "İlk ailevi sorunları çözdüm mü?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Meditasyon, rahatlama, esneklik eğitimi ve aikido veya tai chi gibi dövüş sanatları gibi serbest hareket biçimlerinin tümü yararlıdır - tıpkı direnmek yerine harmanlamayı, akmayı ve kabul etmeyi öğreten her şey gibi.",
+            "Dans veya dövüş sanatları gibi fiziksel beceri eğitimi biçimleri, sert gücü esnek, dinamik bir güce dönüştürmeye yardımcı oldukları ve 31/4'lere ve 13/4'lere bir süreci takip etme ve zaman içinde iyileşme deneyimleme konusunda doğrudan bir deneyim sağladıkları için özel faydalar sunar.",
+            "Bu kişiler egzersiz yaparak gelişirler ve özellikle sosyal sporlardan hoşlanırlar.",
+            "Dengeli, düşük yağlı bir diyet iyi bir temel oluşturur."
+        ],
+        "negative": [
+            "Zihinsel stres veya direnç, fiziksel ve enerjik kabızlığa neden olabilir ve bağışıklık sistemini tehlikeye atabilir.",
+            "Ayak bilekleri, dizler, uyluklar ve kalçalar gibi \"temel noktalarında\" savunmasızdır."
+        ],
+        "positive": [
+            "31/4'lerin ve 13/4'lerin gücü, yaratıcı enerjiyle güçlendirilerek, onlara güçlü bir çekicilik, sağlamlık ve günlük hastalıklara karşı direnç kazandırır.",
+            "Vücut yapıları, büyük ölçüde genetiğe ve yaşam tarzına bağlı olarak, ya geniş gövdeli ve alt kısmı ağır ya da sağlam bir şekilde atletik olma eğilimindedir; her iki durumda da temelde güçlüdürler."
+        ]
+    },
+    "key_traits": [
+        "istikrar",
+        "yaratıcılık",
+        "duygusal ifade",
+        "köklü enerji",
+        "güçlü hırslar",
+        "güç",
+        "duyarlılık",
+        "güvensizlik",
+        "özgüven eksikliği"
+    ],
+    "opportunities": [
+        "gayrimenkul veya yatırımlarda iş, danışmanlık veya danışmanlıkta başarı",
+        "koçluk",
+        "aileye hizmet",
+        "mimarlık",
+        "mühendislik",
+        "yaratıcı iletişim"
+    ],
+    "relationships": {
+        "advice": [
+            "Yeni bir özgünlük düzeyine ulaşmak için güvensizliklerini kendilerine ve başkalarına kabul edin.",
+            "Savunacak daha az şeyi, kanıtlayacak daha az şeyi ve etkilemesi gereken daha az insan olduğunu fark ederek daha büyük bir içsel sağlamlık duygusuna yol açan hassas veya güvensiz niteliklerini itiraf edin.",
+            "İlişkiyi, \"aynı eski şey\" yerine zorlu bir manevi eğitim biçimi olarak takdir ederek, öğrenme, olgunlaşma ve karşılıklı desteği içeren bir iniş çıkışlar süreci olarak görün.",
+            "Özgüven eksikliği, güvensizlik ve bağlılık eksikliği gibi \"cinsel olmayan\" sorunları çözün."
+        ],
+        "negative": [
+            "Bir yerde kalma veya gerçek duygusal taahhütlerde bulunma zorluğu.",
+            "Bağlılık olsa bile arka kapıyı açık bırakabilir.",
+            "Geçmişte yaşanan istismar deneyimleri veya bilinçaltı dirençleri ve fiziksel gerginlikleri, tatmin edici cinsel ifadeye engel olabilir."
+        ],
+        "positive": [
+            "Kolay sosyalleşme birçok arkadaş ve hayranı cezbeder.",
+            "Girişken, aile odaklı ve genellikle insanlarla rahat olma eğilimindedirler.",
+            "İstikrarlı, sadık, sürekli partnerler.",
+            "Güçlü, canlı, dünyevi ve yaratıcı sevgililer."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "\"Bir gecede gelen başarıların\" elde edilmesi yıllar alabilir ve birçok küçük adım gerektirebilir - bunu unutmayın."
+        ],
+        "negative": [
+            "Sabırsızlık, kök salmadan bir işten diğerine atlamaya yol açabilir.",
+            "Çalışmadan başarıya yönelik gerçekçi olmayan beklentiler."
+        ],
+        "positive": [
+            "Yaratıcı ve ifade edici enerjileri ve sağlam analitik yetenekleri nedeniyle çeşitli kariyerlerde başarı bulurlar.",
+            "Zamanla gelişen pratik yaratıcılık, arzuladıkları güvenliğe yol açar."
+        ]
+    }
+}

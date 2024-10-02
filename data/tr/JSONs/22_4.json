@@ -1,0 +1,117 @@
+{
+    "challenges": [
+        "Aşırı işbirliğinin kızgınlığa ve geri çekilmeye yol açması",
+        "Hedeflere doğru gerekli adımları atlama",
+        "Aşırı analiz etme ve takıntılı endişe",
+        "Dürtüsel eylemler ve pişmanlıklar",
+        "İnkar ve geri bildirimi görmezden gelme",
+        "Katı fikirler ve başkalarını dinlemede zorluk"
+    ],
+    "famous_people": [
+        "Woody Allen",
+        "P. T. Barnum",
+        "Annie Besant",
+        "Lenny Bruce",
+        "Samuel Clemens (Mark Twain)",
+        "Alistair Cooke",
+        "Clint Eastwood",
+        "James Michener",
+        "Luciano Pavarotti",
+        "Papa I. Paul",
+        "John D. Rockefeller III",
+        "J. D. Salinger",
+        "Frank Sinatra",
+        "Margaret Thatcher"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Çelişkili taraflarınızı birleştirerek önce kendinizle arkadaş olun.",
+            "Arkadaşlarınızdan gelen geri bildirimlere açık olun; çok mu fazla veriyorsunuz?",
+            "Bedeninizde ve zihninizde esnek kalın - dirençli değil, uyumlu olun.",
+            "Hayatınızı yapılandırın ve yoldaki her adımın tadını çıkarın."
+        ],
+        "questions": [
+            "Kararlarımı alırken, onları gerçek ihtiyaçlarıma ve değerlerime mi yoksa \"yapmam gerektiğini\" düşündüğüme mi dayandırıyorum?",
+            "Başkaları için yaptığım şey hakkında kendimi iyi hissediyor muyum?",
+            "Hedeflerime doğru bir sonraki adım nedir?",
+            "Kimi affetmem veya kimden özür dilemem gerekiyor?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Dans, yoga veya dövüş sanatları gibi esnekliği, rahatlamayı ve akışı destekleyen egzersizlere katılın.",
+            "Niceliği değil kaliteyi ön planda tutarak dengeli beslenmeye öncelik verin.",
+            "Yalnızca başkalarına odaklanmak yerine kişisel sağlığınızın sorumluluğunu alın."
+        ],
+        "negative": [
+            "Dürtüsellik veya zihinsel dikkat dağınıklığı nedeniyle kaza olasılığı.",
+            "Çocukluk deneyimleri veya yetersiz beslenme gibi faktörlere bağlı olarak aşırı kilo alma olasılığı.",
+            "Hayat düzenli bir şekilde yönetilmediğinde stres ve sağlık sorunları potansiyeli."
+        ],
+        "positive": [
+            "Doğal olarak ince, güçlü ve telkari bir fizik.",
+            "Stres etkili bir şekilde yönetildiğinde daha güçlü bünyelerden biri.",
+            "Genellikle nicelikten çok kaliteye öncelik vererek yiyeceklerde aşırıya kaçmaya yatkın değil."
+        ]
+    },
+    "key_traits": [
+        "İşbirlikçi",
+        "Sorumlu",
+        "Süreç odaklı",
+        "Sabırlı",
+        "Analitik",
+        "Yapılandırılmış",
+        "Güçlü fikirler",
+        "Sadık",
+        "Pratik",
+        "Doğrudan",
+        "Kendine güvenen",
+        "Açık sözlü"
+    ],
+    "opportunities": [
+        "İstikrarlı ve güvenli bir temel oluşturmak",
+        "Ekip çalışması ve sabırlı bir süreçle hedeflere ulaşmak",
+        "Yaşam amaçlarıyla uyum sağladıklarında olağanüstü güç ve potansiyel",
+        "Küçük, emin adımlarla olağanüstü başarılara ulaşmak",
+        "İç uyum ve işbirliği yaşamak",
+        "Netlik ve esenlik yerinden başkalarına hizmet etmek"
+    ],
+    "relationships": {
+        "advice": [
+            "Ebeveynlerle etkileşimleri netleştirin ve çözülmemiş sorunları ele alın.",
+            "Geçmişten gelen olası duygusal, fiziksel veya cinsel istismarın üstesinden gelin.",
+            "Bakımda pratikliği duygusal beslemeyle dengeleyin.",
+            "Aşk ilişkilerinde yavaşlayın, rahatlayın ve duygularla bağlantı kurun.",
+            "Algılanan beklentilerden ziyade gerçek duygulara odaklanın.",
+            "Uyumlu ve kontrol sorunları olmayan ortaklar arayın."
+        ],
+        "negative": [
+            "Duygusal tepkisellik ve katı görüşler çatışmaya neden olabilir.",
+            "Aşırı uyum sağlama veya dirençli hale gelme eğilimi, uzlaşmayı zorlaştırıyor.",
+            "Bağımlılık ve aşırı verme potansiyeli.",
+            "Yabancılaşma ve kızgınlık duygularına yol açabilecek yoğun ilişkiler."
+        ],
+        "positive": [
+            "Sevdiklerine hizmet etmek ve onları desteklemek için olağanüstü çabalara girebilir.",
+            "Doğal sadakat ve parlaklık, ilişkileri ödüllendirici hale getirir.",
+            "Etkileşimlerde pratik, doğrudan, kendinden emin ve açık sözlü."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Net sınırları, hudutları ve başarı ölçütleri olan pratik alanları benimseyin.",
+            "Kariyer gelişimi için organizasyon ve analitik becerilerden yararlanın.",
+            "Hedeflere adım adım yaklaşın ve finansal refah için sürecin tadını çıkarın."
+        ],
+        "negative": [
+            "Asi eğilimler ve otoriteye karşı direnç potansiyeli.",
+            "Gerekli süreci izlemeden her şeyi çabucak başarmak için sabırsızlık."
+        ],
+        "positive": [
+            "Güç, azim, sağduyu ve metanet başarıya katkıda bulunur.",
+            "Başkalarını desteklemek için yeteneklerini kullanmada derin bir tatmin.",
+            "Net beklentileri olan pratik çalışmalara ilgi duyma.",
+            "Finansal istikrar ve güvenliğe güçlü bir yönelim."
+        ]
+    }
+}

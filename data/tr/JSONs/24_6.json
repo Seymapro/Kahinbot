@@ -1,0 +1,118 @@
+{
+    "challenges": [
+        "Mükemmeliyetçilik",
+        "Kendilerini ve başkalarını kabul etme",
+        "İnsanları ve fırsatları idealleştirme",
+        "Kendilerini başarısız hissetme",
+        "Aşırı analiz ve fevri davranışlar",
+        "Enerjilerini topraklama",
+        "Vizyonları gerçeğe dönüştürme",
+        "İdealizm ve gerçekçilik arasında denge kurma"
+    ],
+    "famous_people": [
+        "Elizabeth Barrett Browning",
+        "Lewis Carroll",
+        "Carlos Castaneda",
+        "Phil Donahue",
+        "Thomas Edison",
+        "Cary Grant",
+        "Howard Hughes",
+        "Jesse Jackson",
+        "John Lennon",
+        "Joe Louis",
+        "Eleanor Roosevelt",
+        "J. R. R. Tolkien",
+        "Stevie Wonder",
+        "Joanne Woodward",
+        "T. S. Eliot",
+        "Michael Jackson",
+        "Papa VI. Paul",
+        "Christian Slater"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Kendinizi olması gerektiği gibi değil, olduğunuz gibi kabul edin.",
+            "Sadece sonuca değil, sürece de odaklanın.",
+            "Bu gerçeği takdir edin: Mükemmel bir iş veya insan yoktur.",
+            "Rahatlayın ve derin nefes alın; başkalarından sorumlu değilsiniz.",
+            "Geri bildirimlere açık olun, dinleyin ve nazikçe kabul edin."
+        ],
+        "questions": [
+            "Mevcut değerimin ve kapasitemin tamamen farkında mıyım?",
+            "Kendime karşı dürüst müyüm?",
+            "Hayatım bana istikrarlı ve yerleşik mi geliyor?",
+            "Mevcut koşullarım hangi açılardan mükemmel?",
+            "Eğer bu sorular herhangi bir fikir üretiyorsa, bu fikirleri uygulamaya nasıl dökebilirsiniz?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Zihinsel odaklanma, duygusal sakinlik, fiziksel esneklik ve rahatlamayı birleştiren aktivitelere katılın.",
+            "Mükemmeliyetçilik yerine kademeli gelişime odaklanarak, diyet ve egzersizde ılıdılığı benimseyin.",
+            "Zaman içinde gelişme süreci içeren dövüş sanatları, yoga, dans veya diğer aktiviteleri değerlendirin."
+        ],
+        "negative": [
+            "Mükemmeliyetçilikten kaynaklanan strese, endişeye ve baskıya yatkınlık, potansiyel olarak alerjilere, tütün veya alkol kullanımına yol açabilir.",
+            "Fevri davranışlar, dikkat dağınıklığı veya aşırı hız nedeniyle, özellikle alt ekstremitelerde kazalar yaşayabilirler.",
+            "Katı bağlılık ve müsamaha arasında dalgalanan aşırı diyet ve egzersiz alışkanlıklarına sahip olma eğilimindedirler."
+        ],
+        "positive": [
+            "Genellikle güçlü bir bünyeye sahiptirler ve çabuk iyileşirler.",
+            "Düzenli, yoğun egzersizlerle gelişirler."
+        ]
+    },
+    "key_traits": [
+        "Mükemmeliyetçi",
+        "Sorumlu",
+        "Detay odaklı",
+        "İdealist",
+        "Sabırsız",
+        "Destekleyici",
+        "Sosyal",
+        "Kendini eleştiren",
+        "Çalışkan",
+        "Giden",
+        "Sosyal"
+    ],
+    "opportunities": [
+        "Körperarbeit",
+        "Mimarlık",
+        "Hizmet odaklı meslekler",
+        "İşletme danışmanlığı",
+        "Planlama",
+        "Politika",
+        "Atletizm (jimnastik, atlama, tenis, paten)"
+    ],
+    "relationships": {
+        "advice": [
+            "İlişkilerde verme ve alma arasında bir denge kurun.",
+            "Performansa odaklanmak yerine kırılganlığı kucaklayın.",
+            "Duyguları konusunda kendilerine ve partnerlerine karşı dürüst olun."
+        ],
+        "negative": [
+            "\"Mükemmel\" partneri bulamama korkusu nedeniyle bağlılık konusunda zorlanabilirler.",
+            "İdeal ilişki arayışlarında telaşlı olabilirler.",
+            "Gerçek duygularını ve ihtiyaçlarını ifade etmekte zorlanabilirler."
+        ],
+        "positive": [
+            "Keyifli ve destekleyici partnerler olurlar.",
+            "İlişkilerde ilgili ve düşüncelidirler.",
+            "Aldıklarından fazlasını verme eğilimindedirler."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Finansal hedeflere ulaşmak için pratik adımlara ve hazırlığa odaklanın.",
+            "İdeal bir kariyer yolu ararken istikrarlı bir işten erken vazgeçmekten kaçının.",
+            "Değerleriyle ve anlam duygusuyla uyumlu işler yapın."
+        ],
+        "negative": [
+            "Pratik olmazlarsa veya \"emeklerinin karşılığını\" ödemeye istekli olmazlarsa finansal istikrarsızlık yaşayabilirler.",
+            "Başarı hemen gelmezse, umut vadeden fırsatlardan çok çabuk vazgeçebilirler."
+        ],
+        "positive": [
+            "Güç, hassasiyet ve analitik yetenekler gerektiren rollerde üstün başarılı olurlar.",
+            "Kendileriyle yankı bulan bir iş bulurlarsa çeşitli alanlarda başarılı olabilirler."
+        ]
+    }
+}

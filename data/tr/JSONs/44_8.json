@@ -1,0 +1,98 @@
+{
+    "challenges": [
+        "inatçılık ve sabırsızlık gibi olumsuz eğilimlerin üstesinden gelmek",
+        "kaderlerine giden yolda gerekli basamak taşlarına direnmek",
+        "sayısal çeşitlilik eksikliği, belirli alanlarda aşırı odaklanma ve yoğunluğa yol açar",
+        "zihinleri ve duyguları arasında denge kurmakta zorlanma",
+        "kafa karışıklığı ve strese bağlı fevri davranış potansiyeli",
+        "tekrarlayan başarısızlık veya tamamlanmamışlık kalıplarını kırmada zorluk"
+    ],
+    "famous_people": [],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Egzersiz yaparken, gücü ve kuvveti esneklik ve akışkanlıkla birleştirin.",
+            "Hedeflerinize ulaşmak için buradan itibaren atılacak adımları netleştirin ve ardından bunları izleyin.",
+            "Hayatta olsun ya da olmasın, ebeveynlerinizle nasıl hissettiğiniz hakkında konuşun.",
+            "En büyük gücünüz, sizinle yüzleşen güçlerle birlikte akmaktan gelebilir."
+        ],
+        "questions": [
+            "Gücü esneklikle nasıl birleştirebilirim?",
+            "Kişisel hedeflerim ortak iyiye hizmet ediyor mu?",
+            "Bazen kendi iyiliğim için fazla mı inatçı davrandım?",
+            "Bir karara varmak için hem mantığı hem de sezgiyi kullanıyor muyum?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "düşük yağlı, verimli, dengeli beslenme",
+            "esneklik, rahatlama, denge ve meditasyonu vurgulayan düzenli egzersiz rutini",
+            "aikido veya tai chi çalışmak"
+        ],
+        "negative": [
+            "kilo alma eğilimi",
+            "sertlik, gerginlik ve direnç"
+        ],
+        "positive": [
+            "olağanüstü sağlık ve canlılık",
+            "iyi öz bakım ve dikkat"
+        ]
+    },
+    "key_traits": [
+        "sistematik",
+        "maddi başarı odaklı",
+        "azimli",
+        "güçlü",
+        "inatçı",
+        "analitik",
+        "hırslı",
+        "çalışkan",
+        "güvenlik odaklı",
+        "istikrarlı"
+    ],
+    "opportunities": [
+        "başkalarını desteklemek için maddi başarı elde etmek",
+        "zorluklar yoluyla kahramanca azim ve güç geliştirmek",
+        "olumsuz eğilimlerin üstesinden gelerek kaderlerini olumlu bir şekilde ortaya koymak",
+        "bolluk ve güce ulaşmak için analitik becerilerini ve azimlerini kullanmak",
+        "kendileri ve aileleri için istikrarlı ve güvenli bir yaşam inşa etmek",
+        "çeşitli alanlarda lider ve anlayışlı analistler olmak"
+    ],
+    "relationships": {
+        "advice": [
+            "sadakatlerine, güçlerine ve canlılıklarına duyarlılıktan daha çok değer vermek",
+            "ince ipuçları işe yaramayabileceğinden doğrudan iletişim kurmak",
+            "hassasiyeti güçlerini dengeleyen bir ortak bulmak"
+        ],
+        "negative": [
+            "güç mücadeleleri",
+            "istikrarsızlık",
+            "duyguları ve hassasiyeti ifade etmede zorluk"
+        ],
+        "positive": [
+            "sadık",
+            "istikrarlı",
+            "kararlı",
+            "destekleyici",
+            "aile odaklı"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "hedeflere ulaşmak için kademeli, adım adım bir süreci izleyin",
+            "güçlü bir temel oluşturun ve gerekli hazırlığı yapın",
+            "başarıyı toplum hizmetinde kullanın"
+        ],
+        "negative": [
+            "süreci takip etmek istemiyorsa finansal istikrarla mücadele eder",
+            "çok para kazanmasına rağmen finansal istikrarsızlık yaşayabilir",
+            "liderlik tarzlarında aşırı kontrolcü hale gelebilir"
+        ],
+        "positive": [
+            "doğal liderler ve kontrolörler",
+            "anlayışlı analistler",
+            "güçlü iş zekası",
+            "finansal güvenlik için istekli",
+            "maddi alemde büyük başarılar elde etme yeteneğine sahip"
+        ]
+    }
+}

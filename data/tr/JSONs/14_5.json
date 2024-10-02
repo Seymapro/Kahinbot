@@ -1,0 +1,104 @@
+{
+    "challenges": [
+        "Bağımsızlık ile sağlıklı bir karşılıklı bağımlılık ve iş birliği arasında denge kurmak",
+        "Disiplin ve odaklanma yoluyla özgürlük bulmak",
+        "Dağınıklığı ve aceleci davranma eğilimini aşmak",
+        "Kafa karışıklığı ve zihinsel stres eğilimini yönetmek (özellikle 14/5'ler)",
+        "Madde bağımlılığını önlemek için yaratıcı enerjiyi olumlu yönde kanalize etmek",
+        "Güvenlik arzusunu risk ve keşif ihtiyacıyla dengelemek",
+        "Güvensizliği ve kendini korumacı doğayı aşmak"
+    ],
+    "famous_people": [
+        "Clark Gable",
+        "Walter Matthau",
+        "Thomas Wolfe"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "İstikrar ve özgürlük arasında barış kurun; hayatınıza her ikisini de dahil edin.",
+            "Yaratıcılığınızı adım adım disiplinle yönlendirin.",
+            "Her gün sadece birkaç dakika olsa bile egzersiz yapın.",
+            "Kendinizi tamamen adayabileceğiniz ve devam ettirebileceğiniz bir şey bulun"
+        ],
+        "questions": [
+            "Hayatımda daha fazla özgürlük yaratmak için en önemli adımlar nelerdir? Bunları atmaya istekli miyim?",
+            "Beni gerçekten kendimden başka tutan biri var mı?",
+            "Yaratıcı enerjimi nasıl kullanıyorum?",
+            "Hayatımın neresinde daha fazla disipline ihtiyacım var?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Zihni sakinleştirmek için meditasyon",
+            "Denge ve sükunet için ilham verici müzik",
+            "Düzenli ve istikrarlı beslenme alışkanlıkları",
+            "Çeşitli ilginç yiyecekler",
+            "Bloke olmuş yaratıcı enerjiyi serbest bırakmak için dengeli egzersiz",
+            "Hızlılığı, gücü ve yaratıcılığı sağlayan heyecan verici rekabetçi oyunlar",
+            "Yatıştırıcı bir etki için yüzme, serbest dalış ve diğer su sporları"
+        ],
+        "negative": [
+            "Dürtüsel davranışlar veya aşırı efor nedeniyle kırık kemikler",
+            "Yaratıcı enerji bloke olursa karın, bel veya üreme sorunları (özellikle 41/5'ler)",
+            "Zihinsel stres",
+            "Öğün atlama veya hareket halindeyken yemek yeme eğilimi",
+            "Aşırı yemek"
+        ],
+        "positive": [
+            "Genellikle sağlam ve dirençli",
+            "Düzenli, istikrarlı beslenme alışkanlıklarından yararlanır",
+            "Çeşitli egzersizlerle gelişir"
+        ]
+    },
+    "key_traits": [
+        "Bağımsız",
+        "Yaratıcı",
+        "Disiplinli",
+        "Özgürlük arayan",
+        "Analitik (özellikle 14/5'ler)",
+        "Aile odaklı",
+        "Hızlı zekalı",
+        "İstikrarlı enerji (olumlu anlamda)"
+    ],
+    "opportunities": [
+        "Seçilen hedeflere doğru adım adım ilerleyerek özgürlüğe ulaşmak",
+        "Otantik iç ve dış özgürlüğü bulmak",
+        "Bağımsızlığı, sağlıklı öz güven, karşılıklı bağımlılık ve iş birliği biçimleriyle dengelemek",
+        "İnsanlara hayata karşı yeni yaklaşımlar göstermek",
+        "İçsel imgeleri pratik gerçekliğe dönüştürmek",
+        "Hem istikrarı hem de macerayı (fiziksel olarak veya hayal güçlerinde) deneyimlemek"
+    ],
+    "relationships": {
+        "advice": [
+            "Çeşitli deneyim arzusunu bağlılık ihtiyacıyla dengeleyin",
+            "Kendini korumacı ve rekabetçi bir yapıya yol açabilecek güvensizliği aşmaya çalışın"
+        ],
+        "negative": [
+            "Çeşitlilik arzusu ve bağlılık eksikliği nedeniyle yerleşmekte zorluk",
+            "Güvensizlik ve kendini korumacı, rekabetçi bir yapı ilişkileri engelleyebilir"
+        ],
+        "positive": [
+            "Aileye ve istikrara ilgi duma",
+            "Dinamik ve çekici enerji",
+            "Güçlü, coşkulu cinsel ifadeye ihtiyaç duyar ve değer verir"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Başarıya ulaşmak için yaratıcılığı pratiklik ve sabırla birleştirin",
+            "Hem istikrar hem de macera sağlayan alanlar seçin",
+            "Yerleşik çalışmaktan ziyade aktif çalışmalara katılın",
+            "Yazıda veya diğer ifade biçimlerinde açık, yaratıcı hikaye anlatma yeteneklerini kullanın"
+        ],
+        "negative": [
+            "Dürtüsellik ve takip eksikliği finansal istikrarsızlığa yol açabilir",
+            "Dağınıklık, projeleri tamamlamayı ve finansal başarı elde etmeyi zorlaştırabilir"
+        ],
+        "positive": [
+            "Güç, yaratıcılık ve hızlı zeka, uluslararası ticaret gibi alanlarda başarı getirir",
+            "Hızlı analiz gerektiren her türlü yaratıcılık veya işletmede mükemmelleşir",
+            "Sıra dışı yazarlar olurlar, özellikle açık, yaratıcı, dramatik hikaye anlatımında",
+            "Trendleri diğerlerinden önce görebilen yaratıcı vizyonerler"
+        ]
+    }
+}
