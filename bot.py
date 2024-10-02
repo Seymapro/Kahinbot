@@ -27,7 +27,7 @@ async def handle_lifepath_command(event):
     print(life_path)
 
     try:
-        content = life_path_to_content(life_path,Path('/home/nigella/tg_bot/Kitap/data/MDs/'))
+        content = life_path_to_content(life_path,Path('/home/nigella/tg_bot/Kitap/data/tr/MDs/'))
         print(content)
     except Exception as e:
         await event.respond(f"Dosya işlemlerinde hata ile karşılaşıldı: {e}")
