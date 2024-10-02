@@ -47,7 +47,7 @@ async def handle_lifepath_command(event):
     else:
         await event.respond(message.strip(), parse_mode="html")
 
-    with open(f'/home/nigella/tg_bot/Kitap/data/en/JSONs/{life_path[0]}_{life_path[1]}.json', 'r') as f:
+    with open(f'/home/nigella/tg_bot/Kitap/data/tr/JSONs/{life_path[0]}_{life_path[1]}.json', 'r') as f:
         summary_json = json.loads(f.read())
 
     summary_short = '<b><u>Genel Kısa Özet</b></u>\n\n'

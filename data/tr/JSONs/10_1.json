@@ -1,0 +1,85 @@
+{
+    "challenges": [
+        "güvensizlik",
+        "kendilerini kanıtlama ihtiyacı",
+        "yaratıcı enerjileri yönlendirme"
+    ],
+    "famous_people": [
+        "Sasha Obama"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Her gün yaratıcı bir şey yapın; insanları, olayları ve durumları farklı bir perspektiften görmeye çalışın.",
+            "Güvensizliği, aşılması gereken bir engel olarak görün ve bir aktör gibi, hissetmeseniz bile kendinize güveniyormuş gibi davranın.",
+            "Yaratıcılığınızı işiniz veya hobileriniz aracılığıyla ifade etmenin olumlu yollarını bulun.",
+            "Birikmiş enerjiyi serbest bırakmak, bağımlılıkları azaltmak veya ortadan kaldırmak için çeşitli bir günlük egzersiz programı oluşturun.",
+            "Dünyada faydalı olmanın yaratıcı yollarını bulun."
+        ],
+        "questions": [
+            "Yaratıcı enerjimi nasıl kullanıyorum?",
+            "İçsel yeteneklerimi ve becerilerimi nasıl ifade ediyorum?",
+            "Bu sorular herhangi bir içgörü uyandırıyorsa, bunları nasıl uygulayabilirsiniz?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Protein açısından zengin beslenme (yumurta, balık, kümes hayvanları)",
+            "Düzenli kardiyovasküler veya aerobik egzersiz (koşu, tempolu yürüyüş, bisiklet, yüzme)",
+            "Alkol ve keyif verici maddelerden kaçının"
+        ],
+        "negative": [
+            "Hassas enerji alanı - alkole veya uyuşturucuya karşı toleranssız",
+            "Üreme organlarında potansiyel hassasiyet"
+        ],
+        "positive": [
+            "Protein açısından zengin beslenmeyle gelen topraklanmışlık hissi",
+            "Egzersiz yoluyla olumlu enerji yönlendirme"
+        ]
+    },
+    "key_traits": [
+        "Üretken yaratıcı enerji",
+        "Sezgisel",
+        "Karizmatik",
+        "Yenilikçi",
+        "Spontane"
+    ],
+    "opportunities": [
+        "Başkalarına ilham vermek",
+        "Sezgisel yetenekleri kullanmak",
+        "Hayatın her alanına yenilik getirmek",
+        "Yaratıcı alanlar (sanat, tasarım, yazarlık, müzik)",
+        "İş dünyası, eğitim, siyaset",
+        "Yenilikçilik ve alışılmadık düşünme gerektiren alanlar"
+    ],
+    "relationships": {
+        "advice": [
+            "Enerjileri ve odağı dışa doğru yönlendirin",
+            "Doğuştan gelen güvensizliği anlayın ve ele alın",
+            "Özgüven oluşturun"
+        ],
+        "negative": [
+            "Kendilerini kanıtlama ihtiyacı, güvenli ilişkileri engelleyebilir",
+            "Güvensizlik, yakınlığı ve bağ kurmayı engelleyebilir"
+        ],
+        "positive": [
+            "Diğerleriyle otantik bağlantılar kurmak",
+            "Kendileriyle güçlü, destekleyici bir ilişki kurmak"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Yaratıcı sanatlarla ilgilenin (resim, tasarım, müzik, yazarlık vb.)",
+            "İnovasyon ve problem çözmeye olanak tanıyan iş, eğitim, politika veya herhangi bir alanda kariyer yapın"
+        ],
+        "negative": [
+            "Sezgileri görmezden gelmek ve daha azına razı olmak",
+            "Hata yapma ve aşağılanma korkusu",
+            "Hayata mekanik ve stratejik yaklaşım",
+            "Bağlılıklarla sessizlik ve mücadele"
+        ],
+        "positive": [
+            "Yenilikçi çözümler için yaratıcı zekayı kullanma",
+            "Etkili sonuçlara yol açan sezgisel ayırt etme"
+        ]
+    }
+}

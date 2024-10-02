@@ -1,0 +1,104 @@
+{"challenges": [
+    "Dürüstlükten sapmak",
+    "Hayatın nasıl işlediğine dikkat etmemek",
+    "Kandırılmış veya fanatik olmak",
+    "Kendi kanlarının gerçekleriyle karışmasına izin vermek",
+    "Başkalarının girdilerine ve fikirlerine karşı aşırı tepki vermek",
+    "Kendi inanç ve düşüncelerini gerçekle karıştırmak",
+    "Kendi gerçeklerini etki alanlarındaki herkese dayatmaya çalışmak",
+    "Dürüstlükten yoksun davranmak"
+],
+"famous_people": [],
+"fulfilling_destiny": {
+    "guidelines": [
+        "Başkalarının fikirlerine ve seçimlerine saygı gösterin, ancak her şeyden önce kalbinizi dinleyin.",
+        "Harekete geçmeden veya önemli bir karar vermeden önce kendinize sorun, \"Bu durumda Yüksek Benliğim ne yapardı?\"",
+        "Hayattaki rolünüzden hoşlansanız da hoşlanmasanız da başkaları için örnek teşkil ettiğinizi unutmayın.",
+        "Hayatta size neyin ilham verdiğini keşfedin ve bunun peşinden gidin."
+    ],
+    "questions": [
+        "Herhangi bir karar vermeden veya harekete geçmeden önce kendinize “Bu durumda Yüksek Benliğim ne yapardı?” diye sorsaydınız, olayları nasıl farklı algılar ve farklı davranırdınız?",
+        "Başkaları için hangi açılardan örnek teşkil ediyorsunuz? Bunu gerçekten düşünün çünkü insanların ne yaptığınıza ne kadar dikkat ettiğinin farkında olmayabilirsiniz.",
+        "Kendi ve başkalarının fikirleriyle ilişkiniz nedir?",
+        "Tek doğru bir kitap, öğretmen, diyet, egzersiz sistemi veya inanç sistemi olmadığı, daha ziyade her birey için en iyi olanın en iyi sonucu veren olduğu fikri hakkında ne düşünüyorsunuz? Bu fikir, kendi yöntemlerinize daha az bağlı kalmanıza ve dolayısıyla diğer insanların süreçlerine, seçimlerine ve kararlarına daha saygılı olmanıza yardımcı olabilir mi?"
+    ]
+},
+"health": {
+    "advice": [
+        "Bir sağlık veya egzersiz günlüğü tutun",
+        "Meditasyon yapın",
+        "Bilinçaltı zihinle çalışan modaliteleri ve terapileri değerlendirin",
+        "Hayat meselelerini daha derin, ruhsal bir düzeyde iyileştirin",
+        "Başkalarına hizmet etmek için dikkati dışarıya kaydırın",
+        "Olanı tamamen kabullenme yerinden gelin",
+        "Kendilerini affedin"
+    ],
+    "negative": [
+        "Kronik hastalıklar",
+        "Gizemli rahatsızlıklar",
+        "Enerji dengesizlikleri",
+        "Uzun süreli keder",
+        "Sırt problemleri",
+        "Artrit",
+        "Madde bağımlılığı",
+        "Aşırı yemek",
+        "Güvenli olmayan seks"
+    ],
+    "positive": [
+        "İyi fiziksel sağlık",
+        "Yüksek enerji seviyeleri",
+        "Duygusal sağlık"
+    ]
+},
+"key_traits": [
+    "Dürüstlük",
+    "Bilgelik",
+    "Sezgi",
+    "Liderlik",
+    "Amaç derinliği",
+    "Duyarlılık",
+    "Karizma"
+],
+"opportunities": [
+    "Örnek olarak yaşamak ve öğretmek",
+    "Bilgelik yoluyla başkalarıyla bağlantı kurmak",
+    "Sezgisel bilgeliği paylaşmak",
+    "Yaşayan dürüstlük rol modelleri olmak",
+    "Başkaları için yolu aydınlatmak"
+    ],
+"relationships": {
+    "advice": [
+        "Tüm ilişkilere kişisel olmaktan öte davranın",
+        "Kalplerini derin aşka açın",
+        "Kendilerinin ötesinde bir hayata ve bir dünyaya bağlanın",
+        "Sevdiklerinin daha insan olmalarına izin verin"
+    ],
+    "negative": [
+        "İzolasyon",
+        "Yalnızlık",
+        "Başkalarıyla bağlantı kurmada zorluk"
+    ],
+    "positive": [
+        "Derinden sevgi dolu ilişkiler",
+        "Açık yürek",
+        "Kalbin uyanmış bilgeliği"
+    ]
+},
+"talents_work_finances": {
+    "advice": [
+        "Kendilerine sorun, \"Buradaki daha yüksek ilke nedir?\"",
+        "Kendilerine sorun, \"En cesur, özverili, cömert, şefkatli ve bilge benliğim olsaydım nasıl davranırdım?\"",
+        "Kendilerini evrensel yasayla hizalayın"
+    ],
+    "negative": [
+        "Sınırlamalar ve zorluklarla karşı karşıya kalabilirler",
+        "Amaçlarıyla uyumlu değilse parayla mücadele edebilirler",
+        "Daha yüksek bir amaca hizmet etmiyorsa işte tatmin bulamayabilirler"
+    ],
+    "positive": [
+        "Doğuştan liderler",
+        "Çalışmalarına derin bir anlam katarlar",
+        "Para, verdikleri hizmetle doğru orantılı olarak doğal olarak gelir"
+    ]
+}
+}

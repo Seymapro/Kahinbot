@@ -1,0 +1,95 @@
+{
+    "challenges": [
+        "Enerjileri dağıtma eğilimi.",
+        "Hayatın birçok yönüne doğuştan gelen ilgi.",
+        "Bağımlılık ve bağımsızlık arasında gidip gelme.",
+        "Bağımsızlığı özgürlükle karıştırma.",
+        "Aynı anda birçok şeyin peşinden koşma.",
+        "Her şeyden biraz bilen ama hiçbir konuda uzman olmayan kişiler olma.",
+        "Odaklanma ve önceliklendirme eksikliği.",
+        "Hayatları abartılı hikayelerle süsleme.",
+        "Güvenilmez anlatıcılar olma.",
+        "Diğer her şeyi dışlayarak tek bir şeye saplantılı bir şekilde odaklanma"
+    ],
+    "famous_people": [],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Disiplin geliştirmenize yardımcı olmak için basit bir günlük program oluşturun; programınızda çeşitliliğe yer verin.",
+            "Bir ilgi alanına veya aktiviteye derinlemesine dalmanıza can sıkıntısının engel olmasına izin vermeyin.",
+            "Bir uçtan diğerine savrulma eğiliminizi izleyin ve bağımlılık ile bağımsızlık uçları arasında bir denge bulun."
+        ],
+        "questions": [
+            "En önemli üç kısa vadeli önceliğiniz nelerdir? Uzun vadeli öncelikleriniz farklı mı yoksa kısa vadeli önceliklerinizle aynı mı?",
+            "Can sıkıntısı dönemleriyle nasıl başa çıkıyorsunuz? Sizin için can sıkıntısı nedir?",
+            "Yapmak istediğiniz şeylerin, görmek istediğiniz yerlerin ve yaşamak istediğiniz deneyimlerin bir listesi var mı? Varsa, listenizde harekete geçebileceğiniz ilk şey nedir?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Sağlıklı yaşam kurallarına uyun.",
+            "Atletik girişimlerde dikkatli olun ve önlemler alın.",
+            "Tehlikeli hareketlerden kaçının.",
+            "Dövüş sanatları, doğa yürüyüşü, kaya tırmanışı vb. aktivitelerle ilgilenin.",
+            "Okuma, film izleme veya araştırma gibi hareketsiz aktivitelere katılın.",
+            "Disiplinli, düzenli, orta düzeyde egzersiz yapın.",
+            "Sağlıklı bir diyet uygulayın.",
+            "Rahatlamak ve can sıkıntısını benimsemek için meditasyon yapın."
+        ],
+        "negative": [],
+        "positive": []
+    },
+    "key_traits": [
+        "Disiplin yoluyla özgürlüğü deneyimleyin.",
+        "Odaklanın ve net öncelikler belirleyin.",
+        "Genişleyen maceraya bayılın.",
+        "Paradan çok deneyime değer verin.",
+        "Çeşitlilik ve deneyim arzusu.",
+        "Geniş bakış açısı.",
+        "Etrafında olmak uyarıcı ve yorucu olabilir.",
+        "Sağlıklı bir güvenlik ve finansal refah duygusu potansiyeli."
+    ],
+    "opportunities": [
+        "Çeşitli ilgi alanları, hobiler ve meslekler deneyimleyin.",
+        "Seyahat edin, keşfedin ve öğrenin.",
+        "Ufuklarınızı genişletin.",
+        "Hayatı dolu dolu yaşamak için rol model olun.",
+        "Girişimlere içgörü ve derinlik katın.",
+        "İstediğiniz deneyimleri hedefleyin, kilitleyin ve peşinden gidin."
+    ],
+    "relationships": {
+        "advice": [
+            "Dürüstlüğe ve dürüstlüğe öncelik verin.",
+            "Şekil değiştirme, rol yapma ve durumların birden çok yönünü görme konusunda dikkatli olun.",
+            "İlişkilerde hareketli bir hedef olmaktan kaçının.",
+            "İstikrarlı ve ilgi çekici ortaklıklar kurmak için çalışın."
+        ],
+        "negative": [
+            "Tutarsızlık nedeniyle uzun süreli ilişkileri sürdürmede zorluk.",
+            "Partnerler, kiminle birlikte olduklarından emin olmayabilirler.",
+            "Bağımsızlık ihtiyacı, ilişkileri sabote etmeye veya harekete geçmeye yol açabilir."
+        ],
+        "positive": []
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Birçok beceriye değil, birkaç beceriye odaklanın.",
+            "İş ve ilişkilerde disiplini ve bağlılığı koruyun.",
+            "Parayı maceraları ve deneyimleri finanse etmek için bir araç olarak görün.",
+            "Serbest çalışmayı veya evden çalışmayı düşünün.",
+            "Kariyer seçimlerinde esneklik ve özerklik arayın.",
+            "Girişimcilik girişimlerini keşfedin."
+        ],
+        "negative": [
+            "Kariyer arayışlarında odaklanma ve önceliklendirme eksikliği yaşayabilirler.",
+            "Kendilerini uygun referanslar olmadan mesleklere yerleştirmiş olabilirler.",
+            "Hayalleri tutarlı eylemlerle birleştirmekte zorlanabilirler.",
+            "Vizyonlarını gerçek dünyada göstermekte zorlanabilirler."
+        ],
+        "positive": [
+            "Çeşitli alanlarda hünerli olabilirler.",
+            "Çok çeşitli becerilere sahip olabilirler.",
+            "Kendi kendine başlayabilir ve bağımsız olarak iyi çalışabilirler.",
+            "Birçok kariyere uyum sağlayabilir ve başarılı olabilirler."
+        ]
+    }
+}
