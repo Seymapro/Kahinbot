@@ -1,0 +1,106 @@
+{
+    "challenges": [
+        "Öz güvensizlik ve güvensizliğin üstesinden gelmek",
+        "Başkalarına yardım etmekle öz bakımı dengelemek",
+        "Aşırı verme eğilimini yönetmek",
+        "Başkalarının sorunlarına çekilmekten kaçınmak",
+        "Birden fazla enerji ve dürtü arasında odaklanmayı bulmak"
+    ],
+    "famous_people": [
+        "Ethel Barrymore",
+        "Frank Capra",
+        "Emma Goldman",
+        "Tom Harmon",
+        "Alfred Hitchcock",
+        "T. E. Lawrence (Arabistanlı)",
+        "Ramana Maharshi",
+        "Olivia Newton-John",
+        "Walter Pidgeon",
+        "John Ritter",
+        "Paul Robeson"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Başkalarıyla sempati zincirleri değil, empati köprüleri kurun.",
+            "Zihninize saygı duyun ama hislerinize güvenin.",
+            "Bir seferde bir işe odaklanın.",
+            "Başkalarıyla birlikte oluşturduğunuz yaratıcılığa dikkat edin."
+        ],
+        "questions": [
+            "Gerçek kapasitemin farkında mıyım?",
+            "Kendimden şüphe ettiğimde nasıl tepki veriyorum?",
+            "Hayatım başkaları için iyi bir örnek teşkil ediyor mu?",
+            "Yaratıcı enerjimi daha yüksek bir amaca hizmet etmek için başkalarıyla işbirliği içinde kullanmanın bir yolunu buldum mu?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Yoga, tai chi veya meditatif hareket biçimleri gibi gücü ve hassasiyeti birleştiren egzersizler yapın.",
+            "Yiyeceklerle duygular arasındaki bağlantıyı anlayarak diyete bilinçli ve sezgisel bir yaklaşım geliştirin."
+        ],
+        "negative": [
+            "Duygusal hassasiyet ve stres nedeniyle psikosomatik hastalıklara ve alışılmadık rahatsızlıklara yatkınlık.",
+            "Boğaz, üreme bölgesi ve alerjilerde hassasiyet.",
+            "Yeme bozuklukları veya yiyeceklerle sağlıksız ilişkiler potansiyeli."
+        ],
+        "positive": [
+            "Yaşam amaçlarıyla uyum sağladıkça ve stresi etkili bir şekilde yönettikçe gelişmiş sağlık ve esenlik.",
+            "Yaratıcı ifade ve duygusal denge yoluyla artan enerji ve canlılık."
+        ]
+    },
+    "key_traits": [
+        "Yaratıcı",
+        "İşbirlikçi",
+        "Duygusal olarak hassas",
+        "Sezgisel",
+        "Karizmatik",
+        "Bilge",
+        "Dürüstlük odaklı",
+        "İfade edici"
+    ],
+    "opportunities": [
+        "Oyunculuk, performans sergileme, yazarlık, editörlük gibi yaratıcı alanlar",
+        "Empati ve sezginin değerli olduğu terapötik roller",
+        "İşbirliğini içeren ve başkalarına ilham veren liderlik pozisyonları",
+        "Daha yüksek ilkelerle uyumlu ve daha büyük bir amaca hizmet eden iş"
+    ],
+    "relationships": {
+        "advice": [
+            "Yaratıcı ifadelerini destekleyen anlayışlı ve şefkatli bir partner arayın.",
+            "Sağlıklı sınırlar belirleyin ve ilişkilerde aşırı fedakarlıktan kaçının.",
+            "Partner seçerken duygusal sezgilerine sadık kalsınlar.",
+            "Karmaşık romantik ilişkilere girmekten kaçının ve etik davranışlara öncelik verin."
+        ],
+        "negative": [
+            "Duygusal ihtiyaçlarını karşılayabilecek partner bulmakta zorluk.",
+            "İlişkilerde aşırı verme ve tükenmişlik hissetme eğilimi.",
+            "Manipülasyona veya suistimal edilmeye karşı savunmasızlık.",
+            "İlişkilerde öz değer ve güvensizlik ile ilgili zorluklar."
+        ],
+        "positive": [
+            "Karşılıklı anlayış ve desteğe dayalı derinlemesine tatmin edici ve tutkulu ilişkiler.",
+            "Bir partnerle işbirliği ve paylaşılan deneyimler yoluyla geliştirilmiş yaratıcı ifade.",
+            "Romantik ilişkilerde duygusal yakınlık ve güçlü bir bağ duygusu."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Yaratıcı ifadeye, işbirliğine ve başkalarına hizmete olanak tanıyan kariyerlerin peşinden gidin.",
+            "Yeteneklerine güven geliştirin ve finansal başarıya ulaşmak için öz güvensizliğin üstesinden gelin.",
+            "Çalışmalarını değerleriyle uyumlu hale getirin ve onlara ilham veren fırsatlar arayın.",
+            "Profesyonel yaşamlarında güçlü bir destek sistemi kurmaya odaklanın."
+        ],
+        "negative": [
+            "Kârlı fırsatlara göre tutku projelerine öncelik verilmesi nedeniyle finansal istikrarsızlık.",
+            "Tüm yeteneklerini ve ilgi alanlarını kullanan tatmin edici bir iş bulmakta zorluk.",
+            "İşyerinde öz tanıtım ve değerlerini ortaya koyma konusunda sıkıntılar.",
+            "Birden fazla tutku ve birbiriyle yarışan öncelikler nedeniyle erteleme veya odaklanma eksikliği."
+        ],
+        "positive": [
+            "Yaratıcılıklarını güçlü bir iş ahlakıyla birleştirdiklerinde finansal bolluk ve başarı.",
+            "Olumlu bir etki yaratmalarını sağlayan işlerden elde edilen tatmin ve amaç.",
+            "Seçtikleri alandaki yetenekleri ve katkıları için takdir.",
+            "Çalışmalarıyla başkalarına ilham verme ve onları yükseltme fırsatları."
+        ]
+    }
+}

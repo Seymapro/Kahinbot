@@ -1,0 +1,110 @@
+{
+    "challenges": [
+        "Bağımlılığı aşmak",
+        "Sağlıklı sınırlar koymak",
+        "Sorumluluk ve destek arasında denge kurmak",
+        "Kırgınlık ve geri çekilmekten kaçınmak",
+        "Stres ve gerilimi yönetmek"
+    ],
+    "famous_people": [
+        "Julie Andrews",
+        "Richard Burton",
+        "Piper Laurie",
+        "Norman Mailer",
+        "Edouard Manet",
+        "Claude Monet",
+        "Carlos Montoya",
+        "Sidney Poitier",
+        "Ronald Reagan",
+        "Debbie Reynolds",
+        "Dr. Benjamin Spock",
+        "Elizabeth Cady Stanton",
+        "Robert Louis Stevenson",
+        "Gloria Vanderbilt"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Karar verirken, fikirlerinizi yazın ve sonra sezgilerinize güvenin.",
+            "Hayır demeyi öğrenin ve bu konuda kendinizi iyi hissedin.",
+            "Her gün egzersiz yapın ve rutininize esneme ve rahatlamayı dahil ettiğinizden emin olun.",
+            "Vermeyi almayla dengeleyin."
+        ],
+        "questions": [
+            "Bazen insanlar için çok mu geri adım atıyorum ve sonra kendimi kızgın mı hissediyorum?",
+            "Benim sorumluluğum nerede bitiyor, başkalarınınki nerede başlıyor?",
+            "Konfor alanıma saygı duyuyor muyum?",
+            "Hayatın herhangi bir durumunda kendimi kapana kısılmış hissediyor muyum?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Aerobik egzersiz ve düşük yağlı bir diyet uygulayın.",
+            "Esneme, derin nefes alma, rahatlama veya meditasyon yapın.",
+            "Hipnoz ve pozitif imgelemeyi düşünün.",
+            "Dans, yoga, tai chi veya aikido gibi aktivitelerle akışa, esmeye ve dengeye odaklanın."
+        ],
+        "negative": [
+            "Gerginliğe ve strese bağlı rahatsızlıklara yatkın.",
+            "Alerjiler stresli dönemlerde alevlenebilir.",
+            "Fiziksel gerginlik lenfatik sistemi tıkayabilir.",
+            "Kilo yönetimi ile mücadele edebilir.",
+            "Olumsuz fantezilerin ve endişelerin kururubu olabilir."
+        ],
+        "positive": [
+            "Genellikle güçlü ve dinç bir yapıya sahiptir.",
+            "Çoğu hastalığa karşı dirençlidir ve savaşabilir."
+        ]
+    },
+    "key_traits": [
+        "İşbirlikçi",
+        "Duyarlı",
+        "Sorumlu",
+        "Diplomatik",
+        "Destekleyici"
+    ],
+    "opportunities": [
+        "İçsel yeteneklerini başkalarına hizmet etmek için kullanmak",
+        "Sağlıklı sınırlar belirlemek",
+        "Neşeli işbirliği ve karşılıklı destek sağlamak",
+        "Sorumlulukta dengeyi bulmak",
+        "Sevgi ve şefkatle ortak iyiye hizmet etmek"
+    ],
+    "relationships": {
+        "advice": [
+            "Hizmet ile kölelik arasındaki farkı net bir şekilde tanımlayın.",
+            "İhtiyaçlarınızı ve duygularınızı dürüstçe ifade edin.",
+            "Ödün vermeyi ve müzakere etmeyi öğrenin.",
+            "Cinsel sorunlar veya iletişim kopuklukları ile mücadele ediyorsanız profesyonel yardım alın."
+        ],
+        "negative": [
+            "Birlikte bağımlı ve aşırı sorumlu olabilir.",
+            "Gerçek duygularını gizleyebilir ve aşırı işbirliği yapabilir.",
+            "Kırgınlığa ve geri çekilmeye yatkın.",
+            "Aşırı ve yetersiz işbirliği arasında gidip gelebilir.",
+            "Duygusal kalıplar nedeniyle cinsel zorluklar yaşayabilir."
+        ],
+        "positive": [
+            "Destekleyici ve güvenilir partnerler ve ebeveynler.",
+            "Aile veya romantik ilişkilerde mükemmel diplomatlar olabilirler."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "İş ve finansta güvenlik ve istikrar arayın.",
+            "Organizasyon, koordinasyon ve arabuluculuk becerilerini kullanan roller üstlenin.",
+            "Seçtikleri alanlarda hem gücü hem de hassasiyeti benimseyin."
+        ],
+        "negative": [
+            "İşyerinde kendilerini savunmakta zorlanabilirler.",
+            "Sorumluluk ve aşırı çalışma yükü altında hissedebilirler.",
+            "Başkalarının ihtiyaçlarını kendi kariyer hedeflerinin önüne koyabilirler."
+        ],
+        "positive": [
+            "Güç ve hassasiyet dengesini gerektiren rollerde başarılı olurlar.",
+            "Doğal diplomatlar, arabulucular ve müzakereciler.",
+            "Güçlü organizatörler ve koordinatörler.",
+            "Değerli asistanlar ve destekçiler olurlar.",
+            "Hem perde arkasında hem de liderlik pozisyonlarında başarılı olabilirler."
+        ]
+    }
+}

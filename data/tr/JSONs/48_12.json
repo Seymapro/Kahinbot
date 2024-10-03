@@ -1,0 +1,94 @@
+{
+    "challenges": [
+        "güç ve süreç sorunları",
+        "dengeli, yaratıcı ve işbirlikçi ilişkiler kurmak"
+    ],
+    "famous_people": [],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Öz kontrolün kişisel gücün en yüksek formu olduğunu unutmayın.",
+            "Hedefiniz ne olursa olsun, adım adım yaklaşın.",
+            "Ne zaman direneceğinizi ve ne zaman bırakacağınızı bilin.",
+            "Diğer insanları daha büyük benliğinizin bir parçası olarak görerek onlarla işbirliği yapmayı öğrenin."
+        ],
+        "questions": [
+            "Hedeflerime doğru bir sonraki adım nedir?",
+            "Hedeflerime tam bir bütünlükle nasıl ulaşabilirim?",
+            "Kendime ve başkalarına eşit şekilde bakıyor muyum?",
+            "Yaratıcı güçlerimi hangi şekillerde ifade ediyorum?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "düzenli ve bilinçli beslenme ve egzersiz rutini uygulayın",
+            "Meditasyon pratiği, stresi azaltmanın ve sağlığı iyileştirmenin çok doğrudan bir yolu olarak hizmet edebilir",
+            "Uzun vadede düşük yağlı, vejetaryen veya yarı vejetaryen bir diyet onlar için iyi olacaktır.",
+            "Düzensiz değil, düzenli egzersiz yapmak istikrarlı bir antrenman süreci sunacaktır"
+        ],
+        "negative": [
+            "zihinsel strese yatkın",
+            "aşırı sorumlu hissetmeye veya başkalarının hayatıyla aşırı ilgilenmeye başlarlarsa gerilim",
+            "uzun vadeli zayıflatıcı etkilere sahip, tehlikeye atılmış bağışıklık sistemi",
+            "kolay kilo alma",
+            "diz, ayak bileği veya alt ekstremite yaralanmalarına eğilimli",
+            "doğumsal (kalıtsal) problemler"
+        ],
+        "positive": [
+            "son derece güçlü yapı, güçlü bir sağlığı sürdürecek"
+        ]
+    },
+    "key_traits": [
+        "yaratııcılık",
+        "takım çalışması",
+        "başarı",
+        "işbirliği",
+        "etki",
+        "pratiklik",
+        "güçlü liderlik",
+        "ışık ve yaratıcılığın taşıyıcıları"
+    ],
+    "opportunities": [
+        "daha güvenli ve istikrarlı bir dünya yaratmak",
+        "dengeli, yaratıcı ve işbirlikçi ilişkiler kurmak",
+        "yeni sınırların öncüleri"
+    ],
+    "relationships": {
+        "advice": [
+            "Eşlerinin veya arkadaşlarının bunu anlamaları ve onlardan gerçekçi olmayan beklentiler içinde olmamaları önemlidir.",
+            "Uzun vadeli herhangi bir ilişki karşılıklı destek ve işbirliğine dayanmalıdır.",
+            "Yalnızca hisler, hatta cinsel uyum bile, onların daha büyük ihtiyaçlarını ve hırslarını karşılamak için yeterli olmayabilir.",
+            "Sadece bir sevgiliye değil, bir dosta ihtiyaçları olacak"
+        ],
+        "negative": [
+            "hayat romantizmden çok akla dayanacak"
+        ],
+        "positive": [
+            "güçlü, sadık, güvenilir ve destekleyici",
+            "Cinsellik 48/12'ler için önemli olacaktır, sadece ihtiyaçlarını karşılamanın ve yaratıcı enerjilerini kullanmanın bir yolu olarak değil, aynı zamanda bir bağlantı noktası olarak, savunmasız oldukları tek ortamlardan birini sağlayarak."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Net bir taahhütte bulunurlarsa, sağlam bir temel oluştururlarsa ve beklenmedik durumlara karşı esnek kalırken planlarını adım adım takip ederlerse ve daha büyük iyiliğe hizmet ederlerse, sevdikleri işi yaparak, başkalarıyla işbirliği içinde para ve yetkiyi kullanırlar."
+        ],
+        "negative": [
+            "herhangi bir adımı atlamak",
+            "dürüstlüklerinden ödün vermek",
+            "kısa vadeli ödüller ancak uzun vadeli felakete davetiye çıkarmak",
+            "zor düşmek"
+        ],
+        "positive": [
+            "pratik yapıları nedeniyle iş hayatında başarı",
+            "zenginlik, güç ve tanınma dürtüsü",
+            "başarmak için yola koyuldukları her şeyi başarmak",
+            "yaratıcı enerji ve analitik beceriler",
+            "kendilerine ait bağımsız işletmeler kurmak",
+            "yapılar inşa etmek, malzemeleri şekillendirmek veya yaratıcı bir şekilde sorun gidermek",
+            "yeni sınırları keşfetmenin tadını çıkarın",
+            "yetenekli teknisyenler",
+            "bir aile veya bir iş imparatorluğu kurdu",
+            "yaratıcı sporculardan sanatçı-girişimcilere kadar birçok alanda yenilikçiler",
+            "azim, çalışmalarının meyvesini verdiğini görecekler"
+        ]
+    }
+}

@@ -1,0 +1,90 @@
+{
+    "challenges": [
+        "Yoğun ve görsel zihinlerinden huzurlu iç özlerine dikkatlerini kaydırmak",
+        "Bilgiyi eyleme dökmek ve kaderlerini gerçekleştirmek",
+        "4'ün (istikrar ve süreç) ve 5'in (özgürlük ve disiplin) enerjilerini dengelemek",
+        "Dürüstlük"
+    ],
+    "famous_people": [],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Özgürlüğe giden yolda adım adım ilerlemeniz gerektiğini unutmayın.",
+            "Kendi görüşlerinize saygı duyun ve başkalarının da kendi görüşlerine saygı duymasına izin verin.",
+            "Eylemlerinizi dürüstlük ve ilham üzerine kurun.",
+            "Diğerlerini özgürleştirmenin yollarını bulun, bu süreçte siz de özgürleşeceksiniz."
+        ],
+        "questions": [
+            "Hayatımı hangi ilkeler üzerine kuruyorum?",
+            "Sağlam ve istikrarlı bir temel oluşturdum mu?",
+            "İçsel özgürlük ve bağımsızlığa ulaşmak için hayatımda odaklanma ve disiplini uygulayabiliyor muyum?",
+            "İlham verici bir dürüstlük örneği olmak için hangi adımları atabilirim?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Düzenli egzersiz yapın, potansiyel olarak dövüş sanatları, su sporları ve dağcılık gibi çeşitli ve zorlu aktivitelere katılın.",
+            "Diyet ve egzersiz rutinlerini basit, günlük disiplinler olarak düzenleyin.",
+            "Kademeli, adım adım bir süreçle daha sağlıklı bir yaşam tarzına uyum sağlayın."
+        ],
+        "negative": [
+            "Kırık kemikler",
+            "Kafa yaraları",
+            "Beyni veya sinir sistemini etkileyen hastalıklar",
+            "Sağlam beslenme ve egzersiz zorunluluğunu göz ardı etmek"
+        ],
+        "positive": [
+            "Sağlam sağlık",
+            "Güçlü ve sağlıklı bir bedenle artan istikrar ve özgürlük"
+        ]
+    },
+    "key_traits": [
+        "Fiziksel olarak güçlü",
+        "Zihinsel olarak hızlı",
+        "Macera ve heyecan arzusu",
+        "Derin sezgisel bilgelik",
+        "Disiplinli",
+        "Odaklanmış",
+        "İstikrarlı",
+        "Doğrudan",
+        "Sadık",
+        "Sorumlu",
+        "Güçlü"
+    ],
+    "opportunities": [
+        "Günlük hayatta başkalarına liderlik etmek, öğretmenlik yapmak veya ilham vermek",
+        "Ekoloji, psikoloji ve kişisel gelişim gibi alanlarda ihtiyaç duyulan değişiklikleri yaratmak"
+    ],
+    "relationships": {
+        "advice": [
+            "Daha derin ve daha samimi ilişkiler geliştirmek için duygularını kabul edin ve keşfedin.",
+            "Aksi halde alışılmadık olsa bile, sorumlu ilişkiler kurun.",
+            "Yüksek bilgelik perspektifi içinde macera ve çeşitlilik duygusuyla cinselliğe yaklaşın."
+        ],
+        "negative": [
+            "Duyarlılık ve şefkat eksikliği",
+            "İstikrar ve bağımsızlık için çelişen dürtüler nedeniyle çılgınca tahmin edilemeyen duygusal yaşamlar",
+            "Aile ilişkilerinde ve ebeveynlerle veya kardeşlerle zorluklar"
+        ],
+        "positive": [
+            "İlişkiler ve köken ailesi öğrenme ve büyüme kaynakları haline gelir",
+            "Arkadaş çevresi ve dünya geniş anlamda genişletilmiş aile olarak deneyimlenir",
+            "İlişkiler, daha yüksek ve daha derin özgürlüğü gerçekleştirmek için bir temel oluşturabilir."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Sağlam bir mali temel oluşturun ve iyi bir mali düzen sağlayın.",
+            "Becerilerini zorlayan ve olumlu değişim yaratmalarına olanak tanıyan işler arayın.",
+            "Seçtikleri alanda başarıya ulaşmak için özgürlük mücadelelerini kullanın."
+        ],
+        "negative": [
+            "Dağınıklık ve disiplin eksikliği mali istikrarı engelleyebilir",
+            "Mali güvenlikten çok özgürlüğe ve maceraya öncelik verebilir"
+        ],
+        "positive": [
+            "Keskin analitik yetenekler ve hızlı zekalar başarıya katkıda bulunur",
+            "Mali istikrar yoluyla güvenlik sağlayabilir ve seçenekleri genişletebilir",
+            "Liderlik ve olumlu değişim için yeteneklerini kullanmaya istekli"
+        ]
+    }
+}

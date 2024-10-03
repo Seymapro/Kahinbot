@@ -10,9 +10,9 @@
     "fulfilling_destiny": {
         "guidelines": [
             "Her gün yaratıcı bir şey yapın; insanları, olayları ve durumları farklı bir perspektiften görmeye çalışın.",
-            "Güvensizliği, aşılması gereken bir engel olarak görün ve bir aktör gibi, hissetmeseniz bile kendinize güveniyormuş gibi davranın.",
+            "Güvensizliği, üstesinden gelinmesi gereken bir engel olarak görün ve bir aktör gibi, hissetmeseniz bile \"sanki\" kendinize güveniyormuşsunuz gibi davranın.",
             "Yaratıcılığınızı işiniz veya hobileriniz aracılığıyla ifade etmenin olumlu yollarını bulun.",
-            "Birikmiş enerjiyi serbest bırakmak, bağımlılıkları azaltmak veya ortadan kaldırmak için çeşitli bir günlük egzersiz programı oluşturun.",
+            "Bastırılmış enerjiyi serbest bırakmak, bağımlılıkları azaltmak veya ortadan kaldırmak için çeşitli bir günlük egzersiz programı oluşturun.",
             "Dünyada faydalı olmanın yaratıcı yollarını bulun."
         ],
         "questions": [
@@ -33,7 +33,7 @@
         ],
         "positive": [
             "Protein açısından zengin beslenmeyle gelen topraklanmışlık hissi",
-            "Egzersiz yoluyla olumlu enerji yönlendirme"
+            "Egzersiz yoluyla pozitif enerji yönlendirme"
         ]
     },
     "key_traits": [
@@ -46,10 +46,10 @@
     "opportunities": [
         "Başkalarına ilham vermek",
         "Sezgisel yetenekleri kullanmak",
-        "Hayatın her alanına yenilik getirmek",
+        "Hayatın tüm yönlerine yenilik getirmek",
         "Yaratıcı alanlar (sanat, tasarım, yazarlık, müzik)",
-        "İş dünyası, eğitim, siyaset",
-        "Yenilikçilik ve alışılmadık düşünme gerektiren alanlar"
+        "İşletme, eğitim, politika",
+        "Yenilikçilik ve alışılmışın dışında düşünme gerektiren alanlar"
     ],
     "relationships": {
         "advice": [
@@ -58,7 +58,7 @@
             "Özgüven oluşturun"
         ],
         "negative": [
-            "Kendilerini kanıtlama ihtiyacı, güvenli ilişkileri engelleyebilir",
+            "Kendilerini kanıtlama ihtiyacı, güvenli ilişkilere engel olabilir",
             "Güvensizlik, yakınlığı ve bağ kurmayı engelleyebilir"
         ],
         "positive": [
@@ -69,16 +69,16 @@
     "talents_work_finances": {
         "advice": [
             "Yaratıcı sanatlarla ilgilenin (resim, tasarım, müzik, yazarlık vb.)",
-            "İnovasyon ve problem çözmeye olanak tanıyan iş, eğitim, politika veya herhangi bir alanda kariyer yapın"
+            "İşletme, eğitim, politika veya yenilikçilik ve problem çözmeye olanak tanıyan herhangi bir alanda kariyer yapın"
         ],
         "negative": [
             "Sezgileri görmezden gelmek ve daha azına razı olmak",
-            "Hata yapma ve aşağılanma korkusu",
+            "Hatalardan ve aşağılanmaktan korkmak",
             "Hayata mekanik ve stratejik yaklaşım",
-            "Bağlılıklarla sessizlik ve mücadele"
+            "Sessizlik ve bağımlılıklarla mücadele"
         ],
         "positive": [
-            "Yenilikçi çözümler için yaratıcı zekayı kullanma",
+            "Yenilikçi çözümler için yaratıcı zekayı kullanmak",
             "Etkili sonuçlara yol açan sezgisel ayırt etme"
         ]
     }

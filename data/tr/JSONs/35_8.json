@@ -1,0 +1,120 @@
+{
+    "challenges": [
+        "Servet, güç ve saygıya yönelik dürtüleri, bu özelliklere yönelik korkularla dengelemek.",
+        "Pasif ve agresif eğilimleri bütünleşik ve özgün bir benlik oluşturmak üzere bir araya getirmek.",
+        "Bilinçaltı korkularının ve öz-sabotajın üstesinden gelmek.",
+        "Bağımlılık ve bağımsızlık arasında bir denge bulmak.",
+        "Duyguları dürpeş ve doğrudan ifade etmek.",
+        "Hırsı disiplin ve odaklanmayla dengelemek"
+    ],
+    "famous_people": [
+        "Melvin Belli",
+        "Ingrid Bergman",
+        "James Cagney",
+        "Edgar Cayce",
+        "Jack Dempsey",
+        "Buddy Holly",
+        "Bob Newhart",
+        "Norman Vincent Peale",
+        "Mary Pickford",
+        "Upton Sinclair",
+        "Oliver Stone",
+        "Mary Shelley Wollstonecraft"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Başarıya ulaşmak için parlak zekanızı sıkı çalışmayla birleştirin.",
+            "Gücünüzün sahibi olun, ancak kalbinizi de unutmayın.",
+            "Başkaları için yapmak istediğiniz iyiliği gözünüzde canlandırın ve sonra uygulamaya koyun.",
+            "Bir odak noktası bulun; pratik ve gerçekçi olsun"
+        ],
+        "questions": [
+            "Hayatımdaki bolluğa ulaşmak için gereken odaklanmış çalışmayı yaptım mı?",
+            "İçimde bolluk ve güç buldum mu?",
+            "İş anlaşmalarımda ve özel hayatımda en yüksek etik standartları koruyor muyum?",
+            "Duygularımı başkalarıyla özgürce paylaşıyor muyum?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Emniyet kemeri takın ve yüksek riskli aktivitelerden kaçının.",
+            "Öz-sabotajı en aza indirmek için enerjinizi odaklayın, sıkı çalışmayı dinlenmeyle dengeleyin ve daha yüksek bir amaca bağlı kalın.",
+            "Dengeli, düşük yağlı, ağırlıklı olarak vejetaryen bir diyet uygulayın.",
+            "Yeme alışkanlıklarınızda ölçülü olun.",
+            "Dövüş sanatları, ağırlık antrenmanı veya bireysel sporlar gibi kişisel güç hissi veren egzersiz biçimlerine katılın."
+        ],
+        "negative": [
+            "Dağınık hırslar ve dikkat dağınıklığı nedeniyle tükenmişlik ve yaralanmalar.",
+            "Trafik kurallarını dikkate almamak veya öz-sabotaj.",
+            "İşin aşırı vurgulanması, beslenme disiplininin ihmal edilmesine yol açar.",
+            "Yeme alışkanlıklarında aşırı kontrol veya kontrolsüzlük eğilimi."
+        ],
+        "positive": [
+            "Genellikle güçlü bünyeler.",
+            "Bilinçli beslenme seçimlerine yol açan keskin zeka."
+        ]
+    },
+    "key_traits": [
+        "Zenginlik, güç ve saygı tarafından yönlendirilir.",
+        "Pasif ve agresif eğilimler arasında iç çatışmaya eğilimli.",
+        "Hem sakin davranışlara hem de acımasızlığa yatkın.",
+        "Otorite, liderlik ve sorumluluğa ilgi duyar.",
+        "Dramatik, gösterişli veya abartılı olabilir.",
+        "Diğerlerini rahatsız edebilecek bastırılmış bir güce sahiptir.",
+        "Kazalar, yabancılaşma, erteleme veya maddi kayıplar yoluyla öz-sabotaja eğilimli.",
+        "Başarıyı ve hizmeti görselleştirmekten yararlanır.",
+        "Federekar hizmet yoluyla direncin üstesinden gelebilir.",
+        "Hızlı zeka ve çok yönlülükten etkilenir (5 enerjisi) ancak disiplinle mücadele edebilir.",
+        "Aşırı bağımlılık ve bağımsızlık arasında gidip gelebilir (3 ve 5 enerjileri).",
+        "Özellikle olumsuz duyguları ifade etmekte kendini engellenmiş hissedebilir (3 enerjisi).",
+        "Soyut bir şekilde konuşabilir veya zorlanmadıkça duygularını paylaşmaktan kaçınabilir (3 enerjisi).",
+        "İstediğini elde etmek için manipülasyona başvurabilir (3 enerjisi)."
+    ],
+    "opportunities": [
+        "Disiplin yoluyla içsel bolluk ve güç duygusuna ulaşmak.",
+        "Hayattaki nimetleri ortaya çıkarmak ve onları cömertçe paylaşmak.",
+        "Zekaları, vizyonları ve etkinlikleri nedeniyle güçlü liderler olarak görülmek.",
+        "Duruşlarını ne zaman koruyacaklarını ve ne zaman bırakacaklarını bilen, duygusal olarak açık ve savunmasız olmak.",
+        "Cömert, hayırsever bir yapıya sahip, kendi kendini yetiştirmiş başarılar olmak.",
+        "Liderlik ve yetki pozisyonları üstlenmek.",
+        "Açık ve karşılıklı destekleyici ilişkilere sahip olmak."
+    ],
+    "relationships": {
+        "advice": [
+            "İşe adanmışlığı anlayan, kendi kendine yeten partnerler bulun.",
+            "İş hayatını özel hayatla dengeleyin.",
+            "Partnerlerinizle açık ve dürüst bir iletişim kurun.",
+            "Karşılıklı paylaşımı, fedakarlığı ve ruh cömertliğini geliştirin."
+        ],
+        "negative": [
+            "Güç mücadeleleri nedeniyle hayatın ilerleyen dönemlerine kadar uzun süreli ilişkileri sürdürmekte zorlanma.",
+            "Dengesiz pasif ve agresif eğilimlerden kaynaklanan kontrol sorunları.",
+            "İlişkilerin üzerinde işi önceliklendirme eğilimi.",
+            "Duygusal hassasiyet ve öz şüphenin ilişkileri etkileme potansiyeli."
+        ],
+        "positive": [
+            "Son derece ilgili ve keyifli partnerler olabilirler.",
+            "Enerjilerini olumlu bir şekilde kullandıklarında mutlu, tutkulu ve karşılıklı destekleyici ilişkileri sürdürebilirler.",
+            "Özverili ebeveynler ve sevgi dolu partnerler olabilirler."
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Güçlü zihninizi ve zekanızı hizmet ve zenginlik yaratmak için kullanın.",
+            "Ailede, toplumda, sektörde veya siyasette liderlik rollerine adım atın.",
+            "Mucit, yenilikçi, yazar veya hayırsever olarak kariyer yapmayı düşünün.",
+            "Zenginliği ve etkiyi akıllıca ve şefkatle kullanmayı öğrenin.",
+            "Serbest çalışma ve girişimciliğe kucak açın."
+        ],
+        "negative": [
+            "Finansal sorunlar, bireylerin genellikle sıfırdan servet inşa etmelerini gerektiren merkezi bir tema olabilir.",
+            "Odaklanma ve disiplinle mücadele edebilir, bu da finansal arayışlarda öz-sabotaja yol açar.",
+            "Kendilerini bağımlı hissedebilir ve içeriden ziyade başkalarından güç ve destek arayabilirler."
+        ],
+        "positive": [
+            "Çeşitli alanlara uygun parlak ve meraklı bir zihne sahiptir.",
+            "Çoğunlukla sıkı çalışma yoluyla başarıya ulaşan, kendi kendini yetiştirmiş milyonerler.",
+            "Zenginliği insani amaçlar için kullanan cömert hayırseverler olma potansiyeline sahiptirler."
+        ]
+    }
+}

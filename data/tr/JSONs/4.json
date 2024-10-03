@@ -3,8 +3,8 @@
         "Engellerin üstesinden gelmek",
         "Olumsuz eğilimler",
         "İnatçılık",
-        "Fazla analiz etme",
-        "Çok fazla sorumluluk almak",
+        "Aşırı analiz etme",
+        "Çok fazla sorumluluk üstlenme",
         "Manipüle edilme",
         "Sabırsızlık",
         "Planlama eksikliği",
@@ -17,14 +17,14 @@
             "Büyük hedefleri daha küçük adımlara bölün",
             "Gücü esneklikle dengeleyin",
             "İyi hazırlanın ve sistematik olarak ilerleyin",
-            "Uyumlu olun",
-            "Karar verirken iç sesinize güvenin"
+            "Uyum sağlayabilir olun",
+            "Karar verirken içgüdülerinize güvenin"
         ],
         "questions": [
-            "Kendinizin veya başkalarının ne \"yapması gerektiği\" konusundaki inançlara takılıp kaldınız mı?",
+            "Kendinizin veya başkalarının \"yapması gerekenler\" konusundaki inançlara mı takılıp kaldınız?",
             "Mevcut hedefleriniz ve bunlara ulaşmak için atmanız gereken adımlar nelerdir?",
-            "Karar verirken artıları ve eksileri yazmayı ve iç sesinizi dinlemeyi denediniz mi?",
-            "\"Sağlamlık\" kelimesinin sizin için ne anlama geldiği hakkında ne düşünüyorsunuz?"
+            "Karar verirken artıları ve eksileri yazıp içgüdülerinize danışmayı denediniz mi?",
+            "\"Sağlamlık\" kelimesinin sizin için geçerliliği hakkında ne düşünüyorsunuz?"
         ]
     },
     "health": {
@@ -33,22 +33,22 @@
             "Gergin anlarda derin nefes alma ve gevşeme egzersizleri yapın"
         ],
         "negative": [
-            "Bacaklarda yaralanmalara yatkınlık",
+            "Baltık yaralanmalarına yatkınlık",
             "Fiziksel ve zihinsel katılık",
-            "Psikolojik sertlik (tutumların sertleşmesi)",
+            "Psikolojik sertlik (tutumların katılaşması)",
             "Stres somatizasyonu",
             "Alerjiler",
             "Sırt gerginliği"
         ],
         "positive": [
             "Güçlü bünyeler",
-            "Dirençli doğa"
+            "Dayanıklı doğa"
         ]
     },
     "key_traits": [
         "Sağlamlık",
         "Süreç odaklı",
-        "Analitik zihin",
+        "Analitik düşünce",
         "Sorumlu",
         "Güçlü irade",
         "İnatçı",
@@ -57,21 +57,21 @@
         "Açık sözlü",
         "Fiziksel olarak güçlü",
         "Mantıklı",
-        "Temelli",
+        "Oturmuş",
         "Zaman zaman dalgın",
         "Yorgunken kolay kandırılabilir"
     ],
     "opportunities": [
-        "Hayat için sağlam bir temel oluşturmak",
-        "İç ve dış güçlü yönleri kullanmak",
-        "Çalışkanlıkla başarıya ulaşmak",
-        "Dengeli ve doyurucu bir hayat yaratmak"
+        "Hayat için sağlam bir temel inşa etmek",
+        "İç ve dış güçleri kullanmak",
+        "Özenli çabalarla başarıya ulaşmak",
+        "İstikrarlı ve tatmin edici bir yaşam yaratmak"
     ],
     "relationships": {
         "advice": [
-            "\"Ben kendim yapabilirim\" yaklaşımından vazgeçin",
-            "Sorumluluk paylaşın",
-            "Manipülasyona dikkat edin",
+            "\"Kendim yapabilirim\" yaklaşımından vazgeçin",
+            "Sorumluluğu paylaşın",
+            "Manipülasyona karşı dikkatli olun",
             "İş yükünü paylaşmada denge kurun"
         ],
         "negative": [
@@ -81,27 +81,27 @@
         "positive": [
             "Aile odaklı",
             "Arkadaşlıklara değer veren",
-            "Sürü halinde yaşayan",
+            "Girişken",
             "Güçlü kişisel ve profesyonel ağlar kurar"
         ]
     },
     "talents_work_finances": {
         "advice": [
-            "Bir süreçte uzmanlaşın",
+            "Bir süreçte ustalaşın",
             "İyice hazırlanın",
             "Sağlam bir temel oluşturun",
             "Sistematik olarak adım adım ilerleyin"
         ],
         "negative": [
-            "Sabırsızlık, kısayollara ve planlama eksikliğine yol açabilir",
-            "Dağınık düşünceden kaynaklanan bunalım ve stres"
+            "Sabırsızlık kestirmelere ve planlama eksikliğine yol açabilir",
+            "Dağınık düşünceden bunalma ve stres"
         ],
         "positive": [
             "İyi yöneticiler",
             "Satış temsilcileri",
             "Veri analistleri",
             "Finansal planlamacılar",
-            "Dikkatlilik ve süreç odaklılık gerektiren rollerde başarılı olur"
+            "Dikkatli ve süreç odaklı olmayı gerektiren rollerde üstün başarı gösterirler"
         ]
     }
 }

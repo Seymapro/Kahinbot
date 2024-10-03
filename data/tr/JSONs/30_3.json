@@ -1,0 +1,112 @@
+{
+    "challenges": [
+        "özgüven eksikliğinin üstesinden gelmek",
+        "kendilerini yapıcı bir şekilde ifade etmek",
+        "duyarlılıklarını yönetmek",
+        "problemlerle başa çıkmak için olumlu yollar ifade etmenin ustaca yollarını bulmak",
+        "ifade edici enerjilerini yapıcı bir şekilde kanalize etmek ve serbest bırakmak"
+    ],
+    "famous_people": [
+        "Wilt Chamberlain",
+        "Eldridge Cleaver",
+        "Bill Cosby",
+        "Miles Davis",
+        "Douglas Fairbanks, Sr.",
+        "Ella Fitzgerald",
+        "Jodie Foster",
+        "Andrew Jackson",
+        "Ann Landers",
+        "Norman Lear",
+        "Joan Rivers",
+        "Carlos Santana",
+        "Barbara Walters",
+        "John Wayne"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Öz şüpheye dur işareti değil, üstesinden gelinmesi gereken bir engel olarak yaklaşın.",
+            "Her zaman eşit ölçüde geri alacağınızı hissetmeseniz bile, kendinizi duygusal olarak verin.",
+            "Duygularınıza izin verin ve onları anında ifade edin.",
+            "İncelikli sezginize ve özel kaynaklarınıza güvenin ve bunları kullanın."
+        ],
+        "questions": [
+            "Kendimi ifade etme dürtümü öz şüphe nedeniyle engelledim mi?",
+            "Duygu ve ihtiyaçlarımı doğrudan ifade ediyor muyum?",
+            "Başkalarının ihtiyaçlarına karşı duyarlı mıyım?",
+            "Hassas \"iç rehberlik sistemimi\" veya diğer içsel yeteneklerimi tam olarak kullandım mı?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Kalbi açan, duygulara dokunan ve canlandıran veya yükselten müziklerle ilgilenin",
+            "Sezgisel olarak yiyin ve egzersiz yapın - duygusal ve fiziksel olarak iyi gelen şey",
+            "Kendinizi kötü hissettiğinizde duygusal olarak yemek yemekten veya kendinizi şımartmaktan kaçının",
+            "Moraliniz bozuk olduğunda moralinizi yükseltmek için müzik eşliğinde geniş kapsamlı egzersizler yapın"
+        ],
+        "negative": [
+            "Engellenen ifade nedeniyle boğaz bölgesinde hassasiyet",
+            "Kalp ve dizlerde hassasiyet",
+            "Yanlış anlaşılma nedeniyle dizlerde enerji blokajları",
+            "Zamanla dizlerde dolaşım ve fiziksel yapı problemleri"
+        ],
+        "positive": [
+            "Duygusal olarak dengeli olduğunda iyi sağlık"
+        ]
+    },
+    "key_traits": [
+        "İfade edici",
+        "Duyarlı",
+        "Sezgizel",
+        "Duygusal",
+        "Şefkatli",
+        "Anlayışlı",
+        "Hevesli",
+        "Romantik",
+        "Sadık",
+        "Yaratıcı"
+    ],
+    "opportunities": [
+        "Kendilerini yaratıcı bir şekilde ifade etmek",
+        "Başkalarını yüceltmek ve beslemek",
+        "Öğretmek, danışmanlık yapmak, iyileştirmek, icra etmek",
+        "Sosyal hizmette bulunmak",
+        "Diğerlerini yönetmek",
+        "Net mantığı ve aklı kullanmak",
+        "Kendini ifade etme olanağı sunan alanlarda başarılı olmak"
+    ],
+    "relationships": {
+        "advice": [
+            "İlişkilere manevi bir uygulama biçimi olarak bakın",
+            "Duygusal ihtiyaçlar ve eğilimler konusunda doğrudan ve açık olun",
+            "Geçici aşık olmaları kabul edin ve ifade edin, ancak bunlara göre hareket etmeyin",
+            "Duygusal bağlantıya ve açık iletişime odaklanın"
+        ],
+        "negative": [
+            "Muhallebi çocuğu ve duygusal olarak talepkar",
+            "İhtiyaçlarının karşılanması için manipülatif veya mızmız olabilir",
+            "Duygular yönetilmediğinde rastgele cinsel ilişkiye veya sadakatsizliğe eğilimli",
+            "Duygusal veya cinsel sadakatle mücadele edebilir"
+        ],
+        "positive": [
+            "Duygusal olarak cömert ve verici",
+            "Büyük ve hassas bir duygusal enerji alanına sahip olmak",
+            "Kendi ve başkalarının duygularıyla uyum içinde olmak",
+            "Derin duygusal bağlantıya ve tutkulu katılıma değer vermek"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Finansal bolluğu çekmek için yetenekleri ve ifadeyi olumlu kullanın",
+            "Kendini ifade etmeye, öğretmeye, danışmanlığa, şifacılığa, icra etmeye veya yaratıcı ifadeye olanak tanıyan kariyerlerin peşinden gidin"
+        ],
+        "negative": [
+            "Öz şüphe ve engellenen ifade nedeniyle finansal yoksunluk",
+            "Kısıtlayıcı veya duygusal olarak tatmin edici olmayan çalışma ortamlarında gelişemez"
+        ],
+        "positive": [
+            "Doğuştan öğretmenler, danışmanlar, şifacılar, sanatçılar ve sanatçılar",
+            "İletişim, duygusal zeka ve sezgi içeren rollerde üstün başarı gösterirler",
+            "Herhangi bir alanda başarılı olabilirler ancak en çok tatmini ifade edici rollerde bulurlar"
+        ]
+    }
+}

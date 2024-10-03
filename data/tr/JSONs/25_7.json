@@ -1,0 +1,105 @@
+{
+    "challenges": [
+        "Paranoyanın ve izolasyon eğilimlerinin üstesinden gelmek",
+        "Kendilerine ve başkalarına güvenmeyi öğrenmek",
+        "Gizlilik ve bağlantı arasında bir denge bulmak",
+        "İhanet veya yanlış anlaşılma korkusunu yönetmek",
+        "Kendilerini topraklamak ve fiziksel dünyaya bağlanmak"
+    ],
+    "famous_people": [
+        "Bella Abzug",
+        "Arthur Ashe",
+        "Joan Baez",
+        "Helen Gurley Brown",
+        "William F. Buckley, Jr.",
+        "Sir Richard Burton",
+        "Eric Clapton",
+        "Carrie Fisher",
+        "Mel Gibson",
+        "Woody Guthrie",
+        "J. Edgar Hoover",
+        "Marilyn Monroe",
+        "Gertrude Stein",
+        "James Stewart"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "İçgüdülerinize ve sezgilerinize güvenin; bedeninizin ve hayatınızın uzmanı sizsiniz.",
+            "Her gün en az bir derin nefes almayı ve bunu yaparken Ruh'u içinize çekiyormuş gibi hissetmeyi unutmayın.",
+            "Deneyimin tadını çıkarın, ancak ilişkiye odaklanın.",
+            "Olası yanlış anlamaları önlemek için insanlarla net anlaşmalar yapın."
+        ],
+        "questions": [
+            "Dışarıdaki uzmanlara ve fikirlere olan bağımlılıktan kendi sezgisel beden bilgeliğime güvenmeye nasıl geçebilirim?",
+            "Yanlış anlamaları önlemek için, belirli bir durumda gerçek duygularımı ve ihtiyaçlarımı paylaşabilir miyim?",
+            "İnsanlarla güvende mi hissediyorum yoksa zihinsel bir kalkanın arkasına mı saklanıyorum?",
+            "Güvenle ilgili hangi gizli varsayımları yeniden inceleyebilirim?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Fiziksel egzersiz, dövüş sanatları ve doğada vakit geçirmek gibi topraklama aktivitelerine katılın",
+            "Görselleştirme, ışık ve renkle çalışma, çiçek esansları ve sanat gibi estetik şifa biçimlerini keşfedin",
+            "Hem fiziksel hem de zihinsel sağlığa dikkat ederek düzenli disiplini ve öz bakımı uygulayın"
+        ],
+        "negative": [
+            "Aşırı düşünme ve stres alerjiye yol açabilir",
+            "Dağınık enerji, bağımlılık ve kızgınlık böbreküstü bezlerini ve sinir sistemini tehlikeye atabilir",
+            "İhanet duyguları ve duygusal daralma kalp rahatsızlıkları olarak ortaya çıkabilir"
+        ],
+        "positive": [
+            "2 sayısı güç ve canlılık getirir",
+            "5 sayısı geniş bir özgürlük ve esenlik duygusu getirir",
+            "7 sayısı sağlam sağlık uygulamalarını destekleyen ayrımcı bir zihin getirir"
+        ]
+    },
+    "key_traits": [
+        "Analitik ve anlayışlı",
+        "Bağımsız ve özel",
+        "Maneviyata ve mistisizme ilgi duyan",
+        "Güzelliğe ve uyuma değer veren",
+        "Yaratıcı ve hayal gücü yüksek",
+        "Yakın çevrelerine güvenen ancak başkalarına karşı temkinli olabilen"
+    ],
+    "opportunities": [
+        "Başkalarına yardım etmek için zekalarını ve sezgilerini kullanmak",
+        "Kendini keşfetme ve manevi keşif yoluyla özgürlük bulmak",
+        "Güven ve anlayışa dayalı derin ve anlamlı ilişkiler kurmak",
+        "Eşsiz yetenekleri ve yetenekleriyle dünya üzerinde olumlu bir etki yaratmak"
+    ],
+    "relationships": {
+        "advice": [
+            "Açık iletişim ve savunmasızlık pratiği yapın",
+            "Net sınırlar ve beklentiler belirleyin",
+            "İlişkilere daha fazla denge getirmek için öz güveni ve bütünlüğü geliştirin",
+            "Duygusal yakınlığın ve güvenin bağlantıları derinleştirmesine izin verin"
+        ],
+        "negative": [
+            "İhanet ve savunmasızlık korkusu duygusal geri çekilmeye yol açabilir",
+            "Gizlilik ve bağımsızlık ihtiyacı, ilişkilerde mesafe yaratabilir",
+            "Zihne aşırı güvenmek duygusal bağlantıyı engelleyebilir"
+        ],
+        "positive": [
+            "İlişkilerde uyum, denge ve bütünlük arayın",
+            "Başkalarıyla derin ve anlamlı bağlantılar kurmayı arzu edin",
+            "Kendilerini güvende ve güvenilir hissettiklerinde derin bir samimiyet ve tatmin yaşayabilirler"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Analitik becerilerini ve yaratıcılıklarını kullanan kariyerlere kucak açın",
+            "Bağımsızlık ve entelektüel uyarım sunan iş ortamları arayın",
+            "Bolluğa ulaşmak için finansal konularda öz güveni ve disiplini geliştirin"
+        ],
+        "negative": [
+            "Öz güven eksikliği finansal istikrarsızlığa yol açabilir",
+            "Dağınık enerji, finansal hedeflere odaklanmayı zorlaştırabilir",
+            "Deneyim peşinde koşarken aşırı harcama eğilimi, finansal zorluklara neden olabilir"
+        ],
+        "positive": [
+            "Analitik düşünme, yaratıcılık ve becerikli uygulama gerektiren alanlarda üstün başarı gösterirler",
+            "Güçlü bir iş ahlakına ve bir fark yaratma arzusuna sahiptirler",
+            "Yetenekleri ve beceriklilikleriyle finansal başarıya ulaşma potansiyeline sahiptirler"
+        ]
+    }
+}

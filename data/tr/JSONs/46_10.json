@@ -1,0 +1,89 @@
+{
+    "challenges": [
+        "Mükemmeliyetçiliğin ve sabırsızlığın üstesinden gelmek için 4 ve 6 enerjilerini dengelemek",
+        "Süreci sevmeyi ve adım adım bir yaklaşımı benimsemeyi öğrenmek",
+        "Gerçeklik ideallerle örtüşmediğinde yüksek beklentileri yönetmek ve hayal kırıklığından kaçınmak"
+    ],
+    "famous_people": [],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Başarının sürekli pratikten geldiğini kabul edin.",
+            "Vizyonunuzu bir hedef değil, bir yön olarak görün.",
+            "Hayal kurmaya devam edin, ancak pratik yollarla yaratın.",
+            "Harekete geçmeden önce hazırlanın; küçük adımlar büyük fark yaratır"
+        ],
+        "questions": [
+            "Kendimi ve başkalarını nasıl değerlendiriyorum?",
+            "Yaratıcı enerjimi nasıl ifade ediyorum?",
+            "Uzun süren projelere karşı nasıl hissediyorum?",
+            "Duyarlılığımı ve gücümü nasıl kullanıyorum?",
+            "Daha az düşünüp daha çok hissetmeyi nasıl öğrenebilirim?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Diyet ve egzersiz için sürdürülebilir ve eğlenceli bir yaklaşım bulun",
+            "Hızlı çözümlerden kaçının ve bütünsel bir sağlık görüşünü benimseyin",
+            "Üreme sistemi, karın bölgesi ve dizlerdeki olası hassasiyetlerin farkında olun"
+        ],
+        "negative": [
+            "Madde bağımlılığı",
+            "Uygunsuz cinsel aktivite",
+            "İdeallere odaklanma nedeniyle fiziksel sağlığı ihmal etme"
+        ],
+        "positive": [
+            "Güçlü ve son derece rafine bir vücut",
+            "Refahı destekleyen yüksek fikirli yaşam tarzı",
+            "Beslenmeye ilgi duymak ve en uygun diyeti bulmak",
+            "Bütünsel egzersiz uygulamalarına eğilim"
+        ]
+    },
+    "key_traits": [
+        "Yaratıcı",
+        "İdealist",
+        "Pratik",
+        "Duyarlı",
+        "Güçlü"
+    ],
+    "opportunities": [
+        "Kendi yöntemleriyle daha iyi bir dünya yaratmak",
+        "Başkalarına ilham vermek ve onları yükseltmek",
+        "Yeni ve yenilikçi fikirlere öncülük etmek",
+        "Vizyonlarını pratik eylem yoluyla tezahür ettirmek"
+    ],
+    "relationships": {
+        "advice": [
+            "Kendi duygularınızı tamamen kabul edin ve kucaklayın",
+            "İdealize edilmiş imgeleri başkalarına yansıtmaktan kaçının",
+            "Etkileşimlerde empati ve anlayış pratiği yapın"
+        ],
+        "negative": [
+            "Kendilerinde ve başkalarında kusurları kabul etmekte zorluk",
+            "Bastırılmış duygular ve özgün hislerin inkarı",
+            "Derin ve anlamlı bağlantılar kurmada zorluklar"
+        ],
+        "positive": [
+            "Kendinin farkında olduğunda derin sevgi ve bağ kurabilir",
+            "Başkalarını yüceltme ve destekleme konusunda yetenekli",
+            "Büyüme ve anlayışı teşvik eden ilişkilere ilgi duyar"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Tutkular ve değerlerle uyumlu işler yapmak",
+            "Yükümlülükten dolayı tatmin edici olmayan kariyerlere razı gelmekten kaçının",
+            "Sabır ve zorluklarda sebat etme isteği geliştirin"
+        ],
+        "negative": [
+            "İş hayatında memnuniyetsizlik ve huzursuzluk",
+            "Bir işte kendini doymamış veya kapana kısılmış hissetmek",
+            "Güvensizlik veya gerçekçi olmayan beklentiler nedeniyle finansal istikrarsızlık"
+        ],
+        "positive": [
+            "Yapılandırılmış ve yaratıcı alanlarda mükemmelleşin",
+            "Doğal liderler ve danışmanlar",
+            "Güçlü analitik ve problem çözme becerileri",
+            "Öz değer ve net eylem yoluyla finansal bolluk potansiyeli"
+        ]
+    }
+}

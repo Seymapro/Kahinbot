@@ -1,0 +1,83 @@
+{
+    "challenges": [
+        "mükemmeliyetçilik",
+        "bağımlılık",
+        "altta yatan güvensizlik"
+    ],
+    "famous_people": [
+        "Isaac Asimov",
+        "Kristof Kolomb",
+        "Federico Fellini",
+        "Jascha Heifetz",
+        "Jan Dark",
+        "David Niven",
+        "Kral III. Richard"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Vizyonunuza sahip çıkın ve disiplini kullanarak ona ulaşın.",
+            "Yaratıcı enerjinizi sabırla kullanın.",
+            "Ne istediğinizi gözünüzde canlandırın ve vizyonunuzun size ilham vermesine izin verin.",
+            "İçinizdeki mükemmel özgürlüğü bulun."
+        ],
+        "questions": [
+            "Mevcut durumum hangi açıdan mükemmel?",
+            "Yüksek ideallerimi ve yaratıcı vizyonumu pratik şekillerde uygulayabilir miyim?",
+            "Mükemmel özgürlüğü veya adaleti nerede bulabilirim?",
+            "Kendimi, partnerimi ve dünyamı şu anda sevip kabul edebilir miyim?",
+            "Eğer bu sorular herhangi bir içgörü yaratıyorsa, bu içgörüleri nasıl uygulamaya koyabilirsiniz?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "15/6'da çalışan bireyler, içsel kendini iyileştirme mekanizmaları oluşturmak için bilinçaltı imgelerinden yararlanan görselleştirme ve hipnoterapi, homeopati, akupunktur, aromaterapi ve renk terapisi gibi, en az yan etkiye sahip tüm iyileştirme biçimleri olan gelişmiş ve rafine iyileştirme yöntemlerinden en çok yararlanır.",
+            "Diğer insanlar 15/6'lara beslenme veya egzersiz konusunda etkili bir şekilde tavsiyelerde bulunamazlar çünkü bu bireyler en iyi şekilde kendi içsel arketiplerine ve ideallerine göre yönlendirme ararlar. Genel olarak, arındırıcı bir diyetle en iyi sonucu alırlar ve birçok insandan daha az yiyeceğe ihtiyaç duyarlar.",
+            "Çoğu 15/6'lı, kendilerine doğal ve dengeli gelen egzersizlere ilgi duyar; en iyi ihtimalle, tay chi gibi neefes alma, esneme, sıkılaştırma ve rahatlamanın temel unsurlarını birleştiren basit, etkili bir rutini veya çeşitliliğe olanak tanıyan gelişmiş bir hafif jimnastik türünü uygularlar."
+        ],
+        "negative": [
+            "sinir bozuklukları",
+            "cilt döküntüleri",
+            "karın sorunları",
+            "tükenmişlik"
+        ],
+        "positive": []
+    },
+    "key_traits": [
+        "idealist",
+        "bağımsız",
+        "yaratıcı",
+        "mükemmeliyetçi",
+        "vizyoner",
+        "yüksek fikirli"
+    ],
+    "opportunities": [
+        "yazı",
+        "oyunculuk",
+        "keşfetmek",
+        "koçluk"
+    ],
+    "relationships": {
+        "advice": [],
+        "negative": [
+            "insanları idealleştirmek",
+            "gizli hayal kırıklıkları beslemek",
+            "birlikte oldukları kişiyi algılayamamak",
+            "ilişkilerini ideal bir görüntüyle karşılaştırmak"
+        ],
+        "positive": [
+            "doğal cinsel dürtülerinden ve genel olarak ilişkilerinden daha fazlasını veya daha üstün bir şey yaratma arzusu"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [],
+        "negative": [
+            "birçok düzeyde bir eksiklik hissetmek",
+            "daha mükemmel fırsatı beklemek"
+        ],
+        "positive": [
+            "yüksek standartları nedeniyle üstün olmak",
+            "pratik ve faydalı bir şey üretmek",
+            "idealler onları yaratıcı girişimlere yönlendirir"
+        ]
+    }
+}

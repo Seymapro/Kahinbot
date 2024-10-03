@@ -1,0 +1,120 @@
+{
+    "challenges": [
+        "Bağımsızlık ve bağımlılık arasında denge kurma",
+        "Dağınıklığı ve fevriliği aşma",
+        "Yaratıcı enerjiyi etkili bir şekilde yönlendirme",
+        "Disiplin ve odaklanma yoluyla özgürlük bulma",
+        "Adım adım süreçlere karşı direnç",
+        "Sabırsızlık",
+        "Güvensizlik",
+        "Aşırı analiz nedeniyle zihinsel stres"
+    ],
+    "famous_people": [
+        "Sean Cassidy",
+        "William Faulkner",
+        "Clark Gable",
+        "Walter Matthau",
+        "William Friedkin",
+        "Thomas Wolfe"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "İstikrar ve özgürlük arasında barış kurun; hayatınıza ikisini de dahil edin.",
+            "Yaratıcılığınızı adım adım disiplinle yönlendirin.",
+            "Her gün, sadece birkaç dakikalığına bile olsa egzersiz yapın.",
+            "Kendinizi tamamen adayabileceğiniz ve takip edebileceğiniz bir şey bulun."
+        ],
+        "questions": [
+            "Hayatımdaki özgürlüğü artırmak için en önemli adımlar nelerdir? Bunları atmaya istekli miyim?",
+            "Beni kendimden başka gerçekten geri tutan biri var mı?",
+            "Yaratıcı enerjimi nasıl kullanıyorum?",
+            "Hayatımın neresinde daha fazla disipline ihtiyacım var?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Zihni sakinleştirmek için meditasyon",
+            "Denge ve sakinlik için ilham verici müzik",
+            "Düzenli, istikrarlı beslenme alışkanlıkları",
+            "Çeşitli ilginç yiyecekler",
+            "Tıkanmış enerjiyi serbest bırakmak için dengeli egzersiz",
+            "Heyecan verici rekabetçi oyunlar",
+            "Yüzme, serbest dalış ve diğer su sporları"
+        ],
+        "negative": [
+            "Fevrilik veya aşırı efor sarf etmekten kaynaklanan kırık kemikler",
+            "Yaratıcı enerji bloke edilirse karın, bel veya üreme sorunları",
+            "Zihinsel stres",
+            "Öğün atlamak veya ayaküstü yemek yemek",
+            "Aşırı yemek"
+        ],
+        "positive": [
+            "Canlılık",
+            "Enerji",
+            "Deneyimlere susamışlık",
+            "Diğer 5'lere kıyasla sağlamlık ve direnç"
+        ]
+    },
+    "key_traits": [
+        "Bağımsızlık",
+        "İstikrar",
+        "Yaratıcı enerji",
+        "Disiplin yoluyla özgürlük",
+        "Aile odaklılık",
+        "Hızlı zeka",
+        "Analitik yetenek",
+        "Yenilikçilik ve çeşitlilik ihtiyacı",
+        "Merak",
+        "Keşif eğilimleri"
+    ],
+    "opportunities": [
+        "Özgürlük ve bağımsızlığa ulaşmak",
+        "Deneyimde ustalık",
+        "Hayata yeni yaklaşımlar göstermek",
+        "İçsel imgeleri pratik gerçekliğe dönüştürmek",
+        "İstikrarlı bir ev hayatı yaratmak",
+        "Uluslararası ticarette başarı",
+        "Yaratıcı alanlar",
+        "Hızlı analiz gerektiren iş",
+        "Yazarlık"
+    ],
+    "relationships": {
+        "advice": [
+            "Çeşitlilik ihtiyacını bağlılıkla dengeleyin",
+            "İlişkileri iyileştirmek için güvensizliği ele alın",
+            "Güçlü cinsel ifadeye girin"
+        ],
+        "negative": [
+            "İstikrar ve deneyim çeşitliliği arasında kalma",
+            "Yerleşmekte zorlanma",
+            "Güvensizlik nedeniyle kendini korumacı ve rekabetçi doğa",
+            "Bağlılık eksikliği"
+        ],
+        "positive": [
+            "Çekici ve dinamik enerji",
+            "Aileye ve istikrara değer verme",
+            "Güçlü cinsel ifadeye ihtiyaç duyma ve değer verme"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "İşte istikrarı ve macerayı birleştirin",
+            "Yerleşik çalışmaktan ziyade aktif çalışmalara katılın",
+            "Trendleri belirlemek için yaratıcı vizyonu kullanın",
+            "Kapsamlı araştırma ve planlama yapın",
+            "Sabırlı olun ve projeleri tamamlayın"
+        ],
+        "negative": [
+            "Dağınıklık tamamlanmamış projelere yol açabilir",
+            "Fevrilik mali istikrarsızlığa yol açabilir",
+            "Disiplin eksikliği kariyer başarısını engelleyebilir"
+        ],
+        "positive": [
+            "Güç",
+            "Yaratıcılık",
+            "Hızlı zeka",
+            "Net ve yaratıcı hikaye anlatma yetenekleri",
+            "İş zekası"
+        ]
+    }
+}

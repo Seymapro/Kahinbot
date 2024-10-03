@@ -1,0 +1,171 @@
+{
+    "challenges": [
+        "bağımsızlık",
+        "duygusal dürüstlük",
+        "işbirliği"
+    ],
+    "famous_people": [
+        "Karem Abdul-Jabbar",
+        "Lauren Bacall",
+        "Irving Berlin",
+        "Werner Erhardt",
+        "Mick Jagger",
+        "Helen Keller",
+        "Coretta Scott King",
+        "Rudolf Nureyev",
+        "Georgia O'Keefe",
+        "Theodore Roosevelt",
+        "Bertrand Russell",
+        "Lily Tomlin",
+        "Denzel Washington",
+        "Malcolm X"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Oynadığınız rolden daha fazlasısınız; özünüze değer verin.",
+            "Unutmayın: Disiplin ve derinlik, özgürlüğün kapılarını açar.",
+            "Kendinize zaman ayırın, rahatlamak için zaman ayırın ve sağlıklı kalın.",
+            "Olabildiğince açık ve savunmasız olma cesaretini bulun."
+        ],
+        "questions": [
+            "Kendimi sınırlı veya kısıtlanmış hissettiğimde, beni kim özgür bırakabilir?",
+            "Bağımlılık ve bağımsızlık arasında bir denge buldum mu?",
+            "Mevcut disiplin ve odaklanma seviyem nedir?",
+            "Gerçekten ne hissettiğimi ve neye ihtiyacım olduğunu doğrudan ifade ediyor muyum?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Dengeli, düşük yağlı bir diyet ve düzenli egzersiz, hem 32/5'ler hem de 23/5'ler için çok önemli disiplinlerdir.",
+            "Egzersiz rejimlerinin, eğlenceli ve verimli çeşitli egzersizleri içermesi gerekir.",
+            "Çapraz antrenman, müzik eşliğinde hareket etme, dans, dövüş sanatları ve doğa yürüyüşü mükemmel seçeneklerdir."
+        ],
+        "negative": [
+            "hassas vücut",
+            "hızlı metabolizmaları nedeniyle ince ve sinirli",
+            "böbrek üstü bezlerini ve sinir sistemlerini aşırı zorlamak",
+            "dağınık ve stresli veya yorgun",
+            "düzensiz veya disiplinsiz diyet veya egzersiz alışkanlıkları",
+            "dolaşım sistemi zarar görebilir",
+            "fiziksel olarak kendilerini aşırı zorlarlarsa veya yeteneklerinin ötesine geçerlerse kazalar meydana gelebilir",
+            "uyuşturucular onları sadece köleleştirebilir"
+        ],
+        "positive": [
+            "yuvarlak vücut, bunun onları yavaşlatmasına izin vermeyin",
+            "psişik tampon görevi gören yağ veya kas"
+        ]
+    },
+    "key_traits": [
+        "bağımsızlık",
+        "duygusal dürüstlük",
+        "işbirliği",
+        "disiplin yoluyla özgürlük",
+        "deneyim derinliği",
+        "iç zorluklarla yüzleşmek",
+        "eğilimler",
+        "bağımlılık ve bağımsızlık alanlarında çatışmalar",
+        "sorumluluk",
+        "duygunun dürüstçe ifade edilmesi",
+        "geç çiçek açanlar",
+        "hassasiyet ve kendinden şüphe duyma",
+        "daha güçlü bir ifade dürtüsüyle birlikte daha güçlü korkular",
+        "işbirliği etrafında daha derin sorunlar",
+        "gerçek özgürlüğü deneyimlemek",
+        "deneyimleme ve bilme dürtüsü",
+        "hayatın farklı alanlarında -fiziksel, zihinsel, duygusal, sosyal, cinsel ve finansal- hareketlilik duygusu",
+        "fırsatları keşfetmek",
+        "macera bulmak",
+        "hızlı öğrenenler",
+        "akıllarıyla yaşamak",
+        "çeşitli yetenekler ve deneyim",
+        "takıntılı bir şekilde odaklanmak",
+        "disipline, odaklanmaya ve bir öncelik duygusuna ihtiyaç duymak",
+        "nihai özgürlük içseldir - kendileri olma özgürlüğü, kendinden şüphe duymama özgürlüğü, korkudan özgürlük",
+        "içsel özgürlüğü yaratmak, dış deneyimle yüzleşmekle olur",
+        "dış zorluklarla mücadele etmek",
+        "kendinden şüphe duyma ve işbirliği sorunlarıyla yüzleşmek ve bunların üstesinden gelmek",
+        "sınırlarını zorlamak",
+        "bazı duygusal riskler almak",
+        "kapasitelerini keşfetmek",
+        "aşırı işbirliği",
+        "dramatik enerjiler",
+        "şehit kompleksi",
+        "hızlı zekâlı",
+        "hızlı öğrenenler",
+        "çabuk sıkılmak",
+        "küçük bir drama yaratmak",
+        "aydınlanma ve ruhsal kurtuluş",
+        "evrenin onların oyun alanı haline geldiği noktaya kadar bilinçlerini genişletmek",
+        "görsel hayal güçlerini ve doğuştan gelen basiret (berrak görme) yeteneklerini geliştirmek",
+        "geniş bir deneyim yelpazesi",
+        "nispeten sığ olan",
+        "hayatın tüm yönlerinin altında yatan manevi yasaları keşfetmek",
+        "daha derin bir özgürlük duygusu",
+        "yüzeysel geçmek",
+        "her şeyi aynı anda yapmaya çalışırken dağılmak",
+        "enerjilerini ve dikkatlerini odaklamak",
+        "net öncelikler belirlemek ve bunlara bağlı kalmak",
+        "eksik işbirliği ve aşırı işbirliği uçları arasında gidip gelmek",
+        "bağımlılık ve bağımsızlık uçları arasında gidip gelmek",
+        "rahat bir denge bulmak",
+        "kendilerine her uç noktayı keşfetmelerine izin vermek",
+        "bağımlılık sorunlarını inceleyerek bağımsızlık hakkında bilgi edinmek",
+        "sağlıklı bir bağımsızlık ve uygun karşılıklı bağımlılık dengesi kurmak",
+        "sosyal rollerinin arkasına saklanmak",
+        "blöf yapma veya rol yapma yeteneği",
+        "başkalarını bilinçli veya bilinçsiz olarak manipüle etmek",
+        "öfke gibi duyguları kendi bildiklerini yaptırmak için kullanmak",
+        "canlı kalite",
+        "dünyaya Rönesans bakış açısı",
+        "maceraperest veya özgürlük odaklı nitelikler",
+        "tam güven",
+        "hayatlarının potansiyelini, derinliğini ve içlerindeki sınırsız özgürlük durumunu keşfetmek"
+    ],
+    "opportunities": [
+        "öğretmenlik",
+        "yazarlık",
+        "oyunculuk",
+        "müzik",
+        "siyaset",
+        "eğitimler vermek",
+        "mahkeme raporlama",
+        "seyahat etmeyi ve çeşitli insanlarla çalışmayı içeren satış işi"
+    ],
+    "relationships": {
+        "advice": [
+            "Kararlı ilişkiler arenayı sağlar.",
+            "Kendi hayatlarının sorumluluğunu üstlendiklerinde ve kendi filmlerinde yazar ve yönetmen olabileceklerini fark ettiklerinde, başkalarını kendilerini \"durdurdukları\" için suçlamayı bırakırlar ve reaktif bağımsızlık veya izolasyondan daha çok işbirliğinde özgürlük bulurlar.",
+            "hissettiklerini ifade etme cesaretini bulmaları gerekir",
+            "çeşitlilik ve macera arzusunu kabul etmeleri ve kararlı bir ilişkidelerse partnerleriyle bu arzuyu yerine getirmenin bir yolunu bulmaları gerekir",
+            "İlişkilerini daha derin bir özgürlük ve deneyim kapısı olarak mı yoksa bir hapishane olarak mı gördükleri, ilişkinin nasıl gittiğini belirler."
+        ],
+        "negative": [
+            "kendi içsel özgürlük eksikliklerini partnerlerine, arkadaşlarına veya çocuklarına yansıtırlar",
+            "özgürlük sorunlarını gündeme getirecek veya onlara bağımlı hale gelecekleri ve daha sonra kızacakları partnerleri çeker veya seçerler",
+            "duygularını açığa vurmada zorluk"
+        ],
+        "positive": [
+            "duygusal olarak hassas beden ve enerji alanı",
+            "şehvetli, maceraperest ve tutkulu",
+            "fantezilerden ve farklı roller oynamaktan keyif almak",
+            "yeni duygusal özgünlük ve savunmasızlık seviyeleri bulmak için rollerden kurtularak yeni özgürleşme seviyeleri deneyimlemek"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "onlara deneyimin birçok yönünü keşfetmelerine olanak tanıyan herhangi bir meslek",
+            "birikimde para ile macera veya öğrenme deneyimi arasında bir seçim yapıldığında, 32/5'ler ve 23/5'ler deneyimi seçeceklerdir ve bazen parayı kazanmadan önce harcayabilirler"
+        ],
+        "negative": [
+            "güvenlik bir sorundur",
+            "para, satın alabileceği deneyimler kadar yüksek bir öncelik değildir"
+        ],
+        "positive": [
+            "güvenli, güvenli bir ev üssüne değer verirler (tercihen şömineli)",
+            "macera için güvenliği takas etmek",
+            "hızlı zekâ",
+            "genellikle ihtiyaç duydukları zaman para bulabilir veya yaratabilirler",
+            "alacaklıların her zaman en az bir adım önünde olmak"
+        ]
+    }
+}

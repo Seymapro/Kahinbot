@@ -1,0 +1,107 @@
+{
+    "challenges": [
+        "Mükemmeliyetçilik sorunlarıyla başa çıkmak",
+        "Para, güç ve tanınma arzusunu idealleriyle dengelemek",
+        "Öz güven eksikliğinin üstesinden gelmek ve kendilerini göstermek",
+        "Zenginlik ve başarı hakkındaki çelişkili inançları yönetmek"
+    ],
+    "famous_people": [
+        "Muhammed Ali",
+        "James Baldwin",
+        "Lucille Ball",
+        "Cesar Chavez",
+        "Bob Dylan",
+        "Mary Baker Eddy",
+        "Jack London",
+        "Groucho Marx",
+        "Liza Minnelli",
+        "Paul Newman",
+        "Sir Laurence Olivier",
+        "Jesse Owens",
+        "Barbra Streisand",
+        "Elizabeth Taylor"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Sakin bir güç ve güvenle hareket edin.",
+            "Üstün olabileceğiniz bir şey bulun ve sebat edin.",
+            "Değerinizi bilin ve ışığınızın parlamasına izin verin.",
+            "İşi kişisel ilişkilerle dengeleyin"
+        ],
+        "questions": [
+            "Para ve güç için çabalıyor muyum yoksa kaçınıyor muyum?",
+            "Başarıyı hak etmek için daha fazlasını yapmak zorunda hissediyor muyum?",
+            "Kendimi dengeli ve tutarlı bir şekilde ortaya koyuyor muyum?",
+            "Yüksek standartlarım işime nasıl yardımcı oldu ve beni nasıl engelledi?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Kendinize uyguladığınız baskı ve mükemmeliyetçiliği hafifletin",
+            "Kendinizi şımartın ve rahatlayın",
+            "Diyet ve yaşam tarzında ılımlılığı uygulayın",
+            "Zevkli ve dengeli bir egzersiz şekli bulun"
+        ],
+        "negative": [
+            "Hastalık, boşanma veya yaralanma yoluyla kendine sabotaj",
+            "Solar pleksus ve boyunda kronik gerilim",
+            "Sinüs enfeksiyonları",
+            "Yeme bozuklukları ve diyet dalgalanmaları"
+        ],
+        "positive": [
+            "İyi beslenmeye dikkat",
+            "Düzenli egzersiz ve fiziksel aktivite"
+        ]
+    },
+    "key_traits": [
+        "Mükemmeliyetçi",
+        "İdealist",
+        "Çalışkan",
+        "Başarıya odaklı",
+        "Öz güven eksikliğine yatkın",
+        "Eleştiriye duyarlı",
+        "Para ve güç konusunda çatışmalı",
+        "Yüksek standartlar",
+        "Tanınma arzusu"
+    ],
+    "opportunities": [
+        "Finansal başarıya ulaşmak ve bunu iyi şeyler için kullanmak",
+        "Etkili olmak ve platformlarını başkalarına yardım etmek için kullanmak",
+        "Öz güven eksikliğinin üstesinden gelmek ve çalışmaları için takdir görmek",
+        "Değerleriyle uyumlu tatmin edici bir iş bulmak"
+    ],
+    "relationships": {
+        "advice": [
+            "Gerçek duygularına ve ihtiyaçlarına uyum sağlayın",
+            "İlişkilerde esneklik ve kabul pratiği yapın",
+            "Cinsel ilişkilerde performanstan yakınlığa geçiş yapın"
+        ],
+        "negative": [
+            "Uzun süreli ilişkilerde zorluk",
+            "Partnerlere gerçekçi olmayan beklentiler koymak",
+            "Kendi ihtiyaçlarını ifade etmek yerine başkalarını memnun etmeye odaklanmak"
+        ],
+        "positive": [
+            "Derin ve anlamlı bağlantılara sahip olabilme",
+            "Destekleyici ve sevgi dolu partnerler",
+            "Uyumlu ve dengeli ilişkiler kurmaya odaklanmış"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Anlamlı ve tatmin edici gelen bir iş bulun",
+            "Çalışmalarına değer versinler ve buna göre ücret talep etsinler",
+            "Tanınma ve yüksek gelir aramaktan korkmayın"
+        ],
+        "negative": [
+            "Yüksek standartlarını karşılayan bir iş bulmakta zorlanmak",
+            "Çalışmalarını küçümseyebilir ve hak ettikleri ücreti talep etmekten kaçınabilirler",
+            "Öz güven eksikliği nedeniyle kariyerlerinde geç çiçek açabilirler"
+        ],
+        "positive": [
+            "Seçtikleri alanlarda mükemmelleşirler",
+            "Başarıya ulaşmak ve finansal istikrar sağlamak için motive olurlar",
+            "Çalışma ortamlarında lider ve olumlu etkiler haline gelebilirler"
+        ]
+    }
+}

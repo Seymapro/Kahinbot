@@ -1,0 +1,113 @@
+{
+    "challenges": [
+        "Açıklık, özgünlük, kabul ve güvensizlik sorunları",
+        "Kendi içlerindeki yaratıcı ruha ve başkalarının içindeki güzelliğe güvenmeyi öğrenmek",
+        "İdeallerini ve vizyonlarını pratik yollarla paylaşmak",
+        "Yaratıcı enerjiyi yapıcı amaçlar için kullanmak",
+        "Güvensizliğin ve aşağılık duygusunun üstesinden gelmek",
+        "Yüksek vizyonları ve mükemmeliyetçi standartları yönetmek",
+        "Utanma veya aptal görünme korkusuyla başa çıkmak",
+        "Kendisiyle, başkalarıyla, dünya ve Ruh ile bir olma duygusu bulmak",
+        "Gündelik dünyayı kabul etmek ve benimsemek",
+        "İçsel bilgeliğine ve dünyaya güvenmeyi öğrenmek",
+        "Başkalarına ve kendilerine güvenmek"
+    ],
+    "famous_people": [
+        "Edwin \"Buzz\" Aldrin",
+        "Frédéric Chopin",
+        "Fyodor Dostoyevski",
+        "Vladimir Horowitz",
+        "Chet Huntley",
+        "Robert Wagner"
+    ],
+    "fulfilling_destiny": {
+        "guidelines": [
+            "Cilalı maskenizin arkasına saklanmaktan çıkın.",
+            "Hayatınızın yaratıcı sürecine güvenin ve keyfini çıkarın.",
+            "Her hatanın daha derin bir bilgelikten ilham aldığını unutmayın.",
+            "Bu anı tamamen kabul edin ve içindeki mükemmelliği bulun."
+        ],
+        "questions": [
+            "Bana ne ilham veriyor?",
+            "Zorluklarım hangi anlamda mükemmeldi?",
+            "Güvensizlik veya mükemmeliyetçilik beni durdurdu mu?",
+            "Beklentilerim deneyimlerimi nasıl etkiledi?"
+        ]
+    },
+    "health": {
+        "advice": [
+            "Hafif enerji çalışmaları, homeopati, görselleştirme ve meditasyon",
+            "Doyurucu, besleyici ama hafif bir diyet",
+            "Tai chi, yoga ve yüzme ve yürüyüş gibi hafif aerobik gibi rafine bilinçli egzersiz biçimleri"
+        ],
+        "negative": [
+            "Kronik ihanet veya yanlış anlaşılma hissi kalp ve diz problemlerine yol açabilir.",
+            "Karın veya akciğerlerde de sorunlar olabilir.",
+            "Düşüncelere dalmak"
+        ],
+        "positive": [
+            "Düşüncelerini meditasyon veya rahatlama yoluyla serbest bırakmak",
+            "En uygun diyeti bulmak için içgüdülerine güvenmek",
+            "Egzersiz, yaratıcı enerjinin akışını sağlar",
+            "Egzersiz yoluyla vücutlarının doğal bilgeliğine güvenmeyi öğrenmek",
+            "Verimli, yenilikçi egzersizin veya sadece doğanın güzelliğinde yürümenin keyfini çıkarmak"
+        ]
+    },
+    "key_traits": [
+        "Açıklık",
+        "Özgünlük",
+        "Kabul",
+        "Yaratıcı",
+        "Yüksek vizyonlar",
+        "Mükemmeliyetçi",
+        "Özel",
+        "Keskin zihinsel berraklık",
+        "Harika yaratıcı hayal gücü",
+        "Birlik duygusu özlemi",
+        "Yoğun ve aktif hayal gücü",
+        "Yüksek idealler",
+        "Derin bilgi arzusu"
+    ],
+    "opportunities": [
+        "İdeallerini ve vizyonlarını pratik yollarla paylaşmak",
+        "Daha iyi bir dünya yaratmak",
+        "Güvenli bir liman ve bir birlik duygusu bulmak",
+        "Kendilerini yaratıcı çabalarla ifade etmek",
+        "Başkalarını yüzdürmenin ve harekete geçirmenin derin anlamını bulmak"
+    ],
+    "relationships": {
+        "advice": [
+            "Gerçek samimiyete açılmak",
+            "Düşüncesizce terk ederek sevişmek",
+            "Kendilerini tamamen görülebilir ve bilinir kılmak",
+            "Bedeni ve dünyevi yaşamı kabul etmek"
+        ],
+        "negative": [
+            "Güvensizlik ve güvensizlik sorunları",
+            "Duyguları ifade etmede veya duyguları göstermede zorluk",
+            "Fantezi düzeyinde var olan ilişkiler",
+            "İdealize edilmiş figürler aramak",
+            "İlişkilerden çok yalnızlığı tercih etmek"
+        ],
+        "positive": [
+            "Açıklığa, güvene ve paylaşmaya yol açan yüksek vizyon",
+            "Mükemmel yakınlık",
+            "Aşk yapmayı şefkatli ve cesur bir eylem olarak görmek"
+        ]
+    },
+    "talents_work_finances": {
+        "advice": [
+            "Kendilerine ve çalışmalarına değer vermek",
+            "Alma konusunda kendilerini açmak"
+        ],
+        "negative": [
+            "Öz değer sorunları, bolluk alma ve yaratma yeteneklerine müdahale ediyor",
+            "Eleştiri korkusu, sosyal temasdan çekilmeye yol açıyor",
+            "Uyuşturucularda veya hayali fantezi alemlerinde kaçış aramak"
+        ],
+        "positive": [
+            "Herhangi bir alanda örnek niteliğinde, güzel işler üretmek",
+            "Gizliliğe olanak tanıyan, zekaya meydan okuyan ve bir anlam duygusu sunan işlere yönelmek"
+        ]
+    }
+}
