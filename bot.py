@@ -22,7 +22,7 @@
 
 from the_life import birthdate_to_life_path, life_path_to_content
 from paraphraser import paraphrase
-from telethon import TelegramClient, events, Button
+from telethon import TelegramClient, events, Button  # type: ignore[reportAttributeAccessIssue, reportUnknownVariableType]
 from datetime import datetime
 from pathlib import Path
 import os
@@ -33,17 +33,24 @@ __author__ = "Seymapro"
 __version__ = "1.0.0"
 
 logger = logging.getLogger("Kahin Bot")
-logging.basicConfig(filename='/home/nigella/tg_bot/Kitap/ozetcibot.log', level=logging.INFO, format="%(name)s - %(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s")
+logging.basicConfig(
+    filename="/home/nigella/tg_bot/Kitap/kahin_bot.log",
+    level=logging.INFO,
+    format="%(name)s - %(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s",
+)
 
-api_id = int(os.environ["OZETCIBOT_API_ID"])
-api_hash = os.environ["OZETCIBOT_API_HASH"]
-bot_token = os.environ["OZETCIBOT_BOT_TOKEN"]
+api_id = int(os.environ["KAHIN_BOT_API_ID"])
+api_hash = os.environ["KAHIN_BOT_API_HASH"]
+bot_token = os.environ["KAHIN_BOT_BOT_TOKEN"]
 
 client = TelegramClient("bot", api_id, api_hash).start(bot_token=bot_token)
 
-USER_DATA = {}
+USER_DATA: dict[int, dict[str, int | tuple[int, int]]] = {}
 
-def create_json_summary(content_json: dict, key: str) -> str:
+
+def create_json_summary(
+    content_json: dict[str, list[str]] | dict[str, dict[str, list[str]]], key: str
+) -> str:
     TRANSLATIONS = {
         "challenges": "<b><u>ZORLUKLAR</b></u>",
         "famous_people": "<b><u>ÜNLÜ İNSANLAR</b></u>",
@@ -65,72 +72,104 @@ def create_json_summary(content_json: dict, key: str) -> str:
     if type(content_json[key]) is list:
         if content_json[key]:
             content += TRANSLATIONS[key] + "\n\n"
-            content += "\n".join([f"- {bulletpoint}" for bulletpoint in content_json[key]]) + "\n\n"
+            content += (
+                "\n".join([f"- {bulletpoint}" for bulletpoint in content_json[key]])
+                + "\n\n"
+            )
     else:
         content += TRANSLATIONS[key] + "\n\n"
 
-        for subtitle, bulletpoints in content_json[key].items():
+        for subtitle, bulletpoints in content_json[key].items():  # type: ignore[reportUnknownMemberType, reportAttributeAccessIssue]
             if bulletpoints:
                 content += TRANSLATIONS[subtitle] + "\n\n"
-                content += "\n".join([f"- {bulletpoint}" for bulletpoint in bulletpoints]) + "\n\n"
+                content += (
+                    "\n".join([f"- {bulletpoint}" for bulletpoint in bulletpoints])  # type: ignore[reportUnknownVariableType]
+                    + "\n\n"
+                )
 
     return content
 
-async def send_message(event, content: str) -> None:
+
+async def send_message(
+    event: events.callbackquery.CallbackQuery | events.newmessage.NewMessage,
+    content: str,
+) -> None:
+    if not content:
+        return None
+
     message = ""
     for part in content.split("\n\n"):
         if len(message) + len(part) + 2 > 4096:
-            await client.send_message(message=message.strip(), parse_mode="html", entity=await event.get_chat(), reply_to=USER_DATA[event.sender_id]["message_id"])
+            await client.send_message(  # type: ignore[reportUnknownMemberType]
+                entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
+                message=message.strip(),
+                reply_to=USER_DATA[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
+                parse_mode="html",
+            )
             message = ""
         message += f"\n\n{part}"
     else:
-        if not message.isspace():
-            await client.send_message(message=message.strip(), parse_mode="html", entity=await event.get_chat(), reply_to=USER_DATA[event.sender_id]["message_id"])
+        await client.send_message(  # type: ignore[reportUnknownMemberType]
+            entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
+            message=message.strip(),
+            reply_to=USER_DATA[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
+            parse_mode="html",
+        )
 
-    life_path = USER_DATA[event.sender_id]["life_path"]
-    await client.send_message(
+    life_path: tuple[int, int] = USER_DATA[event.sender_id]["life_path"]  # type: ignore[reportUnknownMemberType]
+    await client.send_message(  # type: ignore[reportUnknownMemberType]
+        entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
         message=f"<b><u>HAYAT SAYISI</b></u>: {life_path[0]}/{life_path[1]}",
-        reply_to=USER_DATA[event.sender_id]["message_id"],
-        entity=await event.get_chat(),
-        buttons=[
-            [Button.inline("Tam Metin (Millman)", f"full_text_millman")],
-            [Button.inline("Tam Metin (Forbes)", f"full_text_forbes")],
-            [Button.inline("Özet (Millman)", f"summary_millman")],
-            [Button.inline("Özet (Forbes)", f"summary_forbes")],
-            [Button.inline("Maddeler (Millman)", f"json_millman")],
-        ],
+        reply_to=USER_DATA[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
         parse_mode="html",
+        buttons=[
+            [Button.inline("Tam Metin (Millman)", "full_text_millman")],  # type: ignore[reportUnknownMemberType]
+            [Button.inline("Tam Metin (Forbes)", "full_text_forbes")],  # type: ignore[reportUnknownMemberType]
+            [Button.inline("Özet (Millman)", "summary_millman")],  # type: ignore[reportUnknownMemberType]
+            [Button.inline("Özet (Forbes)", "summary_forbes")],  # type: ignore[reportUnknownMemberType]
+            [Button.inline("Maddeler (Millman)", "json_millman")],  # type: ignore[reportUnknownMemberType]
+        ],
     )
 
-@client.on(events.NewMessage(incoming=True, pattern=r"([\s\S]*)\d{2}\.\d{2}\.\d{4}([\s\S]*)"))
-async def handle_birthdate(event) -> None:
+
+@client.on(  # type: ignore[reportUnknownMemberType, reportUntypedFunctionDecorator]
+    events.NewMessage(incoming=True, pattern=r"([\s\S]*)\d{2}\.\d{2}\.\d{4}([\s\S]*)")  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType]
+)
+async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
     logger.info(event)
 
-    message_raw = event.raw_text.strip()
+    message_raw: str = event.raw_text.strip()  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType, reportUnknownVariableType]
     try:
-        birthdate = datetime.strptime(message_raw, "%d.%m.%Y")
+        birthdate = datetime.strptime(message_raw, "%d.%m.%Y")  # type: ignore[reportUnknownArgumentType]
     except Exception:
-        await event.reply(f"Girilen mesaj ({message_raw}) hatalı!")
-        return
+        await event.reply(f"Girilen mesaj ({message_raw}) hatalı!")  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+        return None
 
     life_path = birthdate_to_life_path(birthdate)
 
-    USER_DATA[event.message.sender_id] = {"message_id": event.message.id,
-                                          "life_path": life_path}
+    USER_DATA[event.message.sender_id] = {  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+        "message_id": event.message.id,  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+        "life_path": life_path,
+    }
 
     await send_message(event, "")
 
-@client.on(events.CallbackQuery(pattern=r"full_text_millman"))
-async def send_full_text_millman(event) -> None:
-    life_path = USER_DATA[event.sender_id]["life_path"]
+
+@client.on(events.CallbackQuery(pattern=r"full_text_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> None:
+    life_path: tuple[int, int] = USER_DATA[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
     try:
         content = life_path_to_content(
             life_path, Path("/home/nigella/tg_bot/Kitap/data/millman/tr/MDs/")
         )
-    except FileNotFoundError as e:
-        await client.send_message(message=f"Dosya işlemlerinde hata ile karşılaşıldı: {e}", entity=await event.get_chat(), reply_to=USER_DATA[event.sender_id]["message_id"])
-        return
+    except FileNotFoundError as err:
+        await send_message(
+            event,
+            "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
+        )
+        logger.error(err)
+        return None
 
     for line in content.splitlines():
         if line.startswith("#"):
@@ -140,13 +179,15 @@ async def send_full_text_millman(event) -> None:
 
     await send_message(event, content)
 
-@client.on(events.CallbackQuery(pattern=r"full_text_forbes"))
-async def send_full_text_forbes(event) -> None:
+
+@client.on(events.CallbackQuery(pattern=r"full_text_forbes"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> None:
     await send_message(event, "Henüz yapım aşamasında.")
 
-@client.on(events.CallbackQuery(pattern=r"json_millman"))
-async def send_json_summary(event) -> None:
-    life_path = USER_DATA[event.sender_id]["life_path"]
+
+@client.on(events.CallbackQuery(pattern=r"json_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -> None:
+    life_path: tuple[int, int] = USER_DATA[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
     try:
         with open(
@@ -154,12 +195,15 @@ async def send_json_summary(event) -> None:
             "r",
         ) as f:
             summary_json = json.loads(f.read())
-    except FileNotFoundError as e:
-        await client.send_message(message=f"Dosya işlemlerinde hata ile karşılaşıldı: {e}", entity=await event.get_chat(), reply_to=USER_DATA[event.sender_id]["message_id"])
-        return
+    except FileNotFoundError as err:
+        await send_message(
+            event,
+            "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
+        )
+        logger.error(err)
+        return None
 
     summary_short = "<b><u>GENEL KISA ÖZET</b></u>\n\n"
-
     summary_short += create_json_summary(summary_json, "key_traits")
     summary_short += create_json_summary(summary_json, "challenges")
     summary_short += create_json_summary(summary_json, "opportunities")
@@ -171,22 +215,34 @@ async def send_json_summary(event) -> None:
 
     await send_message(event, summary_short.strip())
 
-@client.on(events.CallbackQuery(pattern=r"summary_millman"))
-async def send_paraphrased_summary_millman(event) -> None:
-    life_path = USER_DATA[event.sender_id]["life_path"]
+
+@client.on(events.CallbackQuery(pattern=r"summary_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+async def send_paraphrased_summary_millman(
+    event: events.callbackquery.CallbackQuery,
+) -> None:
+    life_path: tuple[int, int] = USER_DATA[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
     try:
         summary = life_path_to_content(
-            life_path, Path("/home/nigella/tg_bot/Kitap/data/millman/tr/Summarizations/")
+            life_path,
+            Path("/home/nigella/tg_bot/Kitap/data/millman/tr/Summarizations/"),
         )
-    except FileNotFoundError as e:
-        await client.send_message(message=f"Dosya işlemlerinde hata ile karşılaşıldı: {e}", entity=await event.get_chat(), reply_to=USER_DATA[event.sender_id]["message_id"])
-        return
+    except FileNotFoundError as err:
+        await send_message(
+            event,
+            "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
+        )
+        logger.error(err)
+        return None
 
     await send_message(event, f"<b><u>GENEL ÖZET</b></u>\n{paraphrase(summary)}")
 
-@client.on(events.CallbackQuery(pattern=r"summary_forbes"))
-async def send_paraphrased_summary_forbes(event) -> None:
+
+@client.on(events.CallbackQuery(pattern=r"summary_forbes"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+async def send_paraphrased_summary_forbes(
+    event: events.callbackquery.CallbackQuery,
+) -> None:
     await send_message(event, "Henüz yapım aşamasında.")
 
-client.run_until_disconnected()
+
+client.run_until_disconnected()  # type: ignore[reportUnknownMemberType]

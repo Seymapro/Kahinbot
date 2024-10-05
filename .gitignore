@@ -3,6 +3,8 @@ data/millman/PDFs/
 data/millman/millman_1995.pdf
 data/forbes/PDFs/
 data/forbes/forbes.pdf
+**/typings
+**/.vscode
 
 *.session
 

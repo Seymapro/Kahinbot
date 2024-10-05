@@ -27,9 +27,9 @@ from google.generativeai.types import HarmCategory, HarmBlockThreshold
 __author__ = "Seymapro"
 __version__ = "1.0.0"
 
-genai.configure(api_key=os.environ["GEMINI_API_KEY"])
+genai.configure(api_key=os.environ["GEMINI_API_KEY"])  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
-generation_config = {
+generation_config: dict[str, int | float | str] = {
     "temperature": 1,
     "top_p": 0.95,
     "top_k": 64,
@@ -37,7 +37,7 @@ generation_config = {
     "response_mime_type": "text/plain",
 }
 
-model = genai.GenerativeModel(
+model = genai.GenerativeModel(  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
     model_name="gemini-1.5-pro",
     generation_config=generation_config,
     safety_settings={
@@ -51,8 +51,8 @@ model = genai.GenerativeModel(
 
 
 def paraphrase(content: str) -> str:
-    chat_session = model.start_chat(history=[])
+    chat_session = model.start_chat(history=[])  # type: ignore[reportUnknownMemberType, reportUnknownVariableType]
 
-    response = chat_session.send_message(content)
+    response = chat_session.send_message(content)  # type: ignore[reportUnknownMemberType, reportUnknownVariableType]
 
-    return response.text
+    return response.text  # type: ignore[reportUnknownMemberType, reportUnknownVariableType]
