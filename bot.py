@@ -95,6 +95,7 @@ def create_json_summary(
 async def send_message(
     event: events.callbackquery.CallbackQuery | events.newmessage.NewMessage,
     content: str,
+    show_buttons: bool = True,
 ) -> None:
     message = ""
     for part in content.split("\n\n"):
@@ -116,20 +117,21 @@ async def send_message(
                 parse_mode="html",
             )
 
-    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportUnknownMemberType]
-    await client.send_message(  # type: ignore[reportUnknownMemberType]
-        entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
-        message=f"<b><u>HAYAT SAYISI</b></u>: {life_path[0]}/{life_path[1]}",
-        reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
-        parse_mode="html",
-        buttons=[
-            [Button.inline("Tam Metin (Millman)", "full_text_millman")],  # type: ignore[reportUnknownMemberType]
-            [Button.inline("Tam Metin (Forbes)", "full_text_forbes")],  # type: ignore[reportUnknownMemberType]
-            [Button.inline("Özet (Millman)", "summary_millman")],  # type: ignore[reportUnknownMemberType]
-            [Button.inline("Özet (Forbes)", "summary_forbes")],  # type: ignore[reportUnknownMemberType]
-            [Button.inline("Maddeler (Millman)", "json_millman")],  # type: ignore[reportUnknownMemberType]
-        ],
-    )
+    if show_buttons:
+        life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportUnknownMemberType]
+        await client.send_message(  # type: ignore[reportUnknownMemberType]
+            entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
+            message=f"<b><u>HAYAT SAYISI</b></u>: {life_path[0]}/{life_path[1]}",
+            reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
+            parse_mode="html",
+            buttons=[
+                [Button.inline("Tam Metin (Millman)", "full_text_millman")],  # type: ignore[reportUnknownMemberType]
+                [Button.inline("Tam Metin (Forbes)", "full_text_forbes")],  # type: ignore[reportUnknownMemberType]
+                [Button.inline("Özet (Millman)", "summary_millman")],  # type: ignore[reportUnknownMemberType]
+                [Button.inline("Özet (Forbes)", "summary_forbes")],  # type: ignore[reportUnknownMemberType]
+                [Button.inline("Maddeler (Millman)", "json_millman")],  # type: ignore[reportUnknownMemberType]
+            ],
+        )
 
 
 @client.on(  # type: ignore[reportUnknownMemberType, reportUntypedFunctionDecorator]
@@ -273,7 +275,9 @@ async def send_paraphrased_summary_millman(
 
         return None
 
-    await send_message(event, "Genel özet hazırlanıyor, lütfen bekleyiniz...")
+    await send_message(
+        event, "Genel özet hazırlanıyor, lütfen bekleyiniz...", show_buttons=False
+    )
     await send_message(event, f"<b><u>GENEL ÖZET</b></u>\n{paraphrase(summary)}")
 
 
