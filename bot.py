@@ -39,15 +39,16 @@ logging.basicConfig(
     format="%(name)s - %(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s",
 )
 
-api_id = int(os.environ["KAHIN_BOT_API_ID"])
-api_hash = os.environ["KAHIN_BOT_API_HASH"]
-bot_token = os.environ["KAHIN_BOT_BOT_TOKEN"]
+API_ID = int(os.environ["KAHIN_BOT_API_ID"])
+API_HASH = os.environ["KAHIN_BOT_API_HASH"]
+BOT_TOKEN = os.environ["KAHIN_BOT_BOT_TOKEN"]
 
-client = TelegramClient("bot", api_id, api_hash).start(bot_token=bot_token)
+client = TelegramClient("bot", API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
-USER_DATA: dict[int, dict[str, int | tuple[int, int]]] = {}
+user_data: dict[int, dict[str, int | tuple[int, int]]] = {}
 
 
+# TODO: Fix repetition.
 def create_json_summary(
     content_json: dict[str, list[str]] | dict[str, dict[str, list[str]]], key: str
 ) -> str:
@@ -90,37 +91,36 @@ def create_json_summary(
     return content
 
 
+# TODO: Fix repetition.
 async def send_message(
     event: events.callbackquery.CallbackQuery | events.newmessage.NewMessage,
     content: str,
 ) -> None:
-    if not content:
-        return None
-
     message = ""
     for part in content.split("\n\n"):
         if len(message) + len(part) + 2 > 4096:
             await client.send_message(  # type: ignore[reportUnknownMemberType]
                 entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
                 message=message.strip(),
-                reply_to=USER_DATA[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
+                reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
                 parse_mode="html",
             )
             message = ""
         message += f"\n\n{part}"
     else:
-        await client.send_message(  # type: ignore[reportUnknownMemberType]
-            entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
-            message=message.strip(),
-            reply_to=USER_DATA[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
-            parse_mode="html",
-        )
+        if not message.isspace():
+            await client.send_message(  # type: ignore[reportUnknownMemberType]
+                entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
+                message=message.strip(),
+                reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
+                parse_mode="html",
+            )
 
-    life_path: tuple[int, int] = USER_DATA[event.sender_id]["life_path"]  # type: ignore[reportUnknownMemberType]
+    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportUnknownMemberType]
     await client.send_message(  # type: ignore[reportUnknownMemberType]
         entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
         message=f"<b><u>HAYAT SAYISI</b></u>: {life_path[0]}/{life_path[1]}",
-        reply_to=USER_DATA[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
+        reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
         parse_mode="html",
         buttons=[
             [Button.inline("Tam Metin (Millman)", "full_text_millman")],  # type: ignore[reportUnknownMemberType]
@@ -141,13 +141,21 @@ async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
     message_raw: str = event.raw_text.strip()  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType, reportUnknownVariableType]
     try:
         birthdate = datetime.strptime(message_raw, "%d.%m.%Y")  # type: ignore[reportUnknownArgumentType]
-    except Exception:
+    except ValueError:
         await event.reply(f"Girilen mesaj ({message_raw}) hatalı!")  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+
+        return None
+    except Exception as err:
+        await event.reply(  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+            "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
+        )
+        logger.error(err)
+
         return None
 
     life_path = birthdate_to_life_path(birthdate)
 
-    USER_DATA[event.message.sender_id] = {  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    user_data[event.message.sender_id] = {  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
         "message_id": event.message.id,  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
         "life_path": life_path,
     }
@@ -157,8 +165,9 @@ async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
 
 @client.on(events.CallbackQuery(pattern=r"full_text_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
 async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> None:
-    life_path: tuple[int, int] = USER_DATA[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
+    # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
         content = life_path_to_content(
             life_path, Path("/home/nigella/tg_bot/Kitap/data/millman/tr/MDs/")
@@ -169,8 +178,17 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
             "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
         )
         logger.error(err)
+
+        return None
+    except Exception as err:
+        await send_message(
+            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
+        )
+        logger.error(err)
+
         return None
 
+    # TODO: Change the actual data so we won't have to edit it on-fly like this.
     for line in content.splitlines():
         if line.startswith("#"):
             content = content.replace(
@@ -180,6 +198,7 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
     await send_message(event, content)
 
 
+# TODO: Implement.
 @client.on(events.CallbackQuery(pattern=r"full_text_forbes"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
 async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> None:
     await send_message(event, "Henüz yapım aşamasında.")
@@ -187,8 +206,9 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
 
 @client.on(events.CallbackQuery(pattern=r"json_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
 async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -> None:
-    life_path: tuple[int, int] = USER_DATA[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
+    # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
         with open(
             f"/home/nigella/tg_bot/Kitap/data/millman/tr/JSONs/{life_path[0]}_{life_path[1]}.json",
@@ -201,8 +221,18 @@ async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -
             "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
         )
         logger.error(err)
+
+        return None
+    except Exception as err:
+        await send_message(
+            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
+        )
+        logger.error(err)
+
         return None
 
+    # I know it looks disgusting but it works and we can't get rid of it reliably, at least not if
+    # we want the final data to be in a proper format with good ordering of headings.
     summary_short = "<b><u>GENEL KISA ÖZET</b></u>\n\n"
     summary_short += create_json_summary(summary_json, "key_traits")
     summary_short += create_json_summary(summary_json, "challenges")
@@ -220,7 +250,7 @@ async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -
 async def send_paraphrased_summary_millman(
     event: events.callbackquery.CallbackQuery,
 ) -> None:
-    life_path: tuple[int, int] = USER_DATA[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
     try:
         summary = life_path_to_content(
@@ -233,11 +263,21 @@ async def send_paraphrased_summary_millman(
             "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
         )
         logger.error(err)
+
+        return None
+    except Exception as err:
+        await send_message(
+            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
+        )
+        logger.error(err)
+
         return None
 
+    await send_message(event, "Genel özet hazırlanıyor, lütfen bekleyiniz...")
     await send_message(event, f"<b><u>GENEL ÖZET</b></u>\n{paraphrase(summary)}")
 
 
+# TODO: Implement.
 @client.on(events.CallbackQuery(pattern=r"summary_forbes"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
 async def send_paraphrased_summary_forbes(
     event: events.callbackquery.CallbackQuery,
