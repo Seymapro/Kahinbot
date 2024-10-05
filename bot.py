@@ -84,21 +84,21 @@ async def json_summ(event):
 
     summary_short = "<b><u>Genel Kısa Özet</b></u>\n\n"
 
-    summary_short += f'<b><u>Temel Özellikler</b></u>\n{"".join(f"- {key_trait}{chr(10)}" for key_trait in summary_json["key_traits"])}\n\n'
+    summary_short += f'<b><u>Temel Özellikler</b></u>\n{"".join(f"* {key_trait}{chr(10)}" for key_trait in summary_json["key_traits"])}\n\n'
 
-    summary_short += f'<b><u>Zorluklar</b></u>\n{"".join(f"- {challenge}{chr(10)}" for challenge in summary_json["challenges"])}\n\n'
+    summary_short += f'<b><u>Zorluklar</b></u>\n{"".join(f"* {challenge}{chr(10)}" for challenge in summary_json["challenges"])}\n\n'
 
-    summary_short += f'<b><u>Fırsatlar</b></u>\n{"".join(f"- {opportunity}{chr(10)}" for opportunity in summary_json["opportunities"])}\n\n'
+    summary_short += f'<b><u>Fırsatlar</b></u>\n{"".join(f"* {opportunity}{chr(10)}" for opportunity in summary_json["opportunities"])}\n\n'
 
-    summary_short += f'<b><u>Sağlık</b></u>\n<b><u>Pozitif</b></u>\n{"".join(f"- {positive}{chr(10)}" for positive in summary_json["health"]["positive"])}\n<b><u>Negatif</b></u>\n{"".join(f"- {negative}{chr(10)}" for negative in summary_json["health"]["negative"])}\n<b><u>Tavsiye</b></u>\n{"".join(f"- {advice}{chr(10)}" for advice in summary_json["health"]["advice"])}\n\n'
+    summary_short += f'<b><u>Sağlık</b></u>\n<b><u>Pozitif</b></u>\n{"".join(f"* {positive}{chr(10)}" for positive in summary_json["health"]["positive"])}\n<b><u>Negatif</b></u>\n{"".join(f"* {negative}{chr(10)}" for negative in summary_json["health"]["negative"])}\n<b><u>Tavsiye</b></u>\n{"".join(f"* {advice}{chr(10)}" for advice in summary_json["health"]["advice"])}\n\n'
 
-    summary_short += f'<b><u>İlişkiler</b></u>\n<b><u>Pozitif</b></u>\n{"".join(f"- {positive}{chr(10)}" for positive in summary_json["relationships"]["positive"])}\n<b><u>Negatif</b></u>\n{"".join(f"- {negative}{chr(10)}" for negative in summary_json["relationships"]["negative"])}\n<b><u>Tavsiye</b></u>\n{"".join(f"- {advice}{chr(10)}" for advice in summary_json["relationships"]["advice"])}\n\n'
+    summary_short += f'<b><u>İlişkiler</b></u>\n<b><u>Pozitif</b></u>\n{"".join(f"* {positive}{chr(10)}" for positive in summary_json["relationships"]["positive"])}\n<b><u>Negatif</b></u>\n{"".join(f"* {negative}{chr(10)}" for negative in summary_json["relationships"]["negative"])}\n<b><u>Tavsiye</b></u>\n{"".join(f"* {advice}{chr(10)}" for advice in summary_json["relationships"]["advice"])}\n\n'
 
-    summary_short += f'<b><u>Yetenekler, İş ve Finans</b></u>\n<b><u>Pozitif</b></u>\n{"".join(f"- {positive}{chr(10)}" for positive in summary_json["talents_work_finances"]["positive"])}\n<b><u>Negatif</b></u>\n{"".join(f"- {negative}{chr(10)}" for negative in summary_json["talents_work_finances"]["negative"])}\n<b><u>Tavsiye</b></u>\n{"".join(f"- {advice}{chr(10)}" for advice in summary_json["talents_work_finances"]["advice"])}\n\n'
+    summary_short += f'<b><u>Yetenekler, İş ve Finans</b></u>\n<b><u>Pozitif</b></u>\n{"".join(f"* {positive}{chr(10)}" for positive in summary_json["talents_work_finances"]["positive"])}\n<b><u>Negatif</b></u>\n{"".join(f"* {negative}{chr(10)}" for negative in summary_json["talents_work_finances"]["negative"])}\n<b><u>Tavsiye</b></u>\n{"".join(f"* {advice}{chr(10)}" for advice in summary_json["talents_work_finances"]["advice"])}\n\n'
 
-    summary_short += f'<b><u>Kaderini Gerçekleştirmek</b></u>\n<b><u>Tavsiye</b></u>\n{"".join(f"- {guideline}{chr(10)}" for guideline in summary_json["fulfilling_destiny"]["guidelines"])}\n<b><u>Sorular</b></u>\n{"".join(f"- {question}{chr(10)}" for question in summary_json["fulfilling_destiny"]["questions"])}\n\n'
+    summary_short += f'<b><u>Kaderini Gerçekleştirmek</b></u>\n<b><u>Tavsiye</b></u>\n{"".join(f"* {guideline}{chr(10)}" for guideline in summary_json["fulfilling_destiny"]["guidelines"])}\n<b><u>Sorular</b></u>\n{"".join(f"* {question}{chr(10)}" for question in summary_json["fulfilling_destiny"]["questions"])}\n\n'
 
-    summary_short += f'<b><u>Ünlü İnsanlar</b></u>\n{"".join(f"- {person}{chr(10)}" for person in summary_json["famous_people"])}'
+    summary_short += f'<b><u>Ünlü İnsanlar</b></u>\n{"".join(f"* {person}{chr(10)}" for person in summary_json["famous_people"])}'
 
     message = ""
     for part in summary_short.split("\n\n"):
