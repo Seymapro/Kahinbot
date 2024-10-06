@@ -1,8 +1,16 @@
-# Kahin Bot
+<div align="center">
+    <img src=".github/seer.webp" width="300">
+</div>
 
+<h1 align="center">Kahin Bot</h1>
+
+[![Chat with @ozetcibot on Telegram](https://img.shields.io/badge/Telegram-%40ozetcibot-blue)](https://t.me/ozetcibot)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 A Telegram bot that tells your life story based on your birthdate according to Dan Millman's `The Life You Were Born to Live`.
+
+> [!CAUTION]
+> ⚠️ This project is still under active development. Expect frequent updates and changes to the structure and functionality of the notebooks. Use with caution, and regularly check for updates or modifications.
 
 ## Features
 
@@ -78,6 +86,31 @@ data/
       |-- tr/
           |-- (TODO: Same structure as millman)
 ```
+
+### millman/tr/
+
+- **translate_md.ipynb**
+  This notebook translates English Markdown files into Turkish using Google Gemini 1.5 Pro.
+
+- **translate_JSON.ipynb**
+  This notebook translates JSON objects into Turkish using Google Gemini 1.5 Pro.
+
+- **translate_summ.ipynb**
+  This notebook translates Markdown summarizations into Turkish using Google Gemini 1.5 Pro.
+
+### millman/en/
+
+- **pdf_prep.ipynb**
+  Prepares PDF files by splitting the whole book's PDF into life paths for easier management and processing.
+
+- **pdf_to_md.ipynb**
+  Converts PDF files into Markdown files using Google Gemini 1.5 Pro.
+
+- **md_to_json.ipynb**
+  Converts Markdown files into JSON objects using Google Gemini 1.5 Pro.
+
+- **summarize.ipynb**
+  Summarizes both Markdown and JSON files into a plain text format for streamlined comprehension.
 
 ## Contributing
 
