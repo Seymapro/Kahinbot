@@ -39,7 +39,7 @@ __version__ = "1.0.0"
 
 logger = logging.getLogger("Kahin Bot")
 logging.basicConfig(
-    filename="/home/nigella/tg_bot/Kitap/kahin_bot.log",
+    filename="/home/nigella/tg_bot/kahin-bot/kahin_bot.log",
     level=logging.INFO,
     format="%(name)s - %(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s",
 )
@@ -218,7 +218,7 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
         content = life_path_to_content(
-            life_path, Path("/home/nigella/tg_bot/Kitap/data/millman/tr/MDs/")
+            life_path, Path("/home/nigella/tg_bot/kahin-bot/data/millman/tr/MDs/")
         )
     except FileNotFoundError as err:
         await send_message(
@@ -261,7 +261,7 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
         contents = pin_code_to_contents(
-            pin_code, Path("/home/nigella/tg_bot/Kitap/data/forbes/tr/MDs/")
+            pin_code, Path("/home/nigella/tg_bot/kahin-bot/data/forbes/tr/MDs/")
         )
     except FileNotFoundError as err:
         await send_message(
@@ -305,7 +305,7 @@ async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
         with open(
-            f"/home/nigella/tg_bot/Kitap/data/millman/tr/JSONs/{life_path[0]}_{life_path[1]}.json",
+            f"/home/nigella/tg_bot/kahin-bot/data/millman/tr/JSONs/{life_path[0]}_{life_path[1]}.json",
             "r",
         ) as f:
             summary_json = json.loads(f.read())
@@ -356,7 +356,7 @@ async def send_paraphrased_summary_millman(
     try:
         summary = life_path_to_content(
             life_path,
-            Path("/home/nigella/tg_bot/Kitap/data/millman/tr/Summarizations/"),
+            Path("/home/nigella/tg_bot/kahin-bot/data/millman/tr/Summarizations/"),
         )
     except FileNotFoundError as err:
         await send_message(
@@ -397,7 +397,7 @@ async def send_paraphrased_summary_forbes(
     try:
         contents = pin_code_to_contents(
             pin_code,
-            Path("/home/nigella/tg_bot/Kitap/data/forbes/tr/Summarizations/"),
+            Path("/home/nigella/tg_bot/kahin-bot/data/forbes/tr/Summarizations/"),
         )
     except FileNotFoundError as err:
         await send_message(
