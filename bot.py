@@ -25,6 +25,7 @@ This module defines a Telegram bot that provides numerology readings based on us
 """
 
 from the_life import birthdate_to_life_path, life_path_to_content
+from pin_code import get_pin_code, pin_code_to_contents
 from paraphraser import paraphrase
 from telethon import TelegramClient, events, Button  # type: ignore[reportAttributeAccessIssue, reportUnknownVariableType]
 from datetime import datetime
@@ -38,7 +39,7 @@ __version__ = "1.0.0"
 
 logger = logging.getLogger("Kahin Bot")
 logging.basicConfig(
-    filename="/home/nigella/tg_bot/Kitap/kahin_bot.log",
+    filename="/home/nigella/tg_bot/kahin-bot/kahin_bot.log",
     level=logging.INFO,
     format="%(name)s - %(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s",
 )
@@ -146,9 +147,11 @@ async def send_message(
 
     if show_buttons:
         life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportUnknownMemberType]
+        pin_code: list[int] = user_data[event.sender_id]["pin_code"]  # type: ignore[reportUnknownMemberType]
         await client.send_message(  # type: ignore[reportUnknownMemberType]
             entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
-            message=f"<b><u>HAYAT SAYISI</b></u>: {life_path[0]}/{life_path[1]}",
+            message=f"<b><u>HAYAT SAYISI</b></u>: {life_path[0]}/{life_path[1]}\n"
+            + f"<b><u>PİN KODU</b></u>: {''.join(map(str, pin_code))}",
             reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
             parse_mode="html",
             buttons=[
@@ -190,10 +193,12 @@ async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
         return None
 
     life_path = birthdate_to_life_path(birthdate)
+    pin_code = get_pin_code(birthdate)
 
     user_data[event.message.sender_id] = {  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
         "message_id": event.message.id,  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
         "life_path": life_path,
+        "pin_code": pin_code,
     }
 
     await send_message(event, "")
@@ -213,7 +218,7 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
         content = life_path_to_content(
-            life_path, Path("/home/nigella/tg_bot/Kitap/data/millman/tr/MDs/")
+            life_path, Path("/home/nigella/tg_bot/kahin-bot/data/millman/tr/MDs/")
         )
     except FileNotFoundError as err:
         await send_message(
@@ -251,7 +256,39 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
         event: The callback query event triggering the function.
     """
 
-    await send_message(event, "Henüz yapım aşamasında.")
+    pin_code: list[int] = user_data[event.sender_id]["pin_code"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+
+    # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
+    try:
+        contents = pin_code_to_contents(
+            pin_code, Path("/home/nigella/tg_bot/kahin-bot/data/forbes/tr/MDs/")
+        )
+    except FileNotFoundError as err:
+        await send_message(
+            event,
+            "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
+        )
+        logger.error(err)
+
+        return None
+    except Exception as err:
+        await send_message(
+            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
+        )
+        logger.error(err)
+
+        return None
+
+    content = "\n\n".join(contents).strip()
+
+    # TODO: Change the actual data so we won't have to edit it on-fly like this.
+    for line in content.splitlines():
+        if line.startswith("#"):
+            content = content.replace(
+                f"{line}", f"<b><u>{line.split('#')[-1].strip()}</b></u>"
+            )
+
+    await send_message(event, content)
 
 
 @client.on(events.CallbackQuery(pattern=r"json_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
@@ -268,7 +305,7 @@ async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
         with open(
-            f"/home/nigella/tg_bot/Kitap/data/millman/tr/JSONs/{life_path[0]}_{life_path[1]}.json",
+            f"/home/nigella/tg_bot/kahin-bot/data/millman/tr/JSONs/{life_path[0]}_{life_path[1]}.json",
             "r",
         ) as f:
             summary_json = json.loads(f.read())
@@ -319,7 +356,7 @@ async def send_paraphrased_summary_millman(
     try:
         summary = life_path_to_content(
             life_path,
-            Path("/home/nigella/tg_bot/Kitap/data/millman/tr/Summarizations/"),
+            Path("/home/nigella/tg_bot/kahin-bot/data/millman/tr/Summarizations/"),
         )
     except FileNotFoundError as err:
         await send_message(
@@ -355,7 +392,35 @@ async def send_paraphrased_summary_forbes(
         event: The callback query event triggering the function.
     """
 
-    await send_message(event, "Henüz yapım aşamasında.")
+    pin_code: list[int] = user_data[event.sender_id]["pin_code"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+
+    try:
+        contents = pin_code_to_contents(
+            pin_code,
+            Path("/home/nigella/tg_bot/kahin-bot/data/forbes/tr/Summarizations/"),
+        )
+    except FileNotFoundError as err:
+        await send_message(
+            event,
+            "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
+        )
+        logger.error(err)
+
+        return None
+    except Exception as err:
+        await send_message(
+            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
+        )
+        logger.error(err)
+
+        return None
+
+    await send_message(
+        event, "Genel özet hazırlanıyor, lütfen bekleyiniz...", show_buttons=False
+    )
+
+    content = "\n\n".join(contents).strip()
+    await send_message(event, f"<b><u>GENEL ÖZET</b></u>\n{paraphrase(content)}")
 
 
 client.run_until_disconnected()  # type: ignore[reportUnknownMemberType]
