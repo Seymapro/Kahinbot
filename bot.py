@@ -285,7 +285,7 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
     for line in content.splitlines():
         if line.startswith("#"):
             content = content.replace(
-                f"{line}\n", f"<b><u>{line.split('#')[-1].strip()}</b></u>"
+                f"{line}", f"<b><u>{line.split('#')[-1].strip()}</b></u>"
             )
 
     await send_message(event, content)
@@ -392,7 +392,35 @@ async def send_paraphrased_summary_forbes(
         event: The callback query event triggering the function.
     """
 
-    await send_message(event, "Henüz yapım aşamasında.")
+    pin_code: list[int] = user_data[event.sender_id]["pin_code"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+
+    try:
+        contents = pin_code_to_contents(
+            pin_code,
+            Path("/home/nigella/tg_bot/Kitap/data/forbes/tr/Summarizations/"),
+        )
+    except FileNotFoundError as err:
+        await send_message(
+            event,
+            "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
+        )
+        logger.error(err)
+
+        return None
+    except Exception as err:
+        await send_message(
+            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
+        )
+        logger.error(err)
+
+        return None
+
+    await send_message(
+        event, "Genel özet hazırlanıyor, lütfen bekleyiniz...", show_buttons=False
+    )
+
+    content = "\n\n".join(contents).strip()
+    await send_message(event, f"<b><u>GENEL ÖZET</b></u>\n{paraphrase(content)}")
 
 
 client.run_until_disconnected()  # type: ignore[reportUnknownMemberType]
