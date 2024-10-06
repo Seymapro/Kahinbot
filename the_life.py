@@ -20,6 +20,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+"""
+This module provides functions for calculating life path numbers from birthdates and generating reports based on data files.
+"""
+
 from datetime import datetime
 from pathlib import Path
 
@@ -28,6 +32,16 @@ __version__ = "1.0.0"
 
 
 def birthdate_to_life_path(birthdate: datetime) -> tuple[int, int]:
+    """
+    Calculates the life path number from a given birthdate.
+
+    Args:
+        birthdate: The birthdate in datetime format.
+
+    Returns:
+        A tuple containing the initial sum and the final life path number.
+    """
+
     first_sum = sum(map(lambda char: int(char), birthdate.strftime("%d%m%Y")))
     last_sum = sum(int(char) for char in str(first_sum)) if first_sum > 9 else first_sum
 
@@ -35,6 +49,20 @@ def birthdate_to_life_path(birthdate: datetime) -> tuple[int, int]:
 
 
 def life_path_to_content(life_path: tuple[int, int], data_directory: Path) -> str:
+    """
+    Retrieves the content associated with a specific life path from data files.
+
+    Args:
+        life_path: The life path number tuple (initial sum, final number).
+        data_directory: The path to the directory containing the data files.
+
+    Returns:
+        The content (string) read from the corresponding data file.
+
+    Raises:
+        Exception: If an error occurs while reading the file.
+    """
+
     file_path = data_directory / f"{life_path[0]}_{life_path[1]}.md"
     try:
         with open(file_path, "r", encoding="UTF-8") as f:
@@ -46,12 +74,13 @@ def life_path_to_content(life_path: tuple[int, int], data_directory: Path) -> st
 if __name__ == "__main__":
     import argparse
 
-    parser: argparse.ArgumentParser = argparse.ArgumentParser(
+    parser = argparse.ArgumentParser(
         description="Processes the given birthdate(s) according to the "
         "Dan Millman's `The Life You Were Born to Live` book.",
         epilog="Contact: @Seymapro",
     )
 
+    # Define command-line arguments
     parser.add_argument(
         "--version", action="version", version=f"%(prog)s {__version__}"
     )
@@ -85,6 +114,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
+    # Get birthdates from arguments or user input
     birthdates_raw = args.birthdates
     if not birthdates_raw:
         birthdates_raw.append(
@@ -94,6 +124,7 @@ if __name__ == "__main__":
             )
         )
 
+    # Validate and parse birthdates
     birthdates: list[datetime] = []
     for birthdate_raw in birthdates_raw:
         try:
@@ -108,6 +139,7 @@ if __name__ == "__main__":
     DATA_DIRECTORY = args.data_directory
     REPORTS_DIRECTORY = args.reports_directory
 
+    # Generate reports for each birthdate
     for birthdate in birthdates:
         life_path = birthdate_to_life_path(birthdate)
         content = life_path_to_content(life_path, DATA_DIRECTORY)

@@ -20,6 +20,10 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+"""
+This module defines a Telegram bot that provides numerology readings based on user input.
+"""
+
 from the_life import birthdate_to_life_path, life_path_to_content
 from paraphraser import paraphrase
 from telethon import TelegramClient, events, Button  # type: ignore[reportAttributeAccessIssue, reportUnknownVariableType]
@@ -39,12 +43,15 @@ logging.basicConfig(
     format="%(name)s - %(asctime)s - %(levelname)s - %(filename)s - %(funcName)s - %(message)s",
 )
 
+# Load environment variables for Telegram API credentials
 API_ID = int(os.environ["KAHIN_BOT_API_ID"])
 API_HASH = os.environ["KAHIN_BOT_API_HASH"]
 BOT_TOKEN = os.environ["KAHIN_BOT_BOT_TOKEN"]
 
+# Initialize the Telegram client with the bot token
 client = TelegramClient("bot", API_ID, API_HASH).start(bot_token=BOT_TOKEN)
 
+# Dictionary to store user data, including their life path and message IDs
 user_data: dict[int, dict[str, int | tuple[int, int]]] = {}
 
 
@@ -52,6 +59,17 @@ user_data: dict[int, dict[str, int | tuple[int, int]]] = {}
 def create_json_summary(
     content_json: dict[str, list[str]] | dict[str, dict[str, list[str]]], key: str
 ) -> str:
+    """
+    Create a formatted summary string from a JSON object.
+
+    Args:
+        content_json: The JSON object containing the data.
+        key: The key to access the relevant data within the JSON.
+
+    Returns:
+        A formatted string containing the summary information.
+    """
+
     TRANSLATIONS = {
         "challenges": "<b><u>ZORLUKLAR</b></u>",
         "famous_people": "<b><u>ÜNLÜ İNSANLAR</b></u>",
@@ -97,6 +115,15 @@ async def send_message(
     content: str,
     show_buttons: bool = True,
 ) -> None:
+    """
+    Sends a message to the user, splitting it into chunks if it exceeds Telegram's message length limit.
+
+    Args:
+        event: The Telegram event object (either a callback query or a new message).
+        content: The message content to be sent.
+        show_buttons: Whether to show the navigation buttons after the message. Defaults to True.
+    """
+
     message = ""
     for part in content.split("\n\n"):
         if len(message) + len(part) + 2 > 4096:
@@ -138,6 +165,13 @@ async def send_message(
     events.NewMessage(incoming=True, pattern=r"([\s\S]*)\d{2}\.\d{2}\.\d{4}([\s\S]*)")  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType]
 )
 async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
+    """
+    Handles new messages containing a birthdate and calculates the life path.
+
+    Args:
+        event: The new message event containing the birthdate.
+    """
+
     logger.info(event)
 
     message_raw: str = event.raw_text.strip()  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType, reportUnknownVariableType]
@@ -167,6 +201,13 @@ async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
 
 @client.on(events.CallbackQuery(pattern=r"full_text_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
 async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> None:
+    """
+    Sends the full text of the numerology reading from the Millman source.
+
+    Args:
+        event: The callback query event triggering the function.
+    """
+
     life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
@@ -203,11 +244,25 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
 # TODO: Implement.
 @client.on(events.CallbackQuery(pattern=r"full_text_forbes"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
 async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> None:
+    """
+    Placeholder function for sending the full text from the Forbes source (not yet implemented).
+
+    Args:
+        event: The callback query event triggering the function.
+    """
+
     await send_message(event, "Henüz yapım aşamasında.")
 
 
 @client.on(events.CallbackQuery(pattern=r"json_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
 async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -> None:
+    """
+    Sends a summarized version of the numerology reading from the Millman source based on a JSON file.
+
+    Args:
+        event: The callback query event triggering the function.
+    """
+
     life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
@@ -252,6 +307,13 @@ async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -
 async def send_paraphrased_summary_millman(
     event: events.callbackquery.CallbackQuery,
 ) -> None:
+    """
+    Sends a paraphrased summary of the numerology reading from the Millman source.
+
+    Args:
+        event: The callback query event triggering the function.
+    """
+
     life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
 
     try:
@@ -286,6 +348,13 @@ async def send_paraphrased_summary_millman(
 async def send_paraphrased_summary_forbes(
     event: events.callbackquery.CallbackQuery,
 ) -> None:
+    """
+    Placeholder function for sending a paraphrased summary from the Forbes source (not yet implemented).
+
+    Args:
+        event: The callback query event triggering the function.
+    """
+
     await send_message(event, "Henüz yapım aşamasında.")
 
 
