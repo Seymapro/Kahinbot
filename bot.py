@@ -159,7 +159,8 @@ async def send_message(
                 [Button.inline("Tam Metin (Forbes)", "full_text_forbes")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Özet (Millman)", "summary_millman")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Özet (Forbes)", "summary_forbes")],  # type: ignore[reportUnknownMemberType]
-                [Button.inline("Maddeler (Millman)", "json_millman")],  # type: ignore[reportUnknownMemberType]
+                [Button.inline("Kısa Maddeler (Millman)", "json_short_millman")],  # type: ignore[reportUnknownMemberType]
+                [Button.inline("Uzun Maddeler (Millman)", "json_long_millman")],  # type: ignore[reportUnknownMemberType]
             ],
         )
 
@@ -291,8 +292,10 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
     await send_message(event, content)
 
 
-@client.on(events.CallbackQuery(pattern=r"json_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
-async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -> None:
+@client.on(events.CallbackQuery(pattern=r"json_short_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+async def send_json_short_summary_millman(
+    event: events.callbackquery.CallbackQuery,
+) -> None:
     """
     Sends a summarized version of the numerology reading from the Millman source based on a JSON file.
 
@@ -328,6 +331,57 @@ async def send_json_summary_millman(event: events.callbackquery.CallbackQuery) -
     # I know it looks disgusting but it works and we can't get rid of it reliably, at least not if
     # we want the final data to be in a proper format with good ordering of headings.
     summary_short = "<b><u>GENEL KISA ÖZET</b></u>\n\n"
+    summary_short += create_json_summary(summary_json, "key_traits")
+    summary_short += create_json_summary(summary_json, "challenges")
+    summary_short += create_json_summary(summary_json, "opportunities")
+    summary_short += create_json_summary(summary_json, "health")
+    summary_short += create_json_summary(summary_json, "relationships")
+    summary_short += create_json_summary(summary_json, "talents_work_finances")
+    summary_short += create_json_summary(summary_json, "fulfilling_destiny")
+    summary_short += create_json_summary(summary_json, "famous_people")
+
+    await send_message(event, summary_short.strip())
+
+
+@client.on(events.CallbackQuery(pattern=r"json_long_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+async def send_json_long_summary_millman(
+    event: events.callbackquery.CallbackQuery,
+) -> None:
+    """
+    Sends a summarized version of the numerology reading from the Millman source based on a JSON file.
+
+    Args:
+        event: The callback query event triggering the function.
+    """
+
+    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+
+    # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
+    try:
+        with open(
+            f"/home/nigella/tg_bot/kahin-bot/data/millman/tr/JSONs_Extended/{life_path[0]}_{life_path[1]}.json",
+            "r",
+        ) as f:
+            summary_json = json.loads(f.read())
+    except FileNotFoundError as err:
+        await send_message(
+            event,
+            "Dosya işlemlerinde hata ile karşılaşıldı, sorun yöneticiye bildirildi.",
+        )
+        logger.error(err)
+
+        return None
+    except Exception as err:
+        await send_message(
+            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
+        )
+        logger.error(err)
+
+        return None
+
+    # I know it looks disgusting but it works and we can't get rid of it reliably, at least not if
+    # we want the final data to be in a proper format with good ordering of headings.
+    summary_short = "<b><u>GENEL UZUN ÖZET</b></u>\n\n"
     summary_short += create_json_summary(summary_json, "key_traits")
     summary_short += create_json_summary(summary_json, "challenges")
     summary_short += create_json_summary(summary_json, "opportunities")
