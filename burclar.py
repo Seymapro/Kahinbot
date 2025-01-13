@@ -39,8 +39,4 @@ class Burclar():
             return "Geçersiz tarih"
 
     def __str__(self):
-        return f"Burcunuz: {self.burc}"
-
-birthdate = datetime(2002, 12, 22)
-burc = Burclar(birthdate)
-print(burc)
+        return self.burc
