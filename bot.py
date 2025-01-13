@@ -27,6 +27,7 @@ This module defines a Telegram bot that provides numerology readings based on us
 from the_life import birthdate_to_life_path, life_path_to_content
 from pin_code import get_pin_code, pin_code_to_contents
 from paraphraser import paraphrase
+from burclar import Burclar
 from telethon import TelegramClient, events, Button  # type: ignore[reportAttributeAccessIssue, reportUnknownVariableType]
 from datetime import datetime
 from pathlib import Path
@@ -161,6 +162,7 @@ async def send_message(
                 [Button.inline("Özet (Forbes)", "summary_forbes")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Kısa Maddeler (Millman)", "json_short_millman")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Uzun Maddeler (Millman)", "json_long_millman")],  # type: ignore[reportUnknownMemberType]
+                [Button.inline("Burçlar", "burclar")]
             ],
         )
 
@@ -200,6 +202,7 @@ async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
         "message_id": event.message.id,  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
         "life_path": life_path,
         "pin_code": pin_code,
+        "birthdate": birthdate
     }
 
     await send_message(event, "")
@@ -476,5 +479,14 @@ async def send_paraphrased_summary_forbes(
     content = "\n\n".join(contents).strip()
     await send_message(event, f"<b><u>GENEL ÖZET</b></u>\n{paraphrase(content)}")
 
+@client.on(events.CallbackQuery(pattern=r"burclar"))
+async def send_zodiac( event: events.callbackquery.CallbackQuery,
+) -> None:
+    birthdate: datetime = user_data[event.sender_id]["birthdate"]
+    burc = Burclar(birthdate)
+    
+    await send_message(
+        event, f"<b><u>BURÇ</u></b>: {burc}"
+    )
 
 client.run_until_disconnected()  # type: ignore[reportUnknownMemberType]
