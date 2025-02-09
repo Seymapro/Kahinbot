@@ -133,6 +133,22 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Implement robust error handling.
 - Improve documentation.
 
+## MeslekBot
+
+**MeslekBot**, uses the personality traits from KahinBot to recommend the most suitable academic department to users.
+
+### Features
+
+- Lists personality traits based on KahinBot's report.
+- Verifies KahinBot's listed personality traits with the user before making a recommendation.
+- The order of personality traits plays an important role in the analysis.
+- Allows the user to manually edit the personality traits and their order if they are dissatisfied with KahinBot's analysis.
+- Recommends a single department that best fits the personality.
+- Provides the top 10 (or more) most suitable departments as an option. The suggestions are listed starting from the most suitable academic department for one's personality to the least.
+- Can generate recommendations based on user-provided information without requiring KahinBot.
+- All proffessions on **kariyer.net** are appointed to the personality traits that is mentioned in KahinBot's analyses (e.g. if one wants to be a teacher they must have these features: ...)
+- The bot can return those required features when a profession is given as an input.
+
 ## Contact
 
 If you have any questions or suggestions, feel free to contact me at [@Seymapro](https://github.com/Seymapro).
