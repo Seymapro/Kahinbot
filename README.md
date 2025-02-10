@@ -125,7 +125,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Dan Millman for his insightful book `The Life You Were Born to Live`.
 - Douglas Forbes for his work on Human Pin Code numbers (**TODO**).
 - Google for providing the Gemini API.
-
+- @ozefe for his assistance and guidance.
+ 
 ## TODOs
 
 - Implement Douglas Forbes' interpretations and content.
