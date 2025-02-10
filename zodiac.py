@@ -1,16 +1,29 @@
 from datetime import datetime
 
-class Burclar():
+
+class Zodiac:
     def __init__(self, birthdate: datetime):
         self.birthdate = birthdate
-        self.zodiacs = ["Koç", "Boğa", "İkizler", "Yengeç", "Aslan", "Başak", 
-                        "Terazi", "Akrep", "Yay", "Oğlak", "Kova", "Balık"]
-        self.burc = self.find_zodiac(self.birthdate)
+        self.zodiacs = [
+            "Koç",
+            "Boğa",
+            "İkizler",
+            "Yengeç",
+            "Aslan",
+            "Başak",
+            "Terazi",
+            "Akrep",
+            "Yay",
+            "Oğlak",
+            "Kova",
+            "Balık",
+        ]
+        self.sign = self.find_zodiac(self.birthdate)
 
     def find_zodiac(self, birthdate: datetime):
         day = birthdate.day
         month = birthdate.month
-        
+
         if (month == 3 and day >= 21) or (month == 4 and day <= 20):
             return self.zodiacs[0]  # Koç
         elif (month == 4 and day >= 21) or (month == 5 and day <= 21):
@@ -36,7 +49,7 @@ class Burclar():
         elif (month == 2 and day >= 20) or (month == 3 and day <= 20):
             return self.zodiacs[11]  # Balık
         else:
-            return "Geçersiz tarih"
+            raise Exception("Invalid date")
 
     def __str__(self):
-        return self.burc
+        return self.sign
