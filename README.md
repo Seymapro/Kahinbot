@@ -62,6 +62,13 @@ A Telegram bot that tells your life story based on your birthdate according to D
 
 ## Data
 
+We use the following books for our data:
+
+- [The Life You Were Born to Live](https://www.peacefulwarrior.com/the-life-you-were-born-to-live/) by Dan Millman
+  - **SHA256 Hash**: `DD579B23FAAAF0017C06FCFD8BBDD6937D1BF4F1601EE8C44941D4E5348D9149`
+- [Human Pin Code](https://humanpincode.com/) by Douglas Forbes
+  - **SHA256 Hash**: `839048F70036CFEE0B446B183F6579D39A376FD07E7511FE1BD12950FDE7C2ED`
+
 The data directory (`data/`) is structured as follows:
 
 ```raw
@@ -126,7 +133,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Douglas Forbes for his work on Human Pin Code numbers (**TODO**).
 - Google for providing the Gemini API.
 - @ozefe for his assistance and guidance.
- 
+
 ## TODOs
 
 - Implement Douglas Forbes' interpretations and content.
