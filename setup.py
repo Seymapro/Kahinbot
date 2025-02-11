@@ -29,41 +29,38 @@ if sys.argv[-1] == "publish":
 
 requires = [
     'python-telegram-bot>=13.0',
-        'python-dotenv>=0.19.0',   
+    'python-dotenv>=0.19.0',   
 ]
-
-# TODO add test requirements
 
 about = {}
 here = os.path.abspath(os.path.dirname(__file__))
-with open(os.path.join(here, "kahinbot"), "r", "utf-8") as f:
+with open(os.path.join(here, "kahinbot", "__version__.py"), "r", encoding="utf-8") as f:
     exec(f.read(), about)
 
-with open("README.md", "r", "utf-8") as f:
+with open("README.md", "r", encoding="utf-8") as f:
     readme = f.read()
 
 setup(
-    name=about["__kahinbot__"],
-    version=about["__0.1__"],
+    name=about["__title__"],
+    version=about["__version__"],
     long_description=readme,
     long_description_content_type="text/markdown",
-    author=about["__seymapro__"],
-    author_email=about["__seymayardim@ogr.iu.edu.tr__"],
+    author=about["__author__"],
+    author_email=about["__author_email__"],
     packages=find_packages(include=["kahinbot", "kahinbot.*"]),
     package_data={"": ["LICENSE"]},
     include_package_data=True,
     python_requires=">=3.11",
     install_requires=requires,
-    license=about["__LICENSE__"],
+    license=about["__license__"],
     zip_safe=False,
     classifiers=[
-    'Development Status :: 3 - Alpha',
-    'Intended Audience :: End Users/Desktop',
-    'License :: OSI Approved :: MIT License',
-    'Programming Language :: Python :: 3',
-    'Programming Language :: Python :: 3.11', 
+        'Development Status :: 3 - Alpha',
+        'Intended Audience :: End Users/Desktop',
+        'License :: OSI Approved :: MIT License',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.11', 
     ],
-    },
     project_urls={
         "Documentation": "https://github.com/Seymapro/Kahinbot/",
     },
