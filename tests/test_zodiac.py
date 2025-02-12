@@ -5,7 +5,6 @@ import unittest
 
 
 class ZodiacInputTestCase(unittest.TestCase):
-    @unittest.expectedFailure
     def test_not_datetime(self) -> None:
         self.assertRaises(AttributeError, Zodiac, "31.07.2002")
 
