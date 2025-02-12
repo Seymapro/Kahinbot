@@ -1,0 +1,5 @@
+__title__ = "kahinbot"
+__version__ = "0.1"
+__author__ = "seymapro"
+__author_email__ = "seymayardim@ogr.iu.edu.tr"
+__license__ = "MIT"
