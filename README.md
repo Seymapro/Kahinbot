@@ -40,12 +40,26 @@ Kahin Bot is a Telegram bot that analyzes your data — like birth date and self
 3. **Set up environment variables:**
     - Add the following environment variables to your environment, replacing the placeholders with your actual API keys and tokens:
 
-     ```toml
+     ```desktop
      KAHIN_BOT_API_ID=your_telegram_api_id
      KAHIN_BOT_API_HASH=your_telegram_api_hash
      KAHIN_BOT_BOT_TOKEN=your_telegram_bot_token
      GEMINI_API_KEY=your_google_gemini_api_key
      ```
+
+### Testing
+
+1. **Go to the tests directory:**
+
+    ```bash
+    cd ./tests/
+    ```
+
+2. **Run all of the tests:**
+
+    ```bash
+    python -m unittest
+    ```
 
 ## Deployment
 
@@ -57,7 +71,7 @@ Kahin Bot is a Telegram bot that analyzes your data — like birth date and self
 
 2. **Populate the created systemd service file appropriately:**
 
-    ```toml
+    ```desktop
     [Unit]
     Description="Kahin Bot is a Telegram bot that analyzes user-provided data — such as birth date, selfies, and other inputs — to make deductions and predictions about personal traits, career paths, potential medical conditions, and more."
     Documentation="https://github.com/Seymapro/Kahinbot"
