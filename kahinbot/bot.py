@@ -24,10 +24,10 @@
 This module defines a Telegram bot that provides numerology readings based on user input.
 """
 
-from .the_life import birthdate_to_life_path, life_path_to_content
-from .pin_code import get_pin_code, pin_code_to_contents
-from .paraphraser import paraphrase
-from .zodiac import Zodiac
+from the_life import birthdate_to_life_path, life_path_to_content
+from pin_code import get_pin_code, pin_code_to_contents
+from paraphraser import paraphrase
+from zodiac import Zodiac
 from telethon import TelegramClient, events, Button  # type: ignore[reportAttributeAccessIssue, reportUnknownVariableType]
 from datetime import datetime
 from pathlib import Path
