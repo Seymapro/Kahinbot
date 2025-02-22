@@ -24,10 +24,10 @@
 This module defines a Telegram bot that provides numerology readings based on user input.
 """
 
-from the_life import birthdate_to_life_path, life_path_to_content
-from pin_code import get_pin_code, pin_code_to_contents
-from paraphraser import paraphrase
-from burclar import Burclar
+from .the_life import birthdate_to_life_path, life_path_to_content
+from .pin_code import get_pin_code, pin_code_to_contents
+from .paraphraser import paraphrase
+from .zodiac import Zodiac
 from telethon import TelegramClient, events, Button  # type: ignore[reportAttributeAccessIssue, reportUnknownVariableType]
 from datetime import datetime
 from pathlib import Path
@@ -149,13 +149,13 @@ async def send_message(
     if show_buttons:
         life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportUnknownMemberType]
         pin_code: list[int] = user_data[event.sender_id]["pin_code"]  # type: ignore[reportUnknownMemberType]
-        burc: str = user_data[event.sender_id]["burc"]
+        zodiac_sign: str = user_data[event.sender_id]["zodiac_sign"]
 
         await client.send_message(  # type: ignore[reportUnknownMemberType]
             entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
             message=f"<b><u>HAYAT SAYISI</b></u>: {life_path[0]}/{life_path[1]}\n"
             + f"<b><u>PİN KODU</b></u>: {''.join(map(str, pin_code))}\n"
-            + f"<b><u>BURÇ</b></u>: {burc}",
+            + f"<b><u>BURÇ</b></u>: {zodiac_sign}",
             reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
             parse_mode="html",
             buttons=[
@@ -165,7 +165,7 @@ async def send_message(
                 [Button.inline("Özet (Forbes)", "summary_forbes")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Kısa Maddeler (Millman)", "json_short_millman")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Uzun Maddeler (Millman)", "json_long_millman")],  # type: ignore[reportUnknownMemberType]
-                [Button.inline("Burcun Özellikleri", "burc_ozellik")]
+                [Button.inline("Burcun Özellikleri", "zodiac_traits")],
             ],
         )
 
@@ -200,14 +200,14 @@ async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
 
     life_path = birthdate_to_life_path(birthdate)
     pin_code = get_pin_code(birthdate)
-    burc = Burclar(birthdate)
+    zodiac_sign = Zodiac(birthdate)
 
     user_data[event.message.sender_id] = {  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
         "message_id": event.message.id,  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
         "life_path": life_path,
         "pin_code": pin_code,
         "birthdate": birthdate,
-        "burc": burc
+        "zodiac_sign": zodiac_sign,
     }
 
     await send_message(event, "")
@@ -484,11 +484,12 @@ async def send_paraphrased_summary_forbes(
     content = "\n\n".join(contents).strip()
     await send_message(event, f"<b><u>GENEL ÖZET</b></u>\n{paraphrase(content)}")
 
-@client.on(events.CallbackQuery(pattern=r"burc_ozellik"))
-async def send_zodiac( event: events.callbackquery.CallbackQuery,
+
+@client.on(events.CallbackQuery(pattern=r"zodiac_traits"))
+async def send_zodiac(
+    event: events.callbackquery.CallbackQuery,
 ) -> None:
-       await send_message(
-        event, f"Şu anlık böyle bir şey yok."
-    )
+    await send_message(event, f"Şu anlık böyle bir şey yok.")
+
 
 client.run_until_disconnected()  # type: ignore[reportUnknownMemberType]
