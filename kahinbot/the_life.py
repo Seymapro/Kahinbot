@@ -23,13 +23,32 @@
 """
 This module provides functions for calculating life path numbers from birthdates and generating reports based on data files.
 """
-
+import logging
 from datetime import datetime
 from pathlib import Path
+import os 
+from logging.handlers import RotatingFileHandler
+
 
 __author__ = "Seymapro"
 __version__ = "1.0.0"
 
+log_file_path = "/home/nigella/tg_bot/kahin-bot/kahin_bot.log"
+
+log_dir = os.path.dirname(log_file_path)
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir, exist_ok=True)
+
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s - %(name)s - %(levelname)s - %(filename)s:%(lineno)d - %(message)s",
+    handlers=[
+        RotatingFileHandler(log_file_path, maxBytes=10_000_000, backupCount=5, encoding="utf-8"),
+        logging.StreamHandler()
+    ]
+)
+
+logger = logging.getLogger("Kahin Bot")
 
 def birthdate_to_life_path(birthdate: datetime) -> tuple[int, int]:
     """
@@ -61,15 +80,21 @@ def life_path_to_content(life_path: tuple[int, int], data_directory: Path) -> st
 
     Raises:
         Exception: If an error occurs while reading the file.
+        FileNotFoundError: If the file does not exists.
     """
 
     file_path = data_directory / f"{life_path[0]}_{life_path[1]}.md"
     try:
         with open(file_path, "r", encoding="UTF-8") as f:
             return f.read()
+    except FileNotFoundError:
+        logger.error(f"File not found: {file_path}", exc_info=True)
+        return f"Error: No data available for life path {life_path[1]}."
     except Exception as e:
-        raise e
+        logger.error(f"Failed to read file {file_path}: {e}", exc_info=True)
+        raise
 
+   
 
 if __name__ == "__main__":
     import argparse
@@ -130,11 +155,12 @@ if __name__ == "__main__":
         try:
             birthdates.append(datetime.strptime(birthdate_raw, "%d.%m.%Y"))
         except ValueError as err:
-            err.add_note(
-                f"ERROR: Given birthdate ({birthdate_raw}) is not in the required "
-                "format (DAY.MONTH.YEAR)"
+            logger.error(
+                f"ERROR: Given birthdate ({birthdate_raw}) is not in the required format (DAY.MONTH.YEAR).",
+                exc_info=True,
             )
-            raise err
+            raise ValueError(f"Invalid birthdate format: {birthdate_raw}") from err
+
 
     DATA_DIRECTORY = args.data_directory
     REPORTS_DIRECTORY = args.reports_directory
