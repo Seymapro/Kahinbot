@@ -64,35 +64,8 @@ class Zodiac:
                 with open(content_dir / f"tip{i}.md", "r", encoding="UTF-8") as f:
                     contents.append(f.read().strip())
 
-        return contents
+        return '\n'.join(contents)
 
 
     def __str__(self):
         return f"Burç: {self.sign} \nEnneagram: {self.enneagram}\nİçerik: {self.zodiac_to_contents(Path('/home/nigella/tg_bot/kahin-bot/kahinbot/enneagram'))}"
-
-
-"""
-Koç – Mars: 8
-
-Boğa – Venüs: 9
-
-İkizler – Merkür: 7
-
-Yengeç – Ay: 2
-
-Aslan – Güneş: 3
-
-Başak – Merkür: 1, 6
-
-Terazi – Venüs: 9
-
-Akrep – Plüton, Mars: 8
-
-Yay – Jüpiter: 7
-
-Oğlak – Satürn: 6, 1
-
-Kova – Uranüs: 5
-
-Balık – Neptün: 4
-"""

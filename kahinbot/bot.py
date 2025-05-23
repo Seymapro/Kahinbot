@@ -155,7 +155,9 @@ async def send_message(
             entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
             message=f"<b><u>HAYAT SAYISI</b></u>: {life_path[0]}/{life_path[1]}\n"
             + f"<b><u>PİN KODU</b></u>: {''.join(map(str, pin_code))}\n"
-            + f"<b><u>BURÇ</b></u>: {zodiac_sign}",
+            + f"<b><u>BURÇ</b></u>: {zodiac_sign.sign}\n"
+            + f"<b><u>BURCUN ENNEAGRAM DEĞERİ</b></u>: {zodiac_sign.enneagram}",
+            
             reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
             parse_mode="html",
             buttons=[
@@ -492,15 +494,8 @@ async def send_zodiac(
     
     zodiac_sign: list[tuple] = user_data[event.sender_id]["zodiac_sign"]
     
-    contents = pin_code_to_contents(
-        zodiac_sign,
-        # Use this pattern in server too.
-        Path("/home/nigella/tg_bot/kahin-bot/data/burclar/enneagram/"),
-    )
+    content = str(zodiac_sign)
     
-    
-    content = "\n\n".join(contents).strip()
-
     # TODO: This is not a todo actually, i love my data as the way it is <3
     for line in content.splitlines():
         if line.startswith("#"):
