@@ -1,5 +1,5 @@
 from .bot import *
-from .burclar import *
+from .zodiac import *
 from .paraphraser import *
 from .pin_code import *
 from .the_life import *

@@ -1,4 +1,5 @@
 from datetime import datetime
+from pathlib import Path
 from kahinbot.zodiac import Zodiac
 
 import unittest
@@ -60,3 +61,7 @@ class ZodiacSignTestCase(unittest.TestCase):
     def test_pisces(self) -> None:
         # Albert Einstein
         self.assertEqual("Balık", Zodiac(datetime(1879, 3, 14)).sign)
+
+
+if __name__ == '__main__':
+    unittest.main()
