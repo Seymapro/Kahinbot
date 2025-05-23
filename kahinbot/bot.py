@@ -24,10 +24,10 @@
 This module defines a Telegram bot that provides numerology readings based on user input.
 """
 
-from .the_life import birthdate_to_life_path, life_path_to_content
-from .pin_code import get_pin_code, pin_code_to_contents
-from .paraphraser import paraphrase
-from .zodiac import Zodiac
+from the_life import birthdate_to_life_path, life_path_to_content
+from pin_code import get_pin_code, pin_code_to_contents
+from paraphraser import paraphrase
+from zodiac import Zodiac
 from telethon import TelegramClient, events, Button  # type: ignore[reportAttributeAccessIssue, reportUnknownVariableType]
 from datetime import datetime
 from pathlib import Path
@@ -165,7 +165,7 @@ async def send_message(
                 [Button.inline("Özet (Forbes)", "summary_forbes")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Kısa Maddeler (Millman)", "json_short_millman")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Uzun Maddeler (Millman)", "json_long_millman")],  # type: ignore[reportUnknownMemberType]
-                [Button.inline("Burcun Özellikleri", "zodiac_traits")],
+                [Button.inline("Burcun Özellikleri (Enneagram)", "zodiac_traits")],
             ],
         )
 
@@ -489,7 +489,25 @@ async def send_paraphrased_summary_forbes(
 async def send_zodiac(
     event: events.callbackquery.CallbackQuery,
 ) -> None:
-    await send_message(event, f"Şu anlık böyle bir şey yok.")
+    
+    zodiac_sign: list[tuple] = user_data[event.sender_id]["zodiac_sign"]
+    
+    contents = pin_code_to_contents(
+        zodiac_sign,
+        # Use this pattern in server too.
+        Path("/home/nigella/tg_bot/kahin-bot/data/burclar/enneagram/"),
+    )
+    
+    
+    content = "\n\n".join(contents).strip()
 
+    # TODO: This is not a todo actually, i love my data as the way it is <3
+    for line in content.splitlines():
+        if line.startswith("#"):
+            content = content.replace(
+                f"{line}", f"<b><u>{line.split('#')[-1].strip()}</b></u>"
+            )
+
+    await send_message(event, content)
 
 client.run_until_disconnected()  # type: ignore[reportUnknownMemberType]
