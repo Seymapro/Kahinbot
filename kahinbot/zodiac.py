@@ -68,7 +68,7 @@ class Zodiac:
 
 
     def __str__(self):
-        return f"Burç: {self.sign} \nEnneagram: {self.enneagram}\nİçerik: {self.zodiac_to_contents(Path('./enneagram/'))}"
+        return f"Burç: {self.sign} \nEnneagram: {self.enneagram}\nİçerik: {self.zodiac_to_contents(Path('/home/nigella/tg_bot/kahin-bot/kahinbot/enneagram'))}"
 
 
 """
