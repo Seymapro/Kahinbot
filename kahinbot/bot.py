@@ -58,9 +58,7 @@ user_data: dict[int, dict[str, int | tuple[int, int]]] = {}
 
 
 # TODO: Fix repetition.
-def create_json_summary(
-    content_json: dict[str, list[str]] | dict[str, dict[str, list[str]]], key: str
-) -> str:
+def create_json_summary(content_json: dict[str, list[str]] | dict[str, dict[str, list[str]]], key: str) -> str:
     """
     Create a formatted summary string from a JSON object.
 
@@ -93,10 +91,7 @@ def create_json_summary(
     if type(content_json[key]) is list:
         if content_json[key]:
             content += TRANSLATIONS[key] + "\n\n"
-            content += (
-                "\n".join([f"- {bulletpoint}" for bulletpoint in content_json[key]])
-                + "\n\n"
-            )
+            content += "\n".join([f"- {bulletpoint}" for bulletpoint in content_json[key]]) + "\n\n"
     else:
         content += TRANSLATIONS[key] + "\n\n"
 
@@ -157,7 +152,6 @@ async def send_message(
             + f"<b><u>PİN KODU</b></u>: {''.join(map(str, pin_code))}\n"
             + f"<b><u>BURÇ</b></u>: {zodiac_sign.sign}\n"
             + f"<b><u>BURCUN ENNEAGRAM DEĞERİ</b></u>: {zodiac_sign.enneagram}",
-            
             reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
             parse_mode="html",
             buttons=[
@@ -167,7 +161,7 @@ async def send_message(
                 [Button.inline("Özet (Forbes)", "summary_forbes")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Kısa Maddeler (Millman)", "json_short_millman")],  # type: ignore[reportUnknownMemberType]
                 [Button.inline("Uzun Maddeler (Millman)", "json_long_millman")],  # type: ignore[reportUnknownMemberType]
-                [Button.inline("Burcun Özellikleri (Enneagram)", "zodiac_traits")],
+                [Button.inline("Enneagram Özellikleri", "zodiac_traits")],
             ],
         )
 
@@ -228,9 +222,7 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
 
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
-        content = life_path_to_content(
-            life_path, Path("/home/nigella/tg_bot/kahin-bot/data/millman/tr/MDs/")
-        )
+        content = life_path_to_content(life_path, Path("/home/nigella/tg_bot/kahin-bot/data/millman/tr/MDs/"))
     except FileNotFoundError as err:
         await send_message(
             event,
@@ -240,9 +232,7 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
 
         return None
     except Exception as err:
-        await send_message(
-            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
-        )
+        await send_message(event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi.")
         logger.error(err)
 
         return None
@@ -250,9 +240,7 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
     # TODO: Change the actual data so we won't have to edit it on-fly like this.
     for line in content.splitlines():
         if line.startswith("#"):
-            content = content.replace(
-                f"{line}\n", f"<b><u>{line.split('#')[-1].strip()}</b></u>"
-            )
+            content = content.replace(f"{line}\n", f"<b><u>{line.split('#')[-1].strip()}</b></u>")
 
     await send_message(event, content)
 
@@ -271,9 +259,7 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
 
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
-        contents = pin_code_to_contents(
-            pin_code, Path("/home/nigella/tg_bot/kahin-bot/data/forbes/tr/MDs/")
-        )
+        contents = pin_code_to_contents(pin_code, Path("/home/nigella/tg_bot/kahin-bot/data/forbes/tr/MDs/"))
     except FileNotFoundError as err:
         await send_message(
             event,
@@ -283,9 +269,7 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
 
         return None
     except Exception as err:
-        await send_message(
-            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
-        )
+        await send_message(event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi.")
         logger.error(err)
 
         return None
@@ -295,9 +279,7 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
     # TODO: Change the actual data so we won't have to edit it on-fly like this.
     for line in content.splitlines():
         if line.startswith("#"):
-            content = content.replace(
-                f"{line}", f"<b><u>{line.split('#')[-1].strip()}</b></u>"
-            )
+            content = content.replace(f"{line}", f"<b><u>{line.split('#')[-1].strip()}</b></u>")
 
     await send_message(event, content)
 
@@ -331,9 +313,7 @@ async def send_json_short_summary_millman(
 
         return None
     except Exception as err:
-        await send_message(
-            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
-        )
+        await send_message(event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi.")
         logger.error(err)
 
         return None
@@ -382,9 +362,7 @@ async def send_json_long_summary_millman(
 
         return None
     except Exception as err:
-        await send_message(
-            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
-        )
+        await send_message(event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi.")
         logger.error(err)
 
         return None
@@ -431,16 +409,12 @@ async def send_paraphrased_summary_millman(
 
         return None
     except Exception as err:
-        await send_message(
-            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
-        )
+        await send_message(event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi.")
         logger.error(err)
 
         return None
 
-    await send_message(
-        event, "Genel özet hazırlanıyor, lütfen bekleyiniz...", show_buttons=False
-    )
+    await send_message(event, "Genel özet hazırlanıyor, lütfen bekleyiniz...", show_buttons=False)
     await send_message(event, f"<b><u>GENEL ÖZET</b></u>\n{paraphrase(summary)}")
 
 
@@ -472,16 +446,12 @@ async def send_paraphrased_summary_forbes(
 
         return None
     except Exception as err:
-        await send_message(
-            event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
-        )
+        await send_message(event, "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi.")
         logger.error(err)
 
         return None
 
-    await send_message(
-        event, "Genel özet hazırlanıyor, lütfen bekleyiniz...", show_buttons=False
-    )
+    await send_message(event, "Genel özet hazırlanıyor, lütfen bekleyiniz...", show_buttons=False)
 
     content = "\n\n".join(contents).strip()
     await send_message(event, f"<b><u>GENEL ÖZET</b></u>\n{paraphrase(content)}")
@@ -491,18 +461,16 @@ async def send_paraphrased_summary_forbes(
 async def send_zodiac(
     event: events.callbackquery.CallbackQuery,
 ) -> None:
-    
     zodiac_sign: list[tuple] = user_data[event.sender_id]["zodiac_sign"]
-    
+
     content = str(zodiac_sign)
-    
+
     # TODO: This is not a todo actually, i love my data as the way it is <3
     for line in content.splitlines():
         if line.startswith("#"):
-            content = content.replace(
-                f"{line}", f"<b><u>{line.split('#')[-1].strip()}</b></u>"
-            )
+            content = content.replace(f"{line}", f"<b><u>{line.split('#')[-1].strip()}</b></u>")
 
     await send_message(event, content)
+
 
 client.run_until_disconnected()  # type: ignore[reportUnknownMemberType]
