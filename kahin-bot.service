@@ -1,0 +1,89 @@
+# Kahin Bot systemd Service Unit Configuration
+#
+# This file defines the systemd service unit for running the Kahin Bot.
+# It specifies dependencies, environment variables, security hardening, logging, and startup behavior.
+# Place this file in /etc/systemd/system/kahin-bot.service
+# and adjust paths, users, and environment files as needed for your deployment.
+# For more details, see: https://github.com/Seymapro/Kahinbot
+
+[Unit]
+Description   = "Kahin Bot is a Telegram bot that analyzes your data — like birth date and selfies — to reveal insights about your personality, career path, and even potential health traits."
+Documentation = "https://github.com/Seymapro/Kahinbot"
+
+# Start after the network stack is available, as the bot needs network access.
+# network-online.target ensures that the network is not just configured, but actually online.
+After = "network.target network-online.target"
+Wants = "network-online.target"
+
+# We use MongoDB, so we want to ensure it is running before starting the bot.
+Requires = "mongod.service"
+
+[Service]
+# Type=simple: Assumes the main process of the service is the one started by ExecStart
+# and that this process does not fork or daemonize itself.
+Type = "simple"
+
+# User and Group:
+# It's a security best practice to run services as a dedicated, non-root user.
+# Before using this, create the user and group:
+#   sudo groupadd -r kahinbotgroup
+#   sudo useradd -r -g kahinbotgroup -d /opt/kahin-bot -s /sbin/nologin kahinbot
+# Adjust the home directory (-d) and ensure the user owns the necessary files/directories:
+#   sudo mkdir -p /opt/kahin-bot/app /var/log/kahin-bot
+#   sudo chown -R kahinbot:kahinbotgroup /opt/kahin-bot
+#   sudo chown -R kahinbot:kahinbotgroup /var/log/kahin-bot # If using file logging
+User  = "kahinbot"
+Group = "kahinbotgroup"
+
+# WorkingDirectory:
+# The absolute path to the directory where your bot's main script and resources are located.
+# systemd will change to this directory before executing ExecStart.
+WorkingDirectory = "/opt/kahin-bot/kahinbot"
+
+# Environment Variables:
+# For sensitive data like API tokens, it's highly recommended to use EnvironmentFile.
+# Create a file (e.g., /etc/kahin-bot/bot.env) with lines like:
+#   KAHIN_BOT_API_ID=your_telegram_api_id
+#   KAHIN_BOT_API_HASH=your_telegram_api_hash
+#   KAHIN_BOT_DATABASE_URL=your_db_connection_string
+#   OTHER_CONFIG_PARAM=value
+# Secure this file:
+#   sudo mkdir -p /etc/kahin-bot
+#   sudo touch /etc/kahin-bot/kahin-bot.env
+#   sudo chown kahinbot:kahinbotgroup /etc/kahin-bot/kahin-bot.env
+#   sudo chmod 600 /etc/kahin-bot/kahin-bot.env
+EnvironmentFile = "/etc/kahin-bot/kahin-bot.env"
+
+# ExecStart:
+# The command and arguments to start your bot.
+# This example assumes you are using a Python virtual environment (recommended).
+# Replace with the actual path to your Python interpreter within the venv and your main script.
+ExecStart = "/opt/kahin-bot/kahinbot/.venv/bin/python3 /opt/kahin-bot/kahinbot/bot.py"
+# If not using a virtual environment (less ideal):
+# ExecStart=/usr/bin/python3 /opt/kahin-bot/kahinbot/bot.py
+
+# Restart behavior:
+# Restart the service if it exits due to an error or non-zero exit code.
+Restart = "always"
+
+# Security Hardening (these are good defaults, but review them for your bot's specific needs):
+
+# Makes entire filesystem hierarchy read-only, except /tmp, /var/tmp
+# Can be set to 'full' for more relaxed protection (mounts /usr, /boot, and /etc as read-only for processes of this unit).
+ProtectSystem = "strict"
+
+# Ensures that the service and all its children can never gain new privileges (e.g., via setuid or setgid bits).
+NoNewPrivileges = true
+
+# Specify paths the service needs write access to, if ProtectSystem is restrictive.
+# e.g., if your bot writes to a specific data directory:
+ReadWritePaths = "/var/log/kahin-bot"
+
+[Install]
+# This directive defines how the service is enabled. When you run `systemctl enable kahin-bot.service`,
+# systemd creates a symbolic link from a .wants/ directory of `multi-user.target` to this unit file.
+# This ensures the service is started when the system boots into a multi-user environment (typical for servers).
+WantedBy = "multi-user.target"
+
+# Alias provides an additional name for the service unit, allowing it to be referenced as 'kahinbot' in systemctl commands.
+Alias = "kahinbot"

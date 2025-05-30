@@ -36,7 +36,10 @@ ipython_config.py
 .vscode/
 
 # Raw data files
-data/forbes/forbes.pdf
+data/forbes/forbes_2002.pdf
 data/forbes/tr/PDFs/*.pdf
 data/millman/millman_1995.pdf
 data/millman/en/PDFs/*.pdf
+
+# Log files
+*.log
