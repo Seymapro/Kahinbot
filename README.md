@@ -63,41 +63,19 @@ Kahin Bot is a Telegram bot that analyzes your data — like birth date and self
 
 ## Deployment
 
-1. **Create a systemd service file:**
+1. **Copy the systemd service file to systemd folder:**
 
     ```bash
-    touch /etc/systemd/system/kahin-bot.service
+    cp ./kahin-bot.service /etc/systemd/system/
     ```
 
-2. **Populate the created systemd service file appropriately:**
-
-    ```desktop
-    [Unit]
-    Description="Kahin Bot is a Telegram bot that analyzes user-provided data — such as birth date, selfies, and other inputs — to make deductions and predictions about personal traits, career paths, potential medical conditions, and more."
-    Documentation="https://github.com/Seymapro/Kahinbot"
-
-    [Service]
-    Type=simple
-    Restart=always
-    User=root
-    Environment="KAHIN_BOT_API_ID=your_telegram_api_id"
-    Environment="KAHIN_BOT_API_HASH=your_telegram_api_hash"
-    Environment="KAHIN_BOT_BOT_TOKEN=your_telegram_bot_token"
-    Environment="GEMINI_API_KEY=your_google_gemini_api_key"
-    ExecStart=/usr/bin/python3 /kahin-bot/bot.py
-
-    [Install]
-    WantedBy=multi-user.target
-    Alias=kahinbot
-    ```
-
-3. **Start the service:**
+2. **Start the service:**
 
     ```bash
     sudo systemctl start kahin-bot
     ```
 
-4. **To stop the service:**
+3. **To stop the service:**
 
     ```bash
     sudo systemctl stop kahin-bot
@@ -126,21 +104,24 @@ We use the following books for our data:
 The data directory (`data/`) is structured as follows:
 
 ```raw
-data
-├───forbes
-│   └───tr
-│       ├───MDs
-│       └───Summarizations
-└───millman
-    ├───en
-    │   ├───JSONs
-    │   ├───MDs
-    │   └───Summarizations
-    └───tr
-        ├───JSONs
-        ├───JSONs_Extended
-        ├───MDs
-        └───Summarizations
+data/
+├── enneagrams
+├── forbes
+│   └── tr
+│       ├── MDs
+│       ├── PDFs
+│       └── Summarizations
+└── millman
+    ├── en
+    │   ├── JSONs
+    │   ├── MDs
+    │   ├── PDFs
+    │   └── Summarizations
+    └── tr
+        ├── JSONs
+        ├── JSONs_Extended
+        ├── MDs
+        └── Summarizations
 ```
 
 ## Contributing
