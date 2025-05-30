@@ -20,12 +20,51 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+"""Zodiac sign determination and mapping to enneagram personality types.
+
+This module provides functionality to determine zodiac signs based on birthdates
+and maps them to corresponding enneagram personality types. It supports Turkish
+zodiac names and handles content retrieval for associated enneagram types.
+
+Example:
+    >>> from datetime import datetime
+    >>> from kahinbot.zodiac import Zodiac
+    >>> birth_date = datetime(1990, 5, 15)
+    >>> zodiac = Zodiac(birth_date)
+    >>> print(f"{zodiac.sign}: Type {zodiac.enneagram}")
+    'Boğa: Type 9'
+
+Classes:
+    Zodiac: Handles zodiac sign calculations and enneagram type mappings.
+"""
+
 from datetime import datetime
 from pathlib import Path
 
+__author__ = "Seymapro"
+__version__ = "1.0.1"
+
 
 class Zodiac:
-    def __init__(self, birthdate: datetime):
+    def __init__(self, birthdate: datetime) -> None:
+        """A class to handle zodiac sign calculations and their associated enneagram types.
+
+        This class determines a person's zodiac sign based on their birthdate and maps it to
+        its corresponding enneagram number. It supports Turkish zodiac names and provides
+        functionality to retrieve associated enneagram content.
+
+        Attributes:
+            birthdate (datetime): The date of birth used for zodiac calculations.
+            zodiacs (list[tuple[str, int]]): List of tuples containing (zodiac_name, enneagram_number).
+            sign (str): The determined zodiac sign name in Turkish.
+            enneagram (int): The associated enneagram number (1-9) for the zodiac sign.
+
+        Example:
+            >>> from datetime import datetime
+            >>> zodiac = Zodiac(datetime(1990, 3, 25))
+            >>> print(zodiac.sign)
+            'Koç'
+        """
         self.birthdate = birthdate
         self.zodiacs = [
             ("Koç", 8),
@@ -44,7 +83,24 @@ class Zodiac:
 
         self.sign, self.enneagram = self.find_zodiac(self.birthdate)
 
-    def find_zodiac(self, birthdate: datetime):
+    def find_zodiac(self, birthdate: datetime) -> tuple[str, int]:
+        """Determines zodiac sign and associated enneagram number based on birthdate.
+
+        Args:
+            birthdate (datetime): The date of birth to determine zodiac sign for.
+
+        Returns:
+            tuple[str, int]: A tuple containing:
+                - str: The zodiac sign name in Turkish
+                - int: The corresponding enneagram number (1-9)
+
+        Raises:
+            Exception: If the provided date is invalid for zodiac determination.
+
+        Note:
+            Uses Turkish zodiac names and maps each sign to a specific enneagram number
+            based on predefined associations in self.zodiacs.
+        """
         day = birthdate.day
         month = birthdate.month
 
@@ -75,14 +131,27 @@ class Zodiac:
         else:
             raise Exception("Invalid date")
 
-    def zodiac_to_contents(self, content_dir: Path) -> list[str]:
+    def zodiac_to_contents(self, content_dir: Path) -> str:
+        """Reads and returns enneagram type content based on zodiac's enneagram number.
+
+        Args:
+            content_dir (Path): Directory path containing enneagram type content files.
+                              Files must be named as 'X.md' where X is the enneagram number.
+
+        Returns:
+            str: Content from the enneagram type file corresponding to this zodiac sign.
+
+        Raises:
+            FileNotFoundError: If the enneagram type file doesn't exist in content_dir.
+            IOError: If there are issues reading the file.
+        """
         contents: list[str] = []
         pin = self.enneagram
 
-        with open(content_dir / f"tip{pin}.md", "r", encoding="UTF-8") as f:
+        with open(content_dir / f"{pin}.md", "r", encoding="UTF-8") as f:
             contents.append(f.read().strip())
 
         return "\n".join(contents)
 
-    def __str__(self):
-        return f"Burç: {self.sign} \nEnneagram: {self.enneagram}\nİçerik: {self.zodiac_to_contents(Path('/home/nigella/tg_bot/kahin-bot/kahinbot/enneagram'))}"
+    def __str__(self) -> str:
+        return f"Burç: {self.sign} \nEnneagram: {self.enneagram}\nİçerik: {self.zodiac_to_contents(Path('../data/enneagrams'))}"

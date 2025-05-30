@@ -20,28 +20,57 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-"""
-This module provides functions for calculating life path numbers from birthdates and generating reports based on data files.
+"""Life Path Number Calculator based on Dan Millman's Teachings.
+
+This module provides functionality to calculate and interpret Life Path Numbers
+based on numerology principles from Dan Millman's 'The Life You Were Born to Live'.
+It processes birthdates to compute numerological values and generates detailed
+reports with interpretations.
+
+Key Features:
+    - Calculates Life Path Numbers from birthdates
+    - Generates personalized reports based on numerological calculations
+    - Supports batch processing of multiple birthdates
+    - Handles file I/O for data and report generation
+
+Example:
+    >>> from datetime import datetime
+    >>> from pathlib import Path
+    >>> birthdate = datetime(1990, 1, 1)
+    >>> life_path = birthdate_to_life_path(birthdate)
+    >>> content = life_path_to_content(life_path, Path("./data"))
 """
 
 from datetime import datetime
 from pathlib import Path
 
 __author__ = "Seymapro"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 
 def birthdate_to_life_path(birthdate: datetime) -> tuple[int, int]:
-    """
-    Calculates the life path number from a given birthdate.
+    """Calculate the life path number based on numerology principles.
+
+    Takes a birthdate and computes both the initial sum of all digits and the final
+    life path number according to numerological reduction. For example, if the birthdate
+    is 22.12.2002, it first sums 2+2+1+2+2+0+0+2=11, then reduces to 1+1=2.
 
     Args:
-        birthdate: The birthdate in datetime format.
+        birthdate (datetime): A datetime object representing the birth date.
+            The date should be a valid Gregorian calendar date.
 
     Returns:
-        A tuple containing the initial sum and the final life path number.
-    """
+        tuple[int, int]: A tuple containing:
+            - first number (int): The initial sum of all digits in the birthdate
+            - second number (int): The final life path number (reduced to a single digit
+              if the first sum is greater than 9)
 
+    Examples:
+        >>> from datetime import datetime
+        >>> birthdate = datetime(2002, 12, 22)
+        >>> birthdate_to_life_path(birthdate)
+        (11, 2)
+    """
     first_sum = sum(map(lambda char: int(char), birthdate.strftime("%d%m%Y")))
     last_sum = sum(int(char) for char in str(first_sum)) if first_sum > 9 else first_sum
 
@@ -49,20 +78,33 @@ def birthdate_to_life_path(birthdate: datetime) -> tuple[int, int]:
 
 
 def life_path_to_content(life_path: tuple[int, int], data_directory: Path) -> str:
-    """
-    Retrieves the content associated with a specific life path from data files.
+    """Retrieves content associated with a life path number from corresponding data file.
+
+    Reads and returns the content from a markdown file that corresponds to the given
+    life path number. The file name is expected to be in the format "{first_sum}_{final_number}.md".
 
     Args:
-        life_path: The life path number tuple (initial sum, final number).
-        data_directory: The path to the directory containing the data files.
+        life_path (tuple[int, int]): A tuple containing two integers:
+            - first element: The initial sum of the birthdate digits
+            - second element: The reduced (final) life path number
+        data_directory (Path): Directory path where the life path data files are stored.
+            Must contain markdown files named in the format "{first_sum}_{final_number}.md"
 
     Returns:
-        The content (string) read from the corresponding data file.
+        str: The complete content of the corresponding life path data file.
 
     Raises:
-        Exception: If an error occurs while reading the file.
-    """
+        FileNotFoundError: If the data file for the given life path number doesn't exist.
+        PermissionError: If the program lacks permission to read the data file.
+        UnicodeDecodeError: If the file content cannot be decoded as UTF-8.
 
+    Examples:
+        >>> from pathlib import Path
+        >>> data_dir = Path("./data")
+        >>> content = life_path_to_content((11, 2), data_dir)
+        >>> print(content[:50])  # Print first 50 characters
+        'Description for life path 11/2: Creative expression...'
+    """
     file_path = data_directory / f"{life_path[0]}_{life_path[1]}.md"
     try:
         with open(file_path, "r", encoding="UTF-8") as f:

@@ -20,30 +20,59 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+"""Generates and processes Human Pin Codes based on birthdates using numerology.
+
+This module implements the Human Pin Code system as described in Douglas Forbes' book,
+generating a unique 9-digit code from a person's birthdate. Each digit is calculated
+using numerological principles and corresponds to specific personality traits or life
+aspects.
+
+Main Functions:
+    downgrade_number: Reduces numbers to single digits through digital root calculation
+    get_pin_code: Generates a 9-digit pin code from a birthdate
+    pin_code_to_contents: Maps pin code digits to corresponding reading contents
+
+The module can be used both as a library and as a command-line tool. When run as
+a script, it processes birthdates and generates detailed reports with readings for
+each pin code digit.
+
+Example:
+    >>> from datetime import datetime
+    >>> from kahinbot.pin_code import get_pin_code
+    >>> pin = get_pin_code(datetime(2002, 12, 22))
+    >>> print(pin)  # Returns [4, 3, 4, 2, 6, 7, 7, 5, 2]
+"""
+
 from datetime import datetime
 from pathlib import Path
 
 __author__ = "Seymapro"
-__version__ = "1.0.0"
+__version__ = "1.0.1"
 
 
 def downgrade_number(number: int) -> int:
-    """
-    Reduces a number to a single digit by repeatedly summing its digits.
+    """Reduces a number to a single digit through iterative digit summation.
 
-    This function takes an integer `number` and applies the digit-summing
-    process until the number is less than 10. For example, if the input is
-    38, it will be reduced as follows: 3 + 8 = 11, and then 1 + 1 = 2.
+    Performs repeated summation of individual digits in a number until a single
+    digit is obtained. This process is also known as digital root calculation.
 
     Args:
-        number (int): The number to be reduced to a single digit.
+        number: An integer to be reduced to a single digit.
 
     Returns:
-        int: A single-digit integer derived from the input number.
+        The digital root (single digit) obtained after repeated digit summation.
 
-    Example:
-        >>> downgrade_number(38)
+    Examples:
+        >>> downgrade_number(38)  # 3 + 8 = 11, then 1 + 1 = 2
         2
+        >>> downgrade_number(123)  # 1 + 2 + 3 = 6
+        6
+        >>> downgrade_number(999)  # 9 + 9 + 9 = 27, then 2 + 7 = 9
+        9
+
+    Note:
+        - The function will return the input number if it's already a single digit
+        - For negative numbers, the function processes their absolute value
     """
 
     while number >= 10:
@@ -53,22 +82,29 @@ def downgrade_number(number: int) -> int:
 
 
 def get_pin_code(birthdate: datetime) -> list[int]:
-    """
-    Generates a pin code based on the given birthdate.
+    """Generates a 9-digit pin code based on birthdate using numerological principles.
 
-    This function calculates a pin code using the day, month, and year
-    components of a provided `birthdate`. It also incorporates additional
-    calculations using the derived single-digit values to generate
-    a complete pin code consisting of eight digits.
+    Calculates a sequence of digits by applying the following rules:
+    1. First digit: Digital root of birth day
+    2. Second digit: Digital root of birth month
+    3. Third digit: Digital root of birth year
+    4. Fourth digit: Digital root of (1st + 2nd + 3rd) digits
+    5. Fifth digit: Digital root of (1st + 4th) digits
+    6. Sixth digit: Digital root of (1st + 2nd) digits
+    7. Seventh digit: Digital root of (2nd + 3rd) digits
+    8. Eighth digit: Digital root of (6th + 7th) digits
+    9. Ninth digit: Digital root of sum of all previous digits
 
     Args:
-        birthdate (datetime): A datetime object representing the birthdate
-                              from which the pin code will be generated.
+        birthdate: A datetime object containing the target birth date.
+            Expected to be a valid date with year, month and day components.
 
     Returns:
-        list[int]: A list of integers representing the pin code.
+        A list of 9 integers (0-9), representing the calculated pin code sequence.
+            Each digit is derived through numerological reduction of date components.
 
     Example:
+        >>> from datetime import datetime
         >>> get_pin_code(datetime(2002, 12, 22))
         [4, 3, 4, 2, 6, 7, 7, 5, 2]
     """
@@ -110,28 +146,32 @@ def get_pin_code(birthdate: datetime) -> list[int]:
 
 
 def pin_code_to_contents(pin_code: list[int], content_dir: Path) -> list[str]:
-    """
-    Retrieves content based on the pin code from specified markdown files.
+    """Maps pin code digits to content from numbered markdown files.
 
-    This function takes a list of pin code integers and reads content
-    from markdown files named according to the pin code digits. The files
-    are expected to be located in the specified `content_dir`.
+    Each digit in the pin code corresponds to a markdown file named in the format
+    "position_digit.md" (e.g., "1_4.md" for first position with digit 4). The
+    function reads these files from the specified directory and returns their
+    contents as a list.
 
     Args:
-        pin_code (list[int]): A list of integers representing the pin code.
-        content_dir (Path): A Path object representing the directory
-                            containing the markdown files.
+        pin_code: List of 9 integers (0-9) representing the numerological pin code.
+            Each digit corresponds to a specific aspect of the reading.
+        content_dir: Directory path containing the markdown files with readings.
+            Files should be named in the format "position_digit.md".
 
     Returns:
-        list[str]: A list of strings containing the content from the
-                    corresponding markdown files.
+        List of strings where each string contains the content of a markdown file
+        corresponding to the pin code digits in order.
 
     Raises:
-        FileNotFoundError: If a specified markdown file does not exist.
+        FileNotFoundError: If any required markdown file is missing from content_dir.
+        TypeError: If pin_code is not a list of integers or content_dir is not a Path.
 
     Example:
-        >>> pin_code_to_contents([4, 3, 4, 2, 6, 7, 7, 5, 2], Path('./data/forbes/MDs/'))
-        ['Content from 1_4.md', 'Content from 2_3.md', ...]
+        >>> pin = [4, 3, 4, 2, 6, 7, 7, 5, 2]
+        >>> contents = pin_code_to_contents(pin, Path("data/readings"))
+        >>> len(contents)  # Returns 9 strings, one for each pin digit
+        9
     """
 
     contents: list[str] = []
@@ -147,15 +187,12 @@ if __name__ == "__main__":
     import argparse
 
     parser = argparse.ArgumentParser(
-        description="Processes the given birthdate(s) according to the "
-        "Douglas Forbes' `Human Pin Code` book.",
+        description="Processes the given birthdate(s) according to the Douglas Forbes' `Human Pin Code` book.",
         epilog="Contact: @Seymapro",
     )
 
     # Define command-line arguments
-    parser.add_argument(
-        "--version", action="version", version=f"%(prog)s {__version__}"
-    )
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     parser.add_argument(
         "-b",
         "--birthdate",
@@ -169,7 +206,7 @@ if __name__ == "__main__":
         "-d",
         "--data-dir",
         "--data-directory",
-        default="./data/forbes/MDs/",
+        default="./data/forbes/tr/MDs/",
         type=Path,
         help="path to the data directory",
         dest="data_directory",
@@ -190,10 +227,7 @@ if __name__ == "__main__":
     birthdates_raw = args.birthdates
     if not birthdates_raw:
         birthdates_raw.append(
-            input(
-                "Please input a birthdate in the DAY.MONTH.YEAR format "
-                "(e.g. 22.12.2002, 31.07.2002): "
-            )
+            input("Please input a birthdate in the DAY.MONTH.YEAR format (e.g. 22.12.2002, 31.07.2002): ")
         )
 
     # Validate and parse birthdates
@@ -202,10 +236,7 @@ if __name__ == "__main__":
         try:
             birthdates.append(datetime.strptime(birthdate_raw, "%d.%m.%Y"))
         except ValueError as err:
-            err.add_note(
-                f"ERROR: Given birthdate ({birthdate_raw}) is not in the required "
-                "format (DAY.MONTH.YEAR)"
-            )
+            err.add_note(f"ERROR: Given birthdate ({birthdate_raw}) is not in the required format (DAY.MONTH.YEAR)")
             raise err
 
     DATA_DIRECTORY = args.data_directory
@@ -215,10 +246,7 @@ if __name__ == "__main__":
     for birthdate in birthdates:
         pin_code = get_pin_code(birthdate)
 
-        print(
-            f"Pin code for birthdate {birthdate.strftime('%d.%m.%Y')} "
-            f"is {''.join(map(str, pin_code))}"
-        )
+        print(f"Pin code for birthdate {birthdate.strftime('%d.%m.%Y')} is {''.join(map(str, pin_code))}")
 
         contents = pin_code_to_contents(pin_code, DATA_DIRECTORY)
 
@@ -232,7 +260,4 @@ if __name__ == "__main__":
             for content in contents:
                 f.write(content + "\n\n")
 
-        print(
-            f"Report for the birthdate {birthdate_str} has been generated "
-            f"and written to file {report_path}"
-        )
+        print(f"Report for the birthdate {birthdate_str} has been generated and written to file {report_path}")
