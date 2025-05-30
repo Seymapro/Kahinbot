@@ -4,7 +4,7 @@ from codecs import open
 from setuptools import setup, find_packages
 
 CURRENT_PYTHON = sys.version_info[:2]
-REQUIRED_PYTHON = (3, 11)
+REQUIRED_PYTHON = (3, 13)
 
 if CURRENT_PYTHON < REQUIRED_PYTHON:
     sys.stderr.write(
@@ -13,12 +13,10 @@ if CURRENT_PYTHON < REQUIRED_PYTHON:
 Unsupported Python version
 ==========================
 This version of KahinBot requires at least Python {}.{}, but
-you're trying to install it on Python {}.{}. 
+you're trying to install it on Python {}.{}.
 
 To resolve this, consider upgrading to a supported Python version.
-""".format(
-            *(REQUIRED_PYTHON + CURRENT_PYTHON)
-        )
+""".format(*(REQUIRED_PYTHON + CURRENT_PYTHON))
     )
     sys.exit(1)
 
@@ -28,8 +26,8 @@ if sys.argv[-1] == "publish":
     sys.exit()
 
 requires = [
-    'python-telegram-bot>=13.0',
-    'python-dotenv>=0.19.0',   
+    "python-telegram-bot>=13.0",
+    "python-dotenv>=0.19.0",
 ]
 
 about = {}
@@ -50,16 +48,16 @@ setup(
     packages=find_packages(include=["kahinbot", "kahinbot.*"]),
     package_data={"": ["LICENSE"]},
     include_package_data=True,
-    python_requires=">=3.11",
+    python_requires=">=3.13",
     install_requires=requires,
     license=about["__license__"],
     zip_safe=False,
     classifiers=[
-        'Development Status :: 3 - Alpha',
-        'Intended Audience :: End Users/Desktop',
-        'License :: OSI Approved :: MIT License',
-        'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.11', 
+        "Development Status :: 3 - Alpha",
+        "Intended Audience :: End Users/Desktop",
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.13",
     ],
     project_urls={
         "Documentation": "https://github.com/Seymapro/Kahinbot/",
