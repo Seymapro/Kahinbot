@@ -1,17 +1,17 @@
 # MIT License
-
+#
 # Copyright (c) 2024 Şeyma Yardım
-
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-
+#
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
-
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -28,7 +28,7 @@ from the_life import birthdate_to_life_path, life_path_to_content
 from pin_code import get_pin_code, pin_code_to_contents
 from paraphraser import paraphrase
 from zodiac import Zodiac
-from telethon import TelegramClient, events, Button  # type: ignore[reportAttributeAccessIssue, reportUnknownVariableType]
+from telethon import TelegramClient, events, Button
 from datetime import datetime
 from pathlib import Path
 import os
@@ -95,13 +95,10 @@ def create_json_summary(content_json: dict[str, list[str]] | dict[str, dict[str,
     else:
         content += TRANSLATIONS[key] + "\n\n"
 
-        for subtitle, bulletpoints in content_json[key].items():  # type: ignore[reportUnknownMemberType, reportAttributeAccessIssue]
+        for subtitle, bulletpoints in content_json[key].items():
             if bulletpoints:
                 content += TRANSLATIONS[subtitle] + "\n\n"
-                content += (
-                    "\n".join([f"- {bulletpoint}" for bulletpoint in bulletpoints])  # type: ignore[reportUnknownVariableType]
-                    + "\n\n"
-                )
+                content += "\n".join([f"- {bulletpoint}" for bulletpoint in bulletpoints]) + "\n\n"
 
     return content
 
@@ -124,51 +121,49 @@ async def send_message(
     message = ""
     for part in content.split("\n\n"):
         if len(message) + len(part) + 2 > 4096:
-            await client.send_message(  # type: ignore[reportUnknownMemberType]
-                entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
+            await client.send_message(
+                entity=await event.get_chat(),
                 message=message.strip(),
-                reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
+                reply_to=user_data[event.sender_id]["message_id"],
                 parse_mode="html",
             )
             message = ""
         message += f"\n\n{part}"
     else:
         if not message.isspace():
-            await client.send_message(  # type: ignore[reportUnknownMemberType]
-                entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
+            await client.send_message(
+                entity=await event.get_chat(),
                 message=message.strip(),
-                reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
+                reply_to=user_data[event.sender_id]["message_id"],
                 parse_mode="html",
             )
 
     if show_buttons:
-        life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportUnknownMemberType]
-        pin_code: list[int] = user_data[event.sender_id]["pin_code"]  # type: ignore[reportUnknownMemberType]
+        life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]
+        pin_code: list[int] = user_data[event.sender_id]["pin_code"]
         zodiac_sign: str = user_data[event.sender_id]["zodiac_sign"]
 
-        await client.send_message(  # type: ignore[reportUnknownMemberType]
-            entity=await event.get_chat(),  # type: ignore[reportUnknownArgumentType, reportUnknownMemberType]
+        await client.send_message(
+            entity=await event.get_chat(),
             message=f"<b><u>HAYAT SAYISI</b></u>: {life_path[0]}/{life_path[1]}\n"
             + f"<b><u>PİN KODU</b></u>: {''.join(map(str, pin_code))}\n"
             + f"<b><u>BURÇ</b></u>: {zodiac_sign.sign}\n"
             + f"<b><u>BURCUN ENNEAGRAM DEĞERİ</b></u>: {zodiac_sign.enneagram}",
-            reply_to=user_data[event.sender_id]["message_id"],  # type: ignore[reportArgumentType, reportUnknownMemberType]
+            reply_to=user_data[event.sender_id]["message_id"],
             parse_mode="html",
             buttons=[
-                [Button.inline("Tam Metin (Millman)", "full_text_millman")],  # type: ignore[reportUnknownMemberType]
-                [Button.inline("Tam Metin (Forbes)", "full_text_forbes")],  # type: ignore[reportUnknownMemberType]
-                [Button.inline("Özet (Millman)", "summary_millman")],  # type: ignore[reportUnknownMemberType]
-                [Button.inline("Özet (Forbes)", "summary_forbes")],  # type: ignore[reportUnknownMemberType]
-                [Button.inline("Kısa Maddeler (Millman)", "json_short_millman")],  # type: ignore[reportUnknownMemberType]
-                [Button.inline("Uzun Maddeler (Millman)", "json_long_millman")],  # type: ignore[reportUnknownMemberType]
+                [Button.inline("Tam Metin (Millman)", "full_text_millman")],
+                [Button.inline("Tam Metin (Forbes)", "full_text_forbes")],
+                [Button.inline("Özet (Millman)", "summary_millman")],
+                [Button.inline("Özet (Forbes)", "summary_forbes")],
+                [Button.inline("Kısa Maddeler (Millman)", "json_short_millman")],
+                [Button.inline("Uzun Maddeler (Millman)", "json_long_millman")],
                 [Button.inline("Enneagram Özellikleri", "zodiac_traits")],
             ],
         )
 
 
-@client.on(  # type: ignore[reportUnknownMemberType, reportUntypedFunctionDecorator]
-    events.NewMessage(incoming=True, pattern=r"([\s\S]*)\d{2}\.\d{2}\.\d{4}([\s\S]*)")  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType]
-)
+@client.on(events.NewMessage(incoming=True, pattern=r"([\s\S]*)\d{2}\.\d{2}\.\d{4}([\s\S]*)"))
 async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
     """
     Handles new messages containing a birthdate and calculates the life path.
@@ -179,17 +174,15 @@ async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
 
     logger.info(event)
 
-    message_raw: str = event.raw_text.strip()  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType, reportUnknownVariableType]
+    message_raw: str = event.raw_text.strip()
     try:
-        birthdate = datetime.strptime(message_raw, "%d.%m.%Y")  # type: ignore[reportUnknownArgumentType]
+        birthdate = datetime.strptime(message_raw, "%d.%m.%Y")
     except ValueError:
-        await event.reply(f"Girilen mesaj ({message_raw}) hatalı!")  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+        await event.reply(f"Girilen mesaj ({message_raw}) hatalı!")
 
         return None
     except Exception as err:
-        await event.reply(  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
-            "Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi."
-        )
+        await event.reply("Bilinmeyen bir hata ile karşılaşıldı ve yöneticiye haber verildi.")
         logger.error(err)
 
         return None
@@ -198,8 +191,8 @@ async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
     pin_code = get_pin_code(birthdate)
     zodiac_sign = Zodiac(birthdate)
 
-    user_data[event.message.sender_id] = {  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
-        "message_id": event.message.id,  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    user_data[event.message.sender_id] = {
+        "message_id": event.message.id,
         "life_path": life_path,
         "pin_code": pin_code,
         "birthdate": birthdate,
@@ -209,7 +202,7 @@ async def handle_birthdate(event: events.newmessage.NewMessage) -> None:
     await send_message(event, "")
 
 
-@client.on(events.CallbackQuery(pattern=r"full_text_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+@client.on(events.CallbackQuery(pattern=r"full_text_millman"))
 async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> None:
     """
     Sends the full text of the numerology reading from the Millman source.
@@ -218,7 +211,7 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
         event: The callback query event triggering the function.
     """
 
-    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]
 
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
@@ -246,7 +239,7 @@ async def send_full_text_millman(event: events.callbackquery.CallbackQuery) -> N
 
 
 # TODO: Implement.
-@client.on(events.CallbackQuery(pattern=r"full_text_forbes"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+@client.on(events.CallbackQuery(pattern=r"full_text_forbes"))
 async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> None:
     """
     Placeholder function for sending the full text from the Forbes source (not yet implemented).
@@ -255,7 +248,7 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
         event: The callback query event triggering the function.
     """
 
-    pin_code: list[int] = user_data[event.sender_id]["pin_code"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    pin_code: list[int] = user_data[event.sender_id]["pin_code"]
 
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
@@ -284,7 +277,7 @@ async def send_full_text_forbes(event: events.callbackquery.CallbackQuery) -> No
     await send_message(event, content)
 
 
-@client.on(events.CallbackQuery(pattern=r"json_short_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+@client.on(events.CallbackQuery(pattern=r"json_short_millman"))
 async def send_json_short_summary_millman(
     event: events.callbackquery.CallbackQuery,
 ) -> None:
@@ -295,7 +288,7 @@ async def send_json_short_summary_millman(
         event: The callback query event triggering the function.
     """
 
-    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]
 
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
@@ -333,7 +326,7 @@ async def send_json_short_summary_millman(
     await send_message(event, summary_short.strip())
 
 
-@client.on(events.CallbackQuery(pattern=r"json_long_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+@client.on(events.CallbackQuery(pattern=r"json_long_millman"))
 async def send_json_long_summary_millman(
     event: events.callbackquery.CallbackQuery,
 ) -> None:
@@ -344,7 +337,7 @@ async def send_json_long_summary_millman(
         event: The callback query event triggering the function.
     """
 
-    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]
 
     # TODO: Extract the file operations with error handling logic to a different function so it is cleaner.
     try:
@@ -382,7 +375,7 @@ async def send_json_long_summary_millman(
     await send_message(event, summary_short.strip())
 
 
-@client.on(events.CallbackQuery(pattern=r"summary_millman"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+@client.on(events.CallbackQuery(pattern=r"summary_millman"))
 async def send_paraphrased_summary_millman(
     event: events.callbackquery.CallbackQuery,
 ) -> None:
@@ -393,7 +386,7 @@ async def send_paraphrased_summary_millman(
         event: The callback query event triggering the function.
     """
 
-    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    life_path: tuple[int, int] = user_data[event.sender_id]["life_path"]
 
     try:
         summary = life_path_to_content(
@@ -419,7 +412,7 @@ async def send_paraphrased_summary_millman(
 
 
 # TODO: Implement.
-@client.on(events.CallbackQuery(pattern=r"summary_forbes"))  # type: ignore[reportAttributeAccessIssue, reportUnknownArgumentType, reportUnknownMemberType, reportUntypedFunctionDecorator]
+@client.on(events.CallbackQuery(pattern=r"summary_forbes"))
 async def send_paraphrased_summary_forbes(
     event: events.callbackquery.CallbackQuery,
 ) -> None:
@@ -430,7 +423,7 @@ async def send_paraphrased_summary_forbes(
         event: The callback query event triggering the function.
     """
 
-    pin_code: list[int] = user_data[event.sender_id]["pin_code"]  # type: ignore[reportAttributeAccessIssue, reportUnknownMemberType]
+    pin_code: list[int] = user_data[event.sender_id]["pin_code"]
 
     try:
         contents = pin_code_to_contents(
@@ -473,4 +466,4 @@ async def send_zodiac(
     await send_message(event, content)
 
 
-client.run_until_disconnected()  # type: ignore[reportUnknownMemberType]
+client.run_until_disconnected()

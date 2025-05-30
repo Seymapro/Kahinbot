@@ -1,17 +1,17 @@
 # MIT License
-
+#
 # Copyright (c) 2024 Şeyma Yardım
-
+#
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to deal
 # in the Software without restriction, including without limitation the rights
 # to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 # copies of the Software, and to permit persons to whom the Software is
 # furnished to do so, subject to the following conditions:
-
+#
 # The above copyright notice and this permission notice shall be included in all
 # copies or substantial portions of the Software.
-
+#
 # THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 # IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 # FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
@@ -81,9 +81,7 @@ if __name__ == "__main__":
     )
 
     # Define command-line arguments
-    parser.add_argument(
-        "--version", action="version", version=f"%(prog)s {__version__}"
-    )
+    parser.add_argument("--version", action="version", version=f"%(prog)s {__version__}")
     parser.add_argument(
         "-b",
         "--birthdate",
@@ -118,10 +116,7 @@ if __name__ == "__main__":
     birthdates_raw = args.birthdates
     if not birthdates_raw:
         birthdates_raw.append(
-            input(
-                "Please input a birthdate in the DAY.MONTH.YEAR format "
-                "(e.g. 22.12.2002, 31.07.2002): "
-            )
+            input("Please input a birthdate in the DAY.MONTH.YEAR format (e.g. 22.12.2002, 31.07.2002): ")
         )
 
     # Validate and parse birthdates
@@ -130,10 +125,7 @@ if __name__ == "__main__":
         try:
             birthdates.append(datetime.strptime(birthdate_raw, "%d.%m.%Y"))
         except ValueError as err:
-            err.add_note(
-                f"ERROR: Given birthdate ({birthdate_raw}) is not in the required "
-                "format (DAY.MONTH.YEAR)"
-            )
+            err.add_note(f"ERROR: Given birthdate ({birthdate_raw}) is not in the required format (DAY.MONTH.YEAR)")
             raise err
 
     DATA_DIRECTORY = args.data_directory
@@ -153,7 +145,4 @@ if __name__ == "__main__":
         ) as f:
             f.write(content)
 
-        print(
-            f"Report for the birthdate {birthdate_str} has been generated "
-            f"and written to file {report_path}"
-        )
+        print(f"Report for the birthdate {birthdate_str} has been generated and written to file {report_path}")
